@@ -1106,7 +1106,7 @@ img.imgcliente {
 
 .caja,.caja1,.caja2{
         margin-bottom: 20px;
-        width: 300px;
+        width: 100%;
 		
 }
 
@@ -1334,6 +1334,7 @@ option{
 
 .modalv2{
     margin-top: 70px;
+    max-width: 400px;
 }
 
 .modal2 p {
@@ -1345,7 +1346,7 @@ option{
 
 .modalv22:target {
   
-    background: linear-gradient(135deg, rgba(255,255,255,1) 10%, rgba(0,158,206,1) 100%);
+    background: linear-gradient(135deg, rgba(255,255,255,.9) 10%, rgba(0,158,206,1) 100%);
 }
 
 .cerrar span.icon-x {
@@ -2217,4 +2218,5 @@ a.linknav {
 
 
 }/* end css */
+
 
