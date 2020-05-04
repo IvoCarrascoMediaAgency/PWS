@@ -105,6 +105,10 @@ line-height: 25px;
 color: white;
 }
 
+input::placeholder {
+    color: rgba(0,0,0,.3);
+}
+
 .diseño{
 font-size: 12px;
 grid-area: footer;
