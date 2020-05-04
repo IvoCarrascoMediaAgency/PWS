@@ -1,0 +1,3004 @@
+html{
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	box-sizing: border-box;
+}
+
+*,
+*:after,
+*::before{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	
+}
+
+@font-face{
+	font-family:'Pacifico';
+	src: url('fonts/Pacifico.ttf') format('opentype');
+	}
+
+
+
+h1,h2,h3,h4,h5{
+	
+	
+	font-family: 'Pacifico', sans-serif;
+	color: #7e0505;
+	
+}
+
+
+p{
+	color: #666;
+	font-family: 'Roboto', sans-serif;
+}
+
+.headercolor{
+	display: grid;
+    width: 100%;
+    top: 0;
+    z-index: 28;
+    position: fixed;
+}
+
+
+
+/*CABECERA  */
+
+.marca{
+	color: white;
+	text-shadow: 1px 2px #444;
+}
+.marca:hover{
+	color: white;
+	text-shadow: 1px 2px #7e0505;
+
+}
+
+
+/* Menu hamburger */
+.menu {
+	
+    border-radius: 50%;
+
+	background: #fadc1a;
+	top: 40px;
+    /* box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF; */
+    cursor: pointer;
+    height: 50px;
+    position: fixed;
+	right: 10px;
+	
+    width: 50px;
+	z-index: 30;
+	filter:opacity(90%);
+	
+
+	display: grid;
+	grid-template-columns: auto;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu .icon-mas{
+	font-size: 2em;
+	transform:rotate(90deg);
+	-ms-transform:rotate(90deg); /* IE 9 */
+	-webkit-transform:rotate(90deg);
+	color:#7e0505;
+	transition: all 1s;
+
+}
+
+
+
+
+.iconnone{
+	transform:rotate(90deg);
+	-ms-transform:rotate(90deg); /* IE 9 */
+	-webkit-transform:rotate(90deg);
+	transition: all 1s;
+
+}
+
+
+
+/* menu flotante  movil color menu2 */
+.colormenu2{
+	
+	transition:all 1s;
+}
+
+.colormenu3{
+	margin-top: 0;
+	margin-right: 10px;
+	transition:all 1s
+}
+
+/* .colormenu2:hover{
+	background: #4d148c;
+} */
+
+/* end menu flotante movil */
+
+
+
+.logomovil
+{
+	width: 100%;
+	margin: auto;
+}
+.logomovil img{
+	height: 100px;
+	
+	
+}
+
+.menumovil2{
+	position: fixed;
+	
+	top: 0;
+	z-index: 25;
+	right: -100%;
+	background: rgba(0,0,0,0.4);
+	height: 100%;
+	width: 100%;
+	
+	transition: .55s .1s cubic-bezier(0, 1.07, 0, 1.02);
+	
+
+
+}
+
+
+
+.menumovil2 .hul{
+	width: 75%;
+	height: 100%;
+	position: relative;
+	font-size: 1em;
+	background: rgba(126, 5, 5, .8);	
+	float: right;
+	
+}
+
+.menumovil2 .hul .qe{
+	text-align: center;
+	margin-top:30px;
+	
+
+}
+.menumovil2 .hul .qe li a{
+	color: #fff;
+}
+
+.menumovil2 .hul li a{
+	color: #ede7f3;
+}
+
+
+/* menu slide */
+
+
+.divportadam{
+	display: grid;
+	grid-template-columns: 75px auto;
+	overflow: hidden;
+}
+
+
+
+.logomenum h2 {
+	line-height: 100px;
+
+	font-size: 1.2em;
+
+	
+}
+
+.logomenum h2 a {
+	text-decoration: none;
+	z-index: 2;
+	
+	
+	
+}
+
+
+.mostrarmenu2{
+	right: 0;
+	z-index: 29;
+
+	
+}
+
+.logofinalm{
+	margin:30px auto 0 auto;
+	display: grid;
+	align-items: center;
+	grid-gap: 5px;
+
+
+}
+
+
+.logofinalm2{
+	margin:20px auto 0 auto;
+	display: grid;
+	align-items: center;
+	grid-gap: 10px;
+
+
+}
+
+.reservasredes{
+	display: grid;
+    align-items: center;
+   
+    grid-gap: 10px;
+}
+
+
+
+.logofinalm2 figure img{
+	
+	height: 90px;
+}
+
+.logofinalm a{
+	text-decoration: none;
+    font-style: italic;
+    color: #fadc1a;
+    font-weight: bold;
+	font-family: Pacifico;
+	font-size: 1.5em;
+
+
+}
+
+
+.logofinalm img{
+
+	height: 80px;
+    margin-bottom: 1em;
+	
+}
+
+
+
+
+
+
+/* end menu slide */
+
+
+.hul button{
+	background: none;
+  border: 0;
+  color: inherit;
+  /* cursor: default; */
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+}
+
+
+.hul li  .btwpmovil
+{
+	color: white;
+}
+
+.hul li  .btwpmovilx
+{
+	color: white;
+	background: #0084ff;
+	padding: 6px;
+	border-radius: 23px;
+	font-size: 0.8em;
+}
+
+.hul li .icon-messenger:before{
+	color: #fff;
+	
+}
+
+
+
+.btwpmovil{
+	font-size: 0.8em;
+	padding: 6px;
+    text-align: center;
+    line-height: 25px;
+    background-color: #128C7E;
+    border-radius: 23px;
+    border: 2px solid #25D366;
+    color: white;
+}
+
+
+
+
+.hul li .btwpmovil:hover{
+	background: #25D366;
+}
+
+.hul li  .btwpmovilx:hover{
+	color: white;
+	background: rgba(88, 82, 175, 0.897);
+	padding: 6px;
+	border-radius: 23px;
+	font-size: 0.8em;
+}
+
+
+.container2{
+	display: flex;
+	
+}
+
+.container{
+	background:  rgba(126, 5, 5, .8);
+}
+
+
+
+.hamburger:before:hover{
+	width: 25px;
+    height: 3px;
+}
+
+.hamburger {
+    position: fixed;
+    top: 24px;
+    left: 15px;
+    width: 20px;
+    height: 2px;
+    background: #7e0505;;
+    display: block;
+    transform-origin: center;
+    transition: .5s ease-in-out;
+}
+
+
+
+.hamburger:after,
+.hamburger:before {
+    background: #7e0505;
+    content: "";
+    display: block;
+    transition: .5s ease-in-out;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.hamburger:before {
+    top: -8px;
+}
+
+.hamburger:after {
+    bottom: -8px;
+}
+
+
+.hul {
+	display: grid;
+	grid-template-columns: auto;
+    position: fixed;
+
+    list-style: none;
+	font-size: 1.5em;
+	/* border-radius: 50%; */
+
+	z-index: 11;
+	width: 100%;
+	text-align: center;
+	
+}
+
+
+
+.hul li{
+	margin: 2em 4em;
+	border-bottom: 1px solid #fadc1a;
+}
+
+.hul li a {
+
+    transition: all 300ms;
+	
+	text-decoration: none;
+ 
+}
+
+
+.hul li a:hover:before {
+    width: 110%;
+}
+
+
+
+
+/* end */
+
+
+
+
+.hem{
+	display:grid;
+	align-items: center;
+	
+	
+
+}
+.hem h2{
+	text-align: center;
+	color:white;
+	
+	font-weight: bold;
+	font-size: 1.7em;
+
+	text-shadow: #7e0505 1px 1px;
+	animation: hemh2a ease-in-out 1s;
+}
+
+.hem .h2portada span{
+	font-size: .7em;
+	font-weight: lighter;
+	font-family: 'Poppins', sans-serif;
+}
+
+.hem .h2textportada{
+	text-align: center;
+	line-height: 1.2em;
+	color: white;
+	text-shadow: #333 1px 1px;
+	font-weight: lighter;
+	font-size: 1.2em;
+	font-weight: bold;
+	animation: hem2text ease-in-out 1s;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+.hem22{
+	
+
+	
+    width: 100%;
+    
+    bottom: 10px;
+    position: absolute;
+    text-align: center;
+	line-height: 50px;
+	justify-content: center;
+	overflow: hidden;
+
+}
+
+.hem22 h2{
+	
+
+	color:white;
+	bottom: 0;
+	width: 100%;
+
+	font-size: 2em;
+	overflow: hidden;
+	text-shadow: #7e0505 1px 1px;
+	animation: hemh2a ease-in-out 1s;
+	
+	
+	
+
+}
+
+.hem22 h2 span{
+	font-size: .7em;
+    font-weight: lighter;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+@keyframes hemh2a {
+	from{
+		transform: translateX(-30px);
+		opacity: 0;
+	}
+	to{
+		transform: translateX(0);
+		opacity: 0.5;
+	}
+}
+@keyframes hem2text {
+	from{
+		transform: translateX(30);
+		opacity: 0;
+	}
+	to{
+		transform: translateX(30);
+		opacity: 0.5;
+	}
+}
+
+
+
+
+.containercontact{
+	height: 35px;
+	background: #fcea75;
+	overflow: hidden;
+}
+
+.containercontactul a.ite span{
+	transition: color .2s ease-in;
+	color: #7e0505;
+}
+
+
+
+.containercontactul .ite span:hover{
+	color: white;
+	transition: color .2s ease-in;
+
+}
+
+.containercontactul{
+	display: grid;
+	grid-template-columns: auto;
+	justify-content: center;
+	
+	
+
+}
+
+.containercontactul li{
+	list-style-type: none;
+	
+
+}
+
+
+
+
+
+.ite {
+	text-decoration: none;
+	color: #be8282;
+	font-size: 0.9em;
+}
+
+
+
+  .menutop{
+	  display: none;
+  }
+
+
+.btnprueba2{
+	display: block;
+	position: relative;
+
+	margin: 5% auto 0 auto;
+
+
+	background: #7e0505;
+
+    border: 2px solid #fadc1a;
+   
+	cursor: pointer;
+
+    border-radius: 3px;
+}
+   
+
+.btnprueba2 a:hover{
+	color:#7e0505;
+	background: #fadc1a;
+}
+
+.btnprueba2:hover{
+	border: 2px solid #7e0505;
+}
+
+
+.btnprueba2 a{
+	color:#fadc1a;
+    transition: .2s;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.8em 0.8em;
+
+}
+.btnprueba2 a span{
+	margin-left:5px;
+}
+
+
+
+.btnprueba1{
+	
+    border-radius: 3px;
+    background: #fadc1a;
+    border: 1px solid #7e0505;
+    cursor: pointer;
+	z-index: 28;
+	margin: 20px 0 0 0;
+}
+
+.btnprueba1:hover{
+	border: 1px solid #fadc1a;
+}
+
+.btnprueba1 a:hover{
+	color:#fadc1a;
+	background: #7e0505;
+	
+	
+	
+}
+
+.btnprueba1 a{
+
+	color: #7e0505;
+    transition: .2s;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+	padding: 0.5em 1.5em;
+	transition: 0.5s;
+
+}
+.btnprueba1 a span{
+	margin-left:5px;
+}
+
+
+
+
+.btnprueba a{
+
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+.btnprueba a span{
+	margin-left:5px;
+}
+
+
+
+
+
+
+/* MENU */
+
+
+/* navbar responsive */
+#container{
+	top: 0;
+	
+	transition: top 0.2s;
+	
+}
+
+
+/* Menu Movil */
+
+
+.portada1{
+	
+	position: absolute;
+	background: #fff fixed no-repeat 50% 50%;
+	background-size: cover;
+	
+	position: absolute;
+		width: 100%;
+	
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		z-index: -2;
+	
+	
+	
+	}
+	
+	
+	#portada1{
+		
+	
+	
+		background-image: url("img/mamaclorindanigth.jpg");
+		
+	
+	
+	
+	}
+
+
+.logomenu{
+    height: 55px;
+	
+}
+
+
+
+.logomenu div figure{
+    margin-right: 10px;
+    width: 55px;
+    height: 55px;
+	float: left; 
+	top: 0;
+	left: 0;
+	
+}
+
+.logomenu figure img{
+    width: 100px;
+	height: 100px;   
+	position: absolute; 
+}
+
+.logomenu div a {
+	
+	font-size: 1.7em;
+	font-weight: bold;
+    color:#fadc1a;
+    text-decoration: none;
+	line-height: 75px;
+	text-align: center;
+	cursor: pointer;
+	font-family: Pacifico;
+	font-style: italic;
+	transition: 0.5s;
+	
+}
+
+
+
+
+
+
+.portadamovil h2 {
+	line-height: 55px;
+
+	font-size: 0.9em;
+	
+}
+
+.portadamovil h2 a {
+	text-decoration: none;
+	
+	z-index: 2;
+	text-transform: uppercase;
+	
+	
+	
+}
+
+
+.portadamovil .logomenu div a {
+	
+    font-size: 0.49em;
+   
+    text-decoration: none;
+	line-height: 55px;
+
+	cursor: pointer;
+	
+}
+
+
+
+
+.containers{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100vh;
+	
+
+}
+
+.containers2{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	z-index: -3;
+	
+}
+
+.containers h2.bien{
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	margin: 0 auto;
+	color: white;
+	font-size: 3em;
+}
+
+
+.containers .slider{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 500%;
+	height: 100%;
+	/* background: linear-gradient(to bottom, rgba(255,255,255,.4) 30%, rgba(126,5,5,.5) 100%); */
+	
+	animation: animate 20s linear infinite alternate;
+	
+	
+}
+
+.containers2 .slider2{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 500%;
+	height: 100%;
+	/* background: linear-gradient(to bottom, rgba(255,255,255,.4) 30%, rgba(126,5,5,.5) 100%); */
+	
+	animation: animate 20s linear infinite reverse;
+	
+	
+}
+
+
+.containers .slider .slide{
+	position: relative;
+	float: left;
+	width: 20%;
+	height: 100%;
+	
+
+}
+
+.containers2 .slider2 .slide2{
+	position: relative;
+	float: left;
+	width: 20%;
+	height: 100%;
+	
+
+}
+
+/* .containers .slider:hover{
+	animation-play-state: paused;
+	
+} */
+.containers .slider .slide .caption{
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	
+	box-sizing: border-box;
+	top: -25%;
+}
+
+.containers2 .slider2 .slide2 .caption{
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	
+	box-sizing: border-box;
+	top: -25%;
+}
+
+
+.containers .slider .slide .caption a{
+	
+	display: block;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 1.2em;
+	text-decoration: none;
+	cursor: pointer;
+
+}
+
+.containers2 .slider2 .slide2 .caption a{
+	
+	display: block;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 1.2em;
+	text-decoration: none;
+	cursor: pointer;
+
+}
+
+
+.containers .slider  .slide1{
+	background: url(img/Cuy_Asado_Quito.png);
+	background-size: 100vw;
+	background-position: center;
+	background-repeat: no-repeat;
+	
+
+	
+
+
+
+}
+
+.containers2 .slider2  .slide1-1{
+	background: url(img/Cuy_Asado_Quito.png);
+	background-size: 100vw;
+	background-position: center;
+	background-repeat: no-repeat;
+	
+
+	
+
+
+
+}
+
+
+
+.containers .slider  .slide2{
+	background: url(img/langostinos_Quito.png);
+	background-size: 100vw;
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+
+.containers2 .slider2  .slide2-2{
+	background: url(img/langostinos_Quito.png);
+	background-size: 100vw;
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+
+
+.containers .slider  .slide3{
+	background: url(img/Locro_De_Queso.png);
+	background-size: 100vw;
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+
+.containers2 .slider2  .slide3-3{
+	background: url(img/Locro_De_Queso.png);
+	background-size: 100vw;
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+
+.containers .slider .slide4{
+	background: url(img/Bandeja-Mama-Clorinda.png);
+	background-size: 100vw;
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+
+.containers2 .slider2 .slide4-4{
+	background: url(img/Bandeja-Mama-Clorinda.png);
+	background-size: 100vw;
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+
+
+
+
+@keyframes animate{
+	10% {
+		margin-left: 0;
+	}
+	
+	20%{
+		margin-left: 0;
+	}
+	30%{
+		margin-left: -100%;
+	}
+	40%{
+		margin-left: -100%;
+	}
+	50%{
+		margin-left: -200%;
+	}
+	60%{
+		margin-left: -200%;
+	}
+	70%{
+		margin-left: -300%;
+	}
+	80%{
+		margin-left: -300%;
+	}
+	90%{
+		margin-left: -400%;
+	}
+	100%{
+		margin-left: -400%;
+	}
+	
+
+
+}
+
+
+
+		
+
+
+nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: none;
+}
+
+nav li{
+	margin-bottom: 1em;
+	margin-left: 1em;
+}
+
+
+
+.h1slogan{
+	display: none;
+}
+
+/* logo final responsive */
+
+
+
+.logofinal img{
+
+	height: 55px;
+	transition: .2s ease-in;
+	
+}
+
+.icon-mas span{
+	content: "";
+}
+
+
+
+/* chat wh
+	atsapp y face */
+
+
+
+	.whatsapp,.facebook{
+		display: grid;
+		grid-template-columns: auto;
+		align-items: center;
+		z-index: 10;
+		position: fixed;
+		cursor: pointer;
+	}
+
+	.facebook a{
+		text-decoration:none;
+		font-size: 2em;
+		text-align: center;
+		margin-top: 6px;
+		
+	}
+
+	.whatsapp a{
+		text-decoration:none;
+		font-size: 2em;
+		color: #fff;
+		text-align: center;
+	}
+
+
+	
+
+	.facebook{
+		width: 50px;
+		height: 50px;
+		right: 20px;
+		background: #fff;
+		border-radius: 50%;
+		transition: box-shadow 0.8s cubic-bezier(.19, 1, .22, 1);
+
+		
+	
+	}
+
+	.whatsapp{
+		width: 50px;
+		height: 50px;
+		right: 20px;
+		background: #25D366;
+		border-radius: 50%;
+		transition: box-shadow 0.8s cubic-bezier(.19, 1, .22, 1);
+
+		
+	}
+
+
+	.facebook:hover{
+		box-shadow: 0 0 0 4px #fff;
+
+		font-size: 1.2em;
+		filter:none;
+		text-align: center;
+	
+
+	}
+
+	.facebook{
+	
+		filter:opacity(80%);
+		
+	}
+
+	.whatsapp:hover{
+		filter:none;
+		box-shadow: 0 0 0 4px #25D366;
+		font-size: 1.2em;
+		color:#ff6600
+
+	
+	
+	}
+
+	.whatsapp:before{
+		top:10px;
+	}
+
+	.whatsapp{
+		
+		filter:opacity(70%);
+		
+	}
+
+	.whatsapp{
+		bottom: 16px;
+	}
+
+
+	.facebook{
+		bottom: 90px;
+	}
+
+	/* facebook y wht2 */
+
+	.whatsapp2,.facebook2{
+		display: none;
+	}
+
+	.whatsapp2,.facebook2{
+	
+		grid-template-columns: auto;
+		align-items: center;
+		z-index: 10;
+		position: fixed;
+		cursor: pointer;
+	}
+
+	.facebook2 a{
+		text-decoration:none;
+		font-size: 2em;
+		text-align: center;
+		margin-top: 6px;
+		
+	}
+
+	.whatsapp2 a{
+		text-decoration:none;
+		font-size: 2em;
+		color: #fff;
+		text-align: center;
+	}
+
+
+	
+
+	.facebook2{
+		width: 50px;
+		height: 50px;
+		right: 20px;
+		background: #fff;
+		border-radius: 50%;
+		transition: box-shadow 0.8s cubic-bezier(.19, 1, .22, 1);
+
+		
+	
+	}
+
+	.whatsapp2{
+		width: 50px;
+		height: 50px;
+		right: 20px;
+		background: #25D366;
+		border-radius: 50%;
+		transition: box-shadow 0.8s cubic-bezier(.19, 1, .22, 1);
+
+		
+	}
+
+
+	.facebook2:hover{
+		box-shadow: 0 0 0 4px #fff;
+
+		font-size: 1.2em;
+		filter:none;
+		text-align: center;
+	
+
+	}
+
+	.facebook2{
+	
+		filter:opacity(80%);
+		
+	}
+
+	.whatsapp2:hover{
+		filter:none;
+		box-shadow: 0 0 0 4px #25D366;
+		font-size: 1.2em;
+		
+
+	
+	
+	}
+
+	.whatsapp2:before{
+		top:10px;
+	}
+
+	.whatsapp2{
+		
+		filter:opacity(70%);
+		
+	}
+
+	.whatsapp2{
+		bottom: 16px;
+	}
+
+
+	.facebook2{
+		bottom: 90px;
+	}
+	/* end fce and wht 2 */
+	
+
+
+/* end */
+
+
+
+.layer{
+	background: linear-gradient(to bottom, rgba(255,255,255,.4) 50%, rgba(0,0,0,1) 100%);
+	z-index: -1;
+	width: 100%;
+	height: 100vh;
+
+}
+
+
+/* end */
+
+
+
+.divportada{
+	
+	display: grid;
+	
+	margin: 0;
+	align-items: center;
+	height: 100%;
+
+}
+
+
+
+.links,.icon-clientes,.icon-telefono,.icon-menudeldia,.icon-mail,.icon-gestion:before{
+	
+	
+	color: #fadc1a;
+	margin-right: 5px;
+
+}
+
+.iconosocial .iconosmenu2{
+	margin: 5px;
+	font-size: 32px;
+
+}
+
+.iconosocial .icon-facebook{
+	color: white;
+	
+}
+
+.iconosocial2{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	justify-content: center;
+	grid-gap: 10px;
+}
+
+.iconosocial2 a{
+	text-decoration: none;
+	color: black;
+}
+
+.iconosocial2 a span{
+	font-size: 2em;
+}
+
+.iconosocial .icon-whatsapp{
+	color:white;
+	
+}
+
+.iconosocial .icon-instagram{
+	color: white;
+	
+}
+
+
+.iconosocial .foot{
+	color: black;
+	
+}
+
+
+
+
+
+.iconosocial a{
+	text-decoration: none;
+}
+
+.menumovil2 .hul li a{
+	display: block;
+	color:white;
+	
+
+}
+
+.menumovil2 .hul li a:hover{
+	transform: scale(1.1);
+	transition: 450ms all;
+	transform-origin: center center;
+	color: #fadc1a;
+	
+}
+
+
+.historia{
+ display: grid;
+ width: 100%;
+ margin: 0 auto;
+ grid-template-columns: auto;
+ text-align: center;
+ height: 600px;
+}
+
+.history1{
+	height: 300px;
+	display: grid;
+	
+}
+
+.history1 p{
+	width: 90%;
+ margin: 0 auto;
+}
+
+.history2{
+	height: 300px;
+	position: relative;
+	background: rgba(0,0,0,.5);
+	
+}
+
+.history2 .btnprueba1{
+	position: absolute;
+    display: grid;
+    top: 50%;
+    right: 0;
+    left: 0;
+    width: 200px;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.history1-1{
+	align-content: center;
+    display: grid;
+}
+	
+	
+
+
+.history1-1 h2{
+	display: flex;
+	justify-content: center;
+		
+}
+
+.history1-1 h2 span{
+	font-family: Roboto;
+	margin-left: 5px;
+	font-size: 0.8em;
+	line-height: 50px;
+}
+
+.menumama{
+	display: grid;
+	width: 100%;
+	margin: 0 auto;
+	grid-template-rows: 30%;
+	text-align: center;
+	height: 600px;
+}
+
+.menumama a span.flechatipica{
+	position: absolute;
+	
+    width: 100%;
+
+	font-size: 3em;
+	overflow: hidden;
+	display: block;
+	
+}
+
+ .icon-flecha-down:before{
+	animation: example 1s linear 1s infinite alternate;
+    position: relative;
+}
+
+@keyframes example {
+	from {top:0; color: #fadc1a}
+    to {top:10px; color: #7e0505;}
+}
+
+
+
+
+
+/* .icon-flecha-down:before{
+	animation: subi ease-in-out 1s;
+}
+
+@keyframes subi {
+	from{
+		transform: translateY(-30px);
+		opacity: 0;
+	}
+	to{
+		transform: translateY(0);
+		opacity: 0.5;
+	} */
+
+
+
+
+
+
+.menumama2{
+	display: grid;
+
+	margin: 0 auto;
+
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.menu2{
+	display: grid;
+	grid-template-areas: 'carnes mariscos' 'carnes mariscos';
+							;
+	
+}
+
+.carnes{
+	grid-area: carnes;
+	margin: 20px auto 50px auto;
+}
+
+.mariscos{
+	grid-area: mariscos;
+	margin: 20px auto 50px auto;
+}
+input{
+	overflow: hidden;
+}
+
+.date1 input{
+	height: 30px;
+}
+
+.date1 span{
+	color: white;
+	font-size: 0.8em;
+	background: rgba(0,0,0,0.5)
+}
+
+
+.textmenu{
+	width: 90%;
+	margin: 0 auto;
+}
+.textmenu h2{
+	color: #7e0505;
+}
+
+.textmenu h2{
+	display: grid;
+	height: 30%;
+	justify-content: center;
+  	align-items: center;
+}
+
+.textmenu p{
+	display: grid;
+	height: 30%;
+	justify-content: center;
+  	align-items: center;
+}
+
+.galeriaul{
+	display: grid;
+	
+}
+
+.galeriaul img{
+	width: 100%;
+	height: 100%;
+}
+
+.menu1{
+	
+	display: grid;
+	grid-template-areas: 'entrada entrada entrada entrada'
+							'sopas sopas comida comida';
+}
+
+.entradas{
+	grid-area: entrada;
+
+}
+
+.galeriaentradas{
+	width: 100%;
+	height: 20vh;
+
+}
+
+
+
+.galeriaentradas ul li a img{
+	max-width: 240px;
+	min-width: 160px;
+}
+
+.galeriaentradas ul li a img.fototipica{
+	max-width: 450px;
+}
+
+.galeriaentradas ul{
+	width: 100%;
+	height: 100%;
+}
+
+.galeriaentradas ul li a img{
+	width: 100%;
+	height: 100%;
+}
+
+.galeriaentradas ul li a{
+	width: 100%;
+	
+}
+
+.galeriaentradas ul li{
+	width: 100%;
+	list-style: none;
+	
+}
+
+.galeriaentradas a.agale{
+
+	color: #7e0505;
+    position: absolute;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    height: 35px;
+    width: 140px;
+    margin-top: 20%;
+    background: #fadc1a;
+    line-height: 35px;
+    background: linear-gradient(to bottom, #fcea75 0%,#fadc1a 100%);
+    border: 1px solid #7e0505;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #7e0505;
+    display: inline-block;
+    text-decoration: none;
+	cursor: pointer;
+	font-family: Pacifico;
+	font-weight: bold;
+	
+}
+
+.galeriaentradas a.agale2{
+
+	color: #7e0505;
+    
+    display: grid;
+    /* margin-left: auto;
+    margin-right: auto; */
+    height: 35px;
+    width: 100px;
+    /* margin-top: 20%; */
+    background: #fadc1a;
+    line-height: 35px;
+    background: linear-gradient(to bottom, #fcea75 0%,#fadc1a 100%);
+    border: 1px solid #7e0505;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #7e0505;
+    display: inline-block;
+    text-decoration: none;
+	cursor: pointer;
+	font-family: Pacifico;
+	font-weight: bold;
+	
+}
+
+.galeriaentradas a.agale:hover{
+	color: #fadc1a;
+	background: linear-gradient(to bottom, #be8282 0%,#7e0505 100%);
+	border: 1px solid #fadc1a;
+}
+
+.galeriaentradas a.agale2:hover{
+	color: #fadc1a;
+	background: linear-gradient(to bottom, #be8282 0%,#7e0505 100%);
+	border: 1px solid #fadc1a;
+}
+
+.modal{
+	display: none;
+}
+
+
+.modalesp{
+	margin-bottom: 20px;
+}
+
+.modal:target {
+	display: block;
+	position: fixed;
+	background: rgba(0,0,0,0.8);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+}
+
+.modal p{
+	color: white;
+	font-style: italic;
+	font-size: 0.9em;
+	width: 90%;
+	margin: auto;
+}
+
+.modal h3{
+	color: #fadc1a;
+	font-size: 1.5em;
+	text-align: center;
+	margin: 60px 0 10px 0;
+	text-shadow: 1px 2px #444;
+}
+.ulmodaltext{
+	text-align: left;
+}
+.ulmodaltext li{
+	list-style: none;
+}
+.ulmodaltext li h4{
+	font-size: .5em;
+	margin-bottom: 10px;
+	color: #fadc1a;
+	margin-top: 10px;
+}
+.ulmodaltext li p{
+	font-size: .4em;
+}
+
+.imagen{
+	width: 100%;
+	height: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.imagen a{
+	color: white;
+	font-size: 2em;
+	text-decoration: none;
+	margin: 0 10px;
+	cursor: pointer;
+}
+
+.imagen a:nth-child(2){
+	margin: 0;
+	height: 1005;
+	flex-shrink: 2;
+}
+
+.imagen img{
+	width: 500px;
+	height: 100%;
+	max-width: 100%;
+	
+}
+
+.cerrar{
+	margin-top: 20px;
+	position: absolute;
+    top: 0;
+    right: 20px;
+	
+}
+
+
+
+
+.cerrar a{
+	color:#fadc1a;
+	text-decoration: none;
+	border-radius: 50%;
+	background: #7e0505;
+
+	width: 30px;
+	height: 30px;
+	line-height: 33px;
+	margin: auto;
+	font-size: 0.7em;
+	
+	display: block;
+}
+
+.imghide{
+	visibility: hidden;
+}
+
+.sopas{
+	grid-area: sopas;
+}
+
+.comidatipica{
+	grid-area: comida;
+}
+
+
+.mapa{
+	height: 300px;
+    width: 95%;
+    margin: 20px auto;
+}
+
+.contacto{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+
+.contactoh2{
+	background:#7e0505;
+	width: 100%;
+	
+}
+
+.contactoh2 h2{
+	color: #fadc1a;
+}
+.contactoh3{
+	background: rgba(0,0,0,.5);
+	width: 100%;
+}
+
+.contactoh3 h2{
+	color: #fadc1a;
+	text-shadow: 1px 2px #444;
+}
+
+
+
+
+.contactoh3 ul{
+	background: none;
+}
+
+
+
+
+
+.contactoul{
+	margin-bottom: 40px;
+	text-align: center;
+	background: #7e0505;
+
+}
+
+
+.contactoul li p{
+	color: white;
+}
+
+.contactoul li p span{
+	color: white;
+    text-decoration: underline;
+}
+
+.contactoul li p a{
+	text-decoration: none;
+	color: #fadc1a;
+}
+
+.contacto ul li{
+	list-style: none;
+}
+
+.contactoul a{
+	text-decoration: none;
+}
+
+.contacto h2{
+	width: 90%;
+	margin:20px auto 20px auto;
+	text-align: center;
+
+}
+
+
+.mapacontacto{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+
+.mapa iframe{
+	display: grid;
+	margin: 0 auto;
+}
+
+
+.orders{
+	display:grid;
+	grid-template-columns: auto;
+
+   
+}
+
+
+.reservas{
+	background: url(img/Reservas_Quito.png);
+	
+    display: grid;
+
+    background-repeat: no-repeat;
+    width: 100%;
+	background-size: cover;
+
+	height: 650px;
+	
+}
+
+.reservaslayer{
+	display: grid;
+
+}
+
+.form2{
+	display: grid;
+	grid-template-columns: 45% 25% 30%;
+}
+
+.reservaslayer h2{
+	text-align: center;
+    color: #fadc1a;
+
+    border-radius: 3px;
+  
+    font-size: 2em;
+    text-shadow: 1px 2px #444;
+}
+
+.reservastext{
+	margin-top: 30px;
+	text-align: center;
+}
+.reservastext p{
+	color: #fadc1a;
+	margin-top: 10px;
+    text-shadow: 1px 1px #444;
+}
+
+form{
+	width: 90%;
+	margin: 0 auto;
+	max-width: 450px;
+	overflow:hidden;
+	height: 100%;
+	margin-bottom: -175px;
+}
+
+input, textarea {
+	width: 100%;
+    margin-bottom: 15px;
+    padding: 5px;
+    font-size: 1em;
+    border-radius: 3px;
+    background: rgba(0,0,0,0.6);
+	color: white;
+	border: 1px solid #7e0505;
+}
+form p{
+	color: #fadc1a;
+	text-align: center;
+	margin-bottom: 10px;
+	text-shadow: 1px 1px #444;
+	font-size: 1.3em;
+	background: rgba(0,0,0,0.5);
+}
+
+
+
+input::placeholder{
+	color:rgba(255,255,255,0.7);
+}
+
+textarea::placeholder{
+	color:rgba(255,255,255,0.7);
+}
+
+textarea {
+	min-height: 100px;
+	max-height: 200px;
+	max-width: 100%;
+
+}
+
+.foodies{
+	width: 100%;
+	margin: 0 auto;
+	
+	
+	height: 100%;
+	
+}
+
+.food2{
+	display: grid;
+	grid-template-columns: auto;
+	
+    
+  
+  
+    
+	
+}
+
+.foodies span{
+	margin: 0 auto 20px auto;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #7e0505;
+	text-align: center;
+	display: block;
+
+}
+
+
+.foodh2 h2{
+	text-align: center;
+	width: 90%;
+	margin: 20px auto  20px auto;
+	
+
+
+}
+
+.trip{
+	display: flex;
+	width: 300px;
+}
+
+.fotofoodie{
+	display: grid;
+	color: white;
+	text-align: right;
+	text-decoration: none;
+	font-style: italic;
+	margin-right: 20px;
+	text-shadow: 1px 1px #444;
+}
+
+.fotofoodie span{
+	color: #fadc1a;
+}
+
+
+.fotofoodie2{
+	display: block;
+	color: white;
+	text-align: right;
+	
+}
+
+.m2:target{
+	display: block;
+	margin: 0 auto;
+
+}
+
+.m2{
+	display: none;
+
+}
+
+
+.m2 h3{
+	margin: 40px auto 0 auto;
+}
+
+.m2 p.pm2{
+	text-align: center;
+	margin: 20px auto;
+}
+
+.m3 a img{
+	width: 240px;
+}
+
+.m4 {
+	display: grid;
+	align-items: center;
+	margin: 20px auto;
+}
+
+.m5{
+	margin: 0 auto;
+}
+
+
+.mc1 a{
+	color: #fadc1a;
+    text-decoration: none;
+    border-radius: 50%;
+    background: #7e0505;
+    width: 30px;
+    height: 30px;
+    line-height: 33px;
+    margin: auto;
+    font-size: 0.7em;
+	align-items: center;
+	display: grid;
+	
+}
+
+.modal24{
+	display: grid;
+	width: 100%;
+	height: 100%;
+}
+
+.modal23{
+	background: rgba(0,0,0,0.7);
+    display: grid;
+    width: 100vh;
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#reservarfoco{
+	display: grid;
+    align-items: center;
+}
+
+
+
+#reservarfoco:target{
+	display: grid;
+    align-items: center;
+}
+
+
+.trip{
+	height: 500px;
+	width: 100%;
+	margin: 0 auto 15px auto;
+	overflow: hidden;
+	display: grid;
+    justify-content: center;
+}
+
+
+.face{
+	height: 500px;
+	width: 100%;
+	margin: 0 auto 15px auto;
+	display: grid;
+    justify-content: center;
+
+}
+
+.face iframe{
+	margin: 0 auto;
+}
+
+/* Google Bussines */
+
+.trip4{
+	width: 90%;
+	margin: 20px auto;
+	max-width: 500px;
+}
+
+.trip span{
+	font-size: 1.2em;
+}
+
+.trip3 span{
+	font-size: 1.2em;
+
+}
+
+.headopinion
+{
+	display: grid;
+	grid-template-columns: auto;
+}
+.headopinion1{
+	width: 100%;
+}
+.headopinion1 h3{
+	font-family: Roboto;
+	color:#333;
+}
+.headopinion1 p{
+	font-family: Roboto;
+	color:#999;
+	font-size: 0.9em;
+}
+
+.estrellasop{
+	display: flex;
+	font-size: 1em;
+	margin: 10px auto 10px auto;
+}
+
+.estrellasop .opinion{
+	font-size: .8em;
+	color:#999;
+
+	
+	margin-left: 10px;
+	font-style: normal;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.estrellas{
+	font-size: 1em;
+	color: #ef6c00;
+	margin-right: 10px;
+
+}
+
+
+
+.estrellasop span{
+	color: #ef6c00;
+	font-size: 1em;
+}
+
+.escribeop{
+	
+	display: grid;
+	align-content: center;
+
+	margin-left: 20px;
+	background: #4d90fe;
+	/* padding: 2px; */
+	border-radius: 3px;
+	height: 20px;
+}
+
+
+.escribeop a{
+	text-decoration: none;
+	text-align: center;
+	font-family: Roboto;
+	display: block;
+    cursor: pointer;
+
+}
+
+.escribeop a span{
+	color: white;
+	
+	font-size: 0.8em;
+	margin: auto 5px;
+	
+}
+
+.avataropi{
+	margin-right: 5px;
+}
+
+.avatar1p{
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+.headopininstatis h4{
+	font-family: Roboto;
+	font-size: .8em;
+	color: black;
+
+}
+
+.head2op{
+	display: grid;
+	grid-template-columns: 60px auto;
+	margin: 5px 0 5px 0;
+}
+
+.head2op span{
+	margin: 0;
+    font-size: .7em;
+    color: #999;
+    text-align: left;
+	display: block;
+	margin-left: 5px;
+}
+
+.headopininstatis h5{
+	font-family: Roboto;
+	font-size: .7em;
+	color: #ef6c00;
+
+}
+
+.estrellassatis{
+	display: flex;
+
+}
+
+.estrellassatis span{
+	/* margin: 0 auto;
+	 */
+
+	 font-size: .8em;
+	margin: 5px 0 10px 0;
+	 color: #ef6c00;
+	 text-align: center;
+	 display: block;
+
+}
+
+
+.estrellassatis p{
+	margin: 5px 0 10px 0;
+	color:#999;
+	font-size: 0.8em;
+	margin-left: 5px;
+
+}
+
+.mensajesatis{
+	color: #222;
+	font-size: 0.8em;
+	text-align: justify;
+}
+
+.mensajesatis span{
+	font-style: italic;
+	margin: 0;
+	font-size: 1em;
+    font-weight: normal;
+    color: #666;
+    text-align: center;
+	display: inline-block;
+}
+
+.opinionsatis{
+	margin: 5px auto;
+}
+
+footer{
+	width: 100%;
+	height: 60px;
+	display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#boton{
+	background: #fadc1a;
+	color: #7e0505;
+	border: 1px solid #7e0505;
+	width: 100px;
+	font-weight: bold;
+	align-items: center;
+	display: grid;
+	margin: 0 auto;
+
+}
+
+#boton:hover{
+	cursor:pointer;
+	background: #7e0505;
+	color: #fadc1a;
+	border: 1px solid #fadc1a;
+}
+
+
+.reservasredes{
+	display: grid;
+	align-items: center;
+	margin-bottom: 20px;
+
+}
+
+.reservasredes p{
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+
+}
+
+
+
+
+.reservasredes .btnprueba1{
+	
+    border-radius: 3px;
+    background: #fadc1a;
+    border: 1px solid #7e0505;
+	cursor: pointer;
+	text-decoration: none;
+	color: #7e0505;padding: 5px 0;
+	display: grid;
+	justify-content: center;
+	
+	font-weight: bold;
+
+	margin: 10px auto;
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    transition: 0.5s;
+   
+}
+
+.reservasredes .btnprueba1:hover{
+	border: 1px solid #fadc1a;
+	background: #7e0505;
+	color: #fadc1a;
+}
+
+
+
+.reservasredes .iconosocial{
+	display: grid;
+    margin: 10px auto;
+    grid-template-columns: auto auto auto;
+
+}
+.reservasredes .logofinalm h2{
+	margin: 10px auto;
+}
+
+
+.reservasredes figure{
+	justify-content: center;
+	display: grid;
+}
+
+.diseño{
+	text-align: center;
+}
+
+.diseño p a{
+	text-decoration: none;
+    color: #7e0505;
+   
+}
+
+
+
+@media screen and (min-width: 768px){
+
+
+
+
+
+	header{
+		background: transparent;
+	}
+
+
+
+	.mostrarmenu2{
+		display: none;
+	}
+
+	
+
+	
+
+	.colormenu1 .logomenu ul li span{
+
+			color: #ffffff;
+	}
+	
+	.colormenu1 .logomenu ul li a span:hover{
+
+		color: #e2c285;
+		/* text-shadow: -1px -1px 0px #795548, 1px -1px 0px #795548, -1px 1px 0px #795548, 1px 1px 0px #795548; */
+		
+}
+
+
+
+   .headercolor{
+	display: grid;
+	width: 100%;
+	top: 0;
+	z-index: 1000;
+	position: fixed;
+   }
+
+ 
+   /* white{
+	background: #ede7f3;
+   } */
+
+   /* new js para cambiar color al hacer scroll el menu */
+
+
+   .hul{
+	   display: none;
+   }
+   
+   
+   .menu{
+	   display: none;
+   }
+
+   .hem h2{
+	   color: #fff;
+	   margin-top: -10%;
+   }
+
+  
+
+.portadamovil1{
+	
+	display: grid;
+	align-items: center;
+	
+		
+
+}
+
+.containers .slider  .slide1{
+	background: url(img/Cuy_Asado_Quito.png);
+	background-size: 120vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	
+
+	
+
+
+
+}
+
+.containers .slider  .slide2{
+	background: url(img/langostinos_Quito.png);
+	background-size: 120vh;
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+
+.containers .slider  .slide3{
+	background: url(img/Locro_De_Queso.png);
+	background-size: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+.containers .slider .slide4{
+	background: url(img/Bandeja-Mama-Clorinda.png);
+	background-size: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+
+
+.containers .slider .slide .caption{
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	
+	box-sizing: border-box;
+	top: 0;
+}
+
+.pruebar{
+	display: flex;
+	order: 4;
+	
+}
+
+
+
+
+
+
+
+.btnprueba{
+	width: 30%;
+}
+
+
+
+
+
+
+
+.layer{
+	/* background: linear-gradient(to bottom, rgba(237,231,243,.4) 30%,rgba(77,20,140,0.5) ); */
+	
+	
+	width: 100%;
+	height: 100vh;
+
+}
+
+
+.containers{
+	top: 0;
+}
+
+
+
+
+
+/* VErificar antes de borrar
+	.container {
+		background: rgba(255,255,255,1);
+background: linear-gradient(to right, transparent 0%, rgba(126,5,5,1) 76%, rgba(126,5,5,1) 100%);
+box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+height: 55px;
+	} */
+
+	.container2{
+	    width: 80%;
+		max-width: 1080px;
+		margin: auto;
+		display: grid;
+		grid-template-columns: 80px auto;
+
+		
+		
+		
+	}
+
+
+
+
+	.logomenu{
+		display: grid;
+		grid-template-columns: auto 1fr;
+	}
+
+	.logomenu ul{
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		line-height: 55px;
+	}
+
+	.logomenu ul li{
+		margin:0 auto;
+		list-style-type: none;
+		
+		font-size: 0.95em;
+		
+
+	}
+
+
+
+
+
+	
+	.ite {
+		text-decoration: none;
+		color: #7e0505;
+		line-height: 35px;
+		font-size: 0.8em;
+	}
+
+	.iter2{
+		margin-left: 10px;
+	}
+
+
+	.containercontactul{
+		grid-template-columns: auto auto auto;
+		width: 100%; 
+		max-width: 1024px; 
+		margin:  0 auto;
+	}
+
+	.containercontactul li{
+		display: flex;
+		width: 100%;
+	}
+
+	.menutop{
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		line-height: 35px;
+		width: 100%;
+		
+	}
+
+
+
+
+	.menutop li a{
+		text-decoration: none;
+		list-style-type: none;
+		color: #7e0505;
+		font-size: 0.8em;
+		transition: color .2s ease-in;
+	}
+
+	.menutop li{
+		display: block;
+		margin-left: 5px;
+	}
+	.menutop li:hover{
+		display: block;
+	}
+	.menutop li a:hover{
+		color: white;
+		transition: color .2s ease-in;
+	}
+
+	.cont2{
+		color: #7e0505;
+	}
+
+	.icon1:hover{
+		color: white;
+	}
+
+	.uberbici{
+		font-size: 1.3em;
+		font-weight: bold;
+		margin-right: 3px;
+	}
+
+	
+
+	.logomenu ul li a.item{
+		text-decoration: none;
+		color: white;
+		transition: color .2s ease-in;
+	}
+
+	.menup{
+		display: block;
+	}
+
+
+	.logomenu ul li h1{
+		font-family: Roboto;
+		font-size: 1.1em;
+		font-weight: normal;
+		margin: 0;
+		margin-left: 4px;
+	}
+
+	.logomenu ul li a.item:hover{
+		color: #fadc1a;
+	}
+
+	.logomenu ul li button a.item:hover{
+		color: #FF6600;
+	}
+
+	.btwp {
+		margin: 0;
+
+		text-align: center;
+	
+		background-color: #128C7E;
+		border-radius: 20px;
+		border: 2px solid #25D366;
+		color: white;
+		padding: 5px;
+		
+	}
+
+
+
+
+	.logomenu ul li button a{
+		margin:0 15px;
+	
+		text-decoration: none;
+		color: white;
+		
+
+	}
+
+	
+	.logomenu ul li button a span{
+		
+	
+		
+		color: white;
+		font-size: 1em;
+	
+
+	}
+
+	.logomenu ul li button:hover{
+		background: #25D366;
+		transform: scale(1.1);
+		border: 1px solid white;
+	}
+
+	.logomenu ul li button span{
+		font-size: 0.8em;
+		
+		
+	}
+
+	.logomenu div a {
+	
+		font-size: 2.5em;
+		font-weight: bold;
+		color:#fadc1a;
+		text-decoration: none;
+		line-height: 58px;
+		text-align: center;
+		cursor: pointer;
+		font-family: Pacifico;
+		font-style: italic;
+		transition: color .2s ease-in;
+		
+	}
+
+
+
+	
+
+	/* logofinal */
+	
+
+	/* boton whats and face */
+
+
+	.whatsapp,.facebook{
+		display: none;
+	}
+	
+	.whatsapp2,.facebook2{
+		display: grid;
+	}
+	/* end */
+
+	
+.food2{
+	display: grid;
+	grid-template-columns: auto auto auto;
+		
+}
+
+
+.container2{
+	width: 100%;
+}
+
+
+.containers2 .slider2 .slide1-1{
+	background-size: 50vw;
+}
+.containers2 .slider2 .slide2-2{
+	background-size: 50vw;
+}
+.containers2 .slider2 .slide3-3{
+	background-size: 50vw;
+}
+.containers2 .slider2 .slide4-4{
+	background-size: 50vw;
+}
+
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 950px){
+
+
+    body{
+		display: grid;
+			
+	}
+
+	.logomenu ul li {
+		font-size: 1.1em;
+	}
+
+	.logofinal{
+		text-align: center;
+	}
+	
+ /* MAIN */
+
+	.portadamovil1{
+			grid-template-rows: auto;
+	}
+
+
+	/* history */
+.historia{
+	height: 100%;
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+	
+.history1{
+	height: 500px;
+	display: grid;
+	align-content: center;
+}
+
+
+.history2{
+	height: 500px;
+	position: relative;
+	background: rgba(0,0,0,.5);
+	display: grid;	
+}
+
+
+
+.history1-1{
+	margin: 20px auto;
+}
+
+
+/* Menú */
+
+.textmenu {
+	width: 50%;
+}
+
+.menumama{
+	margin: 30px auto;
+}
+
+.modal:target{
+	z-index: 11000;
+}
+
+
+
+.orders{
+	display:grid;
+	grid-template-columns: 50% 50%;
+
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.reservas{
+	order: -2;
+	grid-column: 1/2;
+    width: 100%;
+}
+
+.contacto{
+	display: grid;
+    grid-column: -3/2;
+}
+
+.foodies{
+	width: 100%;
+    margin: 0 auto;
+   
+    overflow: hidden;
+    grid-column: -3/3;
+
+}
+
+.mapa{
+
+    width: 95%;
+    margin: 0 auto;
+    order: -1;
+    grid-column: -1/2;
+    height: 100%;
+
+}
+
+
+.reservasredes{
+	width: 100%;
+    margin: 0 auto;
+    grid-column: 2/3;
+
+}
+
+}
+
+
+

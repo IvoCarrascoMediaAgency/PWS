@@ -1,0 +1,399 @@
+
+
+body {
+    background:purple;
+    font-size: 16px;
+    font-family: Helvetica;
+    position: relative;
+}
+
+header{
+    width: 100%;
+    height: 35px;
+    background: rgb(138, 147, 156);
+    position: relative;
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+
+header div.MENU{
+    width: 100%;
+    height: 40px;
+    display: block;
+    width: 100%;
+    background: white;
+    line-height: 20px;
+}
+
+.MENU{
+    display: inline-block;
+}
+
+.MENU h1, a{
+    display: block;
+}
+
+.MENU .menu_bar_icon{
+    display: block;
+    color: black;
+    
+   
+    background: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    line-height: 40px;
+}
+
+.MENU a{
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+.menu_bar_icon span{
+    float: right;
+    font-size: 40px;
+    margin-right: 5px;
+}
+
+
+header h1{
+   
+}
+/* menu responsive MENU */
+header nav .ioMenuMovil{
+    height: 25px;
+    width: 120px;
+    cursor: pointer;
+    line-height: 40px;
+    margin: 0px 0px 0px 10px;
+    padding-top: 5px; 
+    
+
+}
+
+header nav .ioMenuMovil img{
+        height: 100%;
+}
+
+
+header nav#ioMenu div#card_menu ul{
+    padding-left: 30px;
+
+}
+
+header nav#ioMenu div#card_menu ul li{
+    cursor: pointer;
+
+}
+
+header nav#ioMenu div#card_menu ul li button.wtp {
+    width: 95px; 
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    background-color: #1EBEA5;
+    border-radius: 6px;
+    border: 2px solid #00E676;
+
+}
+
+header nav #card_menu ul li button.wtp a {
+  color: white;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+header nav #card_menu ul li button.wtp a span.icon-whatsapp {
+  
+    margin-right: 4px;
+    font-size: 0.8em;
+    
+  }
+/* card memu EXIT */
+
+header nav #card_menu{
+    position: relative;
+    width: 230px;
+    background: white;
+    top: -30px;
+    left: 0px;
+    border-right: 3px solid #AFAEAE;
+    z-index: 999;
+    padding-bottom: 10px;
+    display: none;
+
+
+
+}
+
+/* logo debajo de exit */
+header nav #card_menu #logo_menu{
+    height: 150px;
+    width: 80%;
+    margin: 30px 0px;
+    margin-left: 10%;
+    margin-bottom: 10px;
+   
+}
+
+header nav #card_menu #logo_menu img{
+    width: 100%;
+}
+
+header nav #card_menu ul{
+   
+    margin-top: 10px;
+}
+
+header nav #card_menu ul li{
+    list-style: none;
+    font-size: 0.8em;
+    line-height: 37px;
+
+}
+
+header nav #card_menu ul li a{
+    text-decoration: none;
+    color: black;
+
+}
+
+
+
+
+
+/* barra de menu version movil */
+/* header #prev_section,
+header #next_section{
+    width: 25px;
+    height: 25px;
+ 
+    cursor: pointer;
+     
+    margin: 5px;
+    position: absolute;
+    top: 0px;
+    
+
+}
+
+header #prev_section{
+    right: 15px;
+}
+
+header #next_section{
+    right: 5px;
+}
+
+header #prev_section img,
+header #next_section img{
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    position: relative;
+
+}
+
+header #next_section img{
+    transform: rotate(180deg);
+} */
+
+@media screen and (min-width: 480px){
+
+    body{
+        background: red;
+    }
+}
+
+@media screen and (min-width: 600px){
+
+    body{
+        background: orange;
+    }
+}
+
+@media screen and (min-width: 767px){
+    body{
+        background: yellow;
+    }
+    /* munu tablet */
+
+    header{
+        height: 50px;
+    }
+
+    header .MENU h1{
+        display: inline-block;
+        width:45%;
+    
+        margin: 0px;
+        height: 50px;
+        margin-left: 21px;
+        line-height: 45px;
+        min-width: 320px;
+        
+    }
+
+    header .MENU h1 > *{
+        display: inline-block;
+        vertical-align: middle;
+        text-decoration: none;
+        color: white;
+        font-size: 0.4em;
+        margin:0px 1px;
+    }
+
+    header .MENU h1 figure{
+        height: 40px;
+        width: 40px;
+        margin: 0px;
+    }
+
+    header .MENU h1 figure img{
+        width: 90%;
+    }
+
+    header div.MENU{
+        display: none;
+    }
+
+/*  menu responsive */
+    
+    header nav {
+        display: inline-block;
+        vertical-align: middle;
+        width: 50%;
+       margin-left: -25px;
+        position: relative;
+      
+    }
+
+    header nav #showMenu,
+    header nav #hideMenu{
+        display: none;
+    }
+
+    header nav #card_menu{
+        display: inline-block;
+        border: none;
+        background: none;
+        position: relative;
+        top: 0px;
+        width: 100%;
+        
+        text-align: right;
+        padding-bottom: 0px;
+
+    }
+
+    header nav #card_menu figure{
+        display: none;
+    }
+
+    header nav #card_menu ul{
+       padding: 0px;
+       margin: 0px;
+       margin-top: -15px;
+       /* margin-right: 10px; */
+       text-align: right;
+    }
+
+    header nav #card_menu ul li{
+        display: inline-block;
+        width: 70px;
+        
+        text-align: center;
+        font-size: 1em;
+        margin: -1px;
+        
+       
+
+    }
+
+    header nav #card_menu ul li#quees {
+        width: 205px;
+        font-size: 0.8em;
+    }
+
+
+
+    header nav #card_menu ul li a{
+        color: white;
+    }
+    
+    /* header nav #card_menu ul li button.wtp {
+        width: 90px; 
+        height: 30px;
+        margin: 0 auto;
+        text-align: center;
+        color: white;
+        background-color: #1EBEA5;
+        border-radius: 6px;
+        border: 2px solid #00E676;
+
+    }
+
+    header nav #card_menu ul li button.wtp a {
+      color: white;
+      text-decoration: none;
+      margin: 0px;
+      padding: 0px;
+    } */
+
+   
+
+/* 
+
+    header #prev_section,
+    header #next_section{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background: #29abe2;
+        right: 40px;
+        z-index: 999;
+        border-radius: 50%;
+
+    }
+
+    header #prev_section{
+        top: 115px;
+
+    }
+    
+    header #next_section{
+        top: 190px;
+
+    }
+   
+    header #prev_section img, 
+    header #next_section img{
+       
+        width: 60%;
+    }
+
+      
+    header #prev_section img{
+        top: 10px;
+        left:16px;
+        
+    } 
+    header #next_section img{
+        top: 10px;
+        left: 4px;
+        
+    } */
+
+   
+}
+
+@media screen and (min-width: 950px){
+    body{
+        background: green;
+    }
+}
+

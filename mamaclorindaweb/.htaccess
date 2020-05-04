@@ -1,0 +1,25 @@
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteOptions inherit
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^restaurantemamaclorinda\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.restaurantemamaclorinda\.com$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^our\-story\.html$ "https\:\/\/restaurantemamaclorinda\.com\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^restaurantemamaclorinda\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.restaurantemamaclorinda\.com$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^fanesca\.html$ "https\:\/\/restaurantemamaclorinda\.com\/" [R=302,L]
+RewriteCond %{HTTP_HOST} ^restaurantemamaclorinda\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.restaurantemamaclorinda\.com$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^contact\-us\.html$ "https\:\/\/restaurantemamaclorinda\.com\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^menu\-1\.html$ "https\:\/\/restaurantemamaclorinda\.com\/" [R=301,L]
