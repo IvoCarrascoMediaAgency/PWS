@@ -34,6 +34,16 @@ body, h1,h2,h3,h4,ul{
     
 }
 
+.sumitb2 {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    cursor: pointer;
+    line-height: 25px;
+}
 
 .containernav{
     display:none;
