@@ -467,6 +467,7 @@ li.eti1,li.eti2,li.eti3,li.eti4 {
     display: grid;
     grid-template-columns: 50% 50%;
     align-content: baseline;
+    justify-items: baseline;
 }
 
 
