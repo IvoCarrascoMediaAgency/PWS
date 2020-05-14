@@ -53,6 +53,10 @@ span{
 }
 
 .videofantasma iframe{
-    width: 1px;
     height: 1px;
+    width: 1px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    
 }
