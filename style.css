@@ -677,10 +677,25 @@ li.eti1,li.eti2,li.eti3,li.eti4 {
 }
 
 /*  */
+
+.cardnegocio a {
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
 .mw {
     font-size: 39px;
     color: #fff;
     text-align: center;
+}
+
+.cardnegocio a {
+    /* font-size: 39px; */
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    /* justify-content: center; */
+    /* justify-items: center; */
 }
 
 .hamburger:before:hover{

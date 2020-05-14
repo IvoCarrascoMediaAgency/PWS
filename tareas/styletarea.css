@@ -45,3 +45,14 @@ span{
 .diseño{
     text-align: center;
 }
+
+.videofantasma{
+    width: 1px;
+    height: 1px;
+
+}
+
+.videofantasma iframe{
+    width: 1px;
+    height: 1px;
+}
