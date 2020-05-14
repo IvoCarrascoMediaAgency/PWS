@@ -47,16 +47,21 @@ span{
 }
 
 .videofantasma{
-    width: 1px;
-    height: 1px;
+    
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        padding-bottom: 56.25%;
+        position: relative;
 
 }
 
 .videofantasma iframe{
-    height: 1px;
-    width: 1px;
+    height: 100%;
     left: 0;
     position: absolute;
     top: 0;
+    width: 100%;
     
 }
