@@ -45,23 +45,3 @@ span{
 .diseño{
     text-align: center;
 }
-
-.videofantasma{
-    
-        display: grid;
-        align-content: center;
-        justify-content: center;
-        margin-bottom: 20px;
-        padding-bottom: 56.25%;
-        position: relative;
-
-}
-
-.videofantasma iframe{
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    
-}
