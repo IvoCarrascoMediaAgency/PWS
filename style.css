@@ -1308,14 +1308,13 @@ input, textarea {
 select{
 	width: 100%;
     margin-bottom: 15px;
-    color: #999;
+    color: white;
     border: none;
     padding: 7px;
     font-size: 1em;
     height: 50px;
-    background: rgba(255,255,255,.3);
-    border-bottom: rgba(0,0,0,.2);
-   -webkit-appearance: none;
+    background: rgba(0,0,0,.2);
+    -webkit-appearance: none;
 }
 
 option{
