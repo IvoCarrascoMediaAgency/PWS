@@ -848,7 +848,7 @@ img.imgcliente {
   
   .slider {
     display: flex;
-    width: 500%;
+    width: 600%;
   }
   
   .slider__section {
@@ -1955,6 +1955,16 @@ height: 200px;
 
 
 
+.tarjetas {
+    display: grid;
+    text-align: center;
+    height: 200px;
+    align-content: center;
+}
+
+.tarjetasz img {
+    width: 50px;
+}
 
 
 
@@ -2211,6 +2221,9 @@ a.linknav {
 }
 
 
+.tarjetasz img {
+    width: 80px;
+}
 
 
 
