@@ -12,8 +12,10 @@
     <meta name="description" content="Páginas Web Vendedoras líder en Quito, Cuenca, Guayaquil y todo Ecuador, expertos en marketing, páginas web, ecommerce, SEO y publicidad digital.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="icons/iconos.css">
+    <link rel="stylesheet" href="icons3/stylew.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="alternate" href="https://paginaswebvendedoras.com/" hreflang="es-ec"/>
     <!-- SEO -->
@@ -129,7 +131,7 @@
             </div>
             <!--  -->
             <!-- menumovil -->
-            <div id="#menu2"class='menu'>
+            <div id="menu2"class='menu'>
                 <span class='hamburger'></span>
     
             </div>
@@ -151,7 +153,7 @@
                         <li><a class="item q" href="#contacto">📞 Contacto</a></li>
                         
                     </div>
-                    <div class="disenor"><a href="#modal" rel="noreferrer"><strong>Reactivamos tu negocio 🙂</strong></a></div>
+                    <div class="disenor"><a class="deseop" href="#modal" rel="noreferrer"><strong>Reactivamos tu negocio 🙂</strong></a></div>
 
                     
                 
@@ -165,10 +167,10 @@
 
 
             <div class="frasebtn">
-                <h1>Páginas Web Quito</h1>
-                 <span class="spanfrase">Para Emprendedores y PYMES</span>
-                <span> Digitaliza tu negocio y <strong>vende</strong> con tu Página Web <br><strong>+ Redes Sociales</strong></span> <br>
-                <a class="tripimg" href="#modal">Solicitar Promo 👉50%OFF</a>
+                <h1>Páginas Web Ecommerce</h1>
+                <span class="spanfrase">Para Emprendedores y PYMES</span>
+                <span class="spandigi"> Digitaliza tu negocio y <strong>vende</strong> con tu<br>Web-Ecommerce <strong>+ Redes Sociales</strong></span> <br>
+                <a class="tripimg deseop" href="#modal">Solicitar Promo 👉50%OFF</a>
 
             </div><!--end nav frasebtn -->
 
@@ -191,17 +193,20 @@
             <label for="entry.1773884649" ></label>
                     <select class="selectb" id="entry.1773884649"  name="entry.1773884649" placeholder="Rol" title="Por favor escribe cual es tu rol" required>
                     <option value="Emprendedor/a">Emprendedor/a</option>
-                    <option value="PYME">PYME</option>
+                    <option value="PYME">PYME/Empresari@</option>
                     <option value="Agencia Digital">Agencia Digital</option>
                     <option value="Freelancer">Freelancer</option>
                     </select>
 
                     <label for="entry.1973262934" ></label>
                     <select class="selectb" id="entry.1973262934"  name="entry.1973262934" placeholder="Servicios" title="Por favor escribe cual es tu rol" required>
-                    <option value="Publicidad y Marketing Digital">Publicidad y Marketing Digital</option>
-                    <option value="Páginas Web Vendedoras®">Páginas Web Vendedoras®</option>
-                    <option value="Desarrollo de Apps/Software">Desarrollo de Apps/Software</option>
-                    <option value="Diseño Gráfico/Comunicación Visualr">Diseño Gráfico/Comunicación Visual</option>
+
+                        <option value="Selecciona el Plan">Selecciona el Plan</option>
+                        <option value="Plan Emprendedor/a">Plan Emprendedor/a</option>
+                    <option value="Plan PRO Ecommerce">Plan PRO Ecommerce</option>
+                   
+                    <option value="Plan Full Ecommerce">Plan Full Ecommerce</option>
+                    
                     </select>
                 
                     <label for="entry.1046100591" ></label>
@@ -211,11 +216,17 @@
                     <label for="entry.631173237" ></label>
                     <select class="selectb" id="entry.631173237"  name="entry.631173237" placeholder="Rol" title="Por favor escribe cual es tu rol" required>
                     <option value="Horario para contacto">Horario para Contacto</option>
-                    <option value="De 8:00 a 10:00">De 8:00 a 10:00</option>
-                    <option value="De 10:00 a 12:00">De 10:00 a 12:00</option>
-                    <option value="De 14:00 a 16:00">De 14:00 a 16:00</option>
-                    <option value="De 16:00 a 18:00">De 16:00 a 18:00</option>
-                    <option value="De 20:00 a 22:00">De 20:00 a 22:00</option>
+                    <option value="7:00 AM">7:00 AM</option>
+                    <option value="8:00 AM">8:00 AM</option>
+                   
+                    <option value="14:00 PM">14:00 PM</option>
+                    <option value="15:00 PM">15:00 PM</option>
+                    <option value="16:00 PM">16:00 PM</option>
+                    <option value="17:00 PM">17:00 PM</option>
+                    <option value="18:00 PM">18:00 PM</option>
+                    <option value="19:00 PM">19:00 PM</option>
+                    <option value="20:00 PM">20:00 PM</option>
+                    
                     </select>
             
        
@@ -224,13 +235,14 @@
             
 
                    
-            <input type="submit" class="sumitb" name="" onclick="window.open('https://api.whatsapp.com/send?phone=593980687988&text=Saludos,%20deseo%20m%C3%A1s%20informaci%C3%B3n')"  value="Enviar">
+            <!-- <input type="submit" class="sumitb" name="" onclick="window.open('https://api.whatsapp.com/send?phone=593980687988&text=Saludos,%20deseo%20m%C3%A1s%20informaci%C3%B3n')"  value="Enviar"> -->
 
+            <input id="boton" type="submit" class="sumitb" name="" onclick="goToPage();" target="_blank" value="Enviar por WhatsApp">
             
         </form>
         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){}"></iframe>
         <div class="cerrar" id="cerrar">
-            <a href="#"><span class="icon-x"></span></a>
+       <span class="icon-x"></span>
 
         </div>
         <div class="fantasma">
@@ -260,10 +272,11 @@
             <div class="etiquetas">
 
                 <ul>
-                    <li class="eti1 select tripimg">Publicidad y Marketing Digital</li>
-                    <li class="eti2">Páginas Web Vendedoras®</li>
+                    <li class="eti2 select tripimg">Páginas Web Ecommerce®</li>
+                    <li class="eti1 ">Publicidad y Marketing Digital</li>
+                
                     <li class="eti3">Desarrollo de Apps/Software</li>
-                    <li class="eti4">Diseño Gráfico/Comunicación Visual</li>
+                    <li class="eti4">Diseño Publicitario/Comunicación Visual</li>
                 </ul>
 
 
@@ -272,29 +285,27 @@
             <div class="etiquetasinfo">
                 
 
-                <div class="mk datos1 show">
+                <div class="mk datos1 ">
                     <img src="https://paginaswebvendedoras.com/img/marketing-digital.png" alt="agencia de marketing digital y posicionamiento SEO en Quito Guayaquil Cuenca Ambato Ecuador" title="agencia de marketing digital quito ecuador">
                     <div class="mk-info">
-                        <h2>Marketig Digital</h2>
+                        <h2>Publicidad y Marketig Digital</h2>
                         <p>Somos una agencia de marketing digital que trabaja con
                             emprendedores/as, pequeñas, medianas y grandes empresas
                             para captar clientes potenciales a través de la promoción de marca 
-                            junto a estrategias de publicidad omnicanal. 
+                            junto a estrategias de marketing y publicidad omnicanal. 
                         </p>
-                        <a href="#modal">Más Información</a>
+                        <a class="deseop" href="#modal">Más Información</a>
                     </div>
                 </div><!--  -->
 
-                <div class="mk2 datos2">
+                <div class="mk2 datos2 show">
                     <img src="https://paginaswebvendedoras.com/img/diseno-de-paginas-web-Quito.png" alt="Empresa de diseño y desarrollo web en quito guayaquil cuenca ecuador" title="Empresa de diseño y desarrollo web en quito guayaquil cuenca ecuador">
                     <div class="mk-info">
-                        <h2>Páginas Web Vendedoras®</h2>
-                        <p>Somos una agencia de marketing digital que trabaja con
-                            emprendedores/as, pequeñas, medianas y grandes empresas
-                            para captar clientes potenciales a través de la promoción de marca 
-                            junto a estrategias de publicidad omnicanal. 
-                        </p>
-                        <a href="#modal">Más Información</a>
+                        <h2>Páginas Web Ecommerce®</h2>
+                        <p> 
+                            Digitalizamos tu negocio para que puedas vender tus productos/servicios a través de tu propia tienda online y hacer de tu cliente la mejor experiencia de compra. Construimos tu tienda con integración a Facebook, Instragram y WhatsApp, ahora con el 50%OFF por tiempo limitado, contrátalo ya! </p>
+
+                        <a class="deseop" href="#modal">Más Información</a>
                     </div>
                 </div><!--  -->
 
@@ -302,25 +313,19 @@
                     <img src="https://paginaswebvendedoras.com/img/desarrollo-de-aplicaciones-y-software.png" alt="desarrollo de aplicaciones apps moviles para android, iOS en quito guayaquil cuenca ecuador" title="desarrollo de aplicaciones apps moviles para android, iOS en quito guayaquil cuenca ecuador">
                     <div class="mk-info">
                         <h2>Desarrollo de Apps/Software</h2>
-                        <p>Somos una agencia de marketing digital que trabaja con
-                            emprendedores/as, pequeñas, medianas y grandes empresas
-                            para captar clientes potenciales a través de la promoción de marca 
-                            junto a estrategias de publicidad omnicanal. 
+                        <p>Desarrollo de Apps y WebApps con las mejores plataformas para proyectos 100% escalables.
                         </p>
-                        <a href="#modal">Más Información</a>
+                        <a class="deseop" href="#modal">Más Información</a>
                     </div>
                 </div><!--  -->
 
                 <div class="mk4 datos4">
                     <img src="https://paginaswebvendedoras.com/img/diseno-grafico-y-comunicacion-visual.png" alt="gestion de redes sociales social media marketing quito ecuador" title="gestion de redes sociales social media marketing quito ecuador">
                     <div class="mk-info">
-                        <h2>Diseño Gráfico / Comunicación Visual</h2>
-                        <p>Somos una agencia de marketing digital que trabaja con
-                            emprendedores/as, pequeñas, medianas y grandes empresas
-                            para captar clientes potenciales a través de la promoción de marca 
-                            junto a estrategias de publicidad omnicanal. 
+                        <h2>Diseño Publicitario / Comunicación Visual</h2>
+                        <p>Servicio especializado para aquellos emprendedores/as que necesitan profecionalizar su marca a través de la creación de una línea gráfica, planificación y pauta en redes sociales.  
                         </p>
-                        <a href="#modal">Más Información</a>
+                        <a class="deseop" href="#modal">Más Información</a>
                     </div>
                 </div><!--  -->
 
@@ -352,10 +357,10 @@
                                     
                                     
                                     
-                                    <li class="eti1 select tripimg"><a class="agale" href="#img1">Publicidad y Marketing Digital</a></li>
-                                    <li class="eti2"><a class="agale" href="#img2">Páginas Web Vendedoras®</a></li>
+                                    <li class="eti1 "><a class="agale" href="#img1">Publicidad y Marketing Digital</a></li>
+                                    <li class="eti2 select tripimg"><a class="agale" href="#img2">Páginas Web Ecommerce®</a></li>
                                     <li class="eti3"><a class="agale" href="#img3">Desarrollo de Apps/Software</a></li>
-                                    <li class="eti4"><a class="agale" href="#img4">Diseño Gráfico/Comunicación Visual</a></li>
+                                    <li class="eti4"><a class="agale" href="#img4">Diseño Publicitario/Comunicación Visual</a></li>
 
                                     <li class="imghide"><a href="#img2"><img src="https://paginaswebvendedoras.com/img/marketing-digital.png" alt="agencia marketing digital posicionamiento web seo en Quito Cuenca Ambato Guayaquil Ecuador" title="agencia de posicionamiento web seo en Quito Cuenca Ambato Guayaquil Ecuador"></a></li>
                                     <li class="imghide"><a href="#img3"><img src="https://paginaswebvendedoras.com/img/diseno-de-paginas-web-Quito.png" alt="empresa de diseño y desarrollo web ecommerce quito guayaquil cuenca ecuador" title="empresa de diseño y desarrollo web ecommerce quito guayaquil cuenca ecuador"></a></li>
@@ -385,7 +390,7 @@
                                     <a href="#img2"><span class="icon-flecha-rigth"></span><div  class="btn-next btnser">&gt;</div></a>
                 
                                 </div>
-                               <a class="btnpruebas" href="#modal">Más Información<span class="icon-boton-descargar"></span></a >
+                               <a class="btnpruebas deseop"  href="#modal">Más Información<span class="icon-boton-descargar"></span></a >
                                 <div class="cerrar" id="cerrar">
                                         <a href="#serviciosmovil"><span class="icon-x iconxmodals "></span></a>
                                 </div>
@@ -394,9 +399,9 @@
 
 
                     <div class="modalservicio" id="img2">
-                            <h3>Páginas Web Vendedoras®</h3>
+                            <h3>Páginas Web Ecommerce®</h3>
                             
-                            <p>Digitaliza tu negocio en tiempos de corona virus, aprovecha nuestra PROMO COVID-19 para emprendedores y PYMES por tiempo limitado.</p>
+                            <p>Digitalizamos tu negocio para que puedas vender tus productos/servicios a través de tu propia tienda online y hacer de tu cliente la mejor experiencia de compra. Construimos tu tienda con integración a Facebook, Instragram y WhatsApp, ahora con el 50%OFF por tiempo limitado, contrátalo ya!</p>
                             <div class="imagen">
                                     
                                 <a href="#img1"><span class="icon-flecha-izq"></span><div  class="btn-prev btnser">&lt;</div></a>
@@ -404,7 +409,7 @@
                                 <a href="#img3"><span class="icon-flecha-rigth"></span><div  class="btn-next btnser">&gt;</div></a>
             
                             </div>
-                            <a class="btnpruebas"  href="#modal">Más Información <span class="icon-boton-descargar"></span></a>
+                            <a class="btnpruebas deseop"  href="#modal">Más Información <span class="icon-boton-descargar"></span></a>
                                 <div class="cerrar" id="cerrar">
                                 <a href="#serviciosmovil"><span class="icon-x iconxmodals"></span></a>
                             </div>
@@ -415,7 +420,7 @@
                     <div class="modalservicio" id="img3">
                             <h3>Desarrollo de Apps/Software</h3>
                             
-                            <p>Ahorra recursos digitalizando tu negocio con software a la medida</p>
+                            <p>Desarrollo de Apps y WebApps con las mejores plataformas para proyectos 100% escalables.</p>
                         <div class="imagen">
                                 
                             <a href="#img2"><span class="icon-flecha-izq"></span><div  class="btn-prev btnser">&lt;</div></a>
@@ -423,7 +428,7 @@
                             <a href="#img4"><span class="icon-flecha-rigth"></span><div  class="btn-next btnser">&gt;</div></a>
         
                         </div>
-                        <a class="btnpruebas" href="#modal">Más Información <span class="icon-boton-descargar"></span></a>
+                        <a class="btnpruebas deseop"  href="#modal">Más Información <span class="icon-boton-descargar"></span></a>
                             <div class="cerrar" id="cerrar">
                             <a href="#serviciosmovil"><span class="icon-x iconxmodals"></span></a>
                          </div>
@@ -432,7 +437,7 @@
                     <div class="modalservicio" id="img4">
                         <h3>Diseño Gráfico / Comunicación Visual</h3>
                         
-                        <p>Comunica tu marca a través de una línea gráfica profesional,  enfocada en ventas, publicidad y marketing.</p>
+                        <p>Servicio especializado para aquellos emprendedores/as que necesitan profecionalizar su marca a través de la creación de una línea gráfica, planificación y pauta en redes sociales.</p>
                     <div class="imagen">
                             
                         <a href="#img3"><span class="icon-flecha-izq"></span><div  class="btn-prev btnser">&lt;</div></a>
@@ -440,7 +445,7 @@
                         <a href="#img1"><span class="icon-flecha-rigth"></span><div  class="btn-next btnser">&gt;</div></a>
     
                     </div>
-                    <a class="btnpruebas" href="#modal">Más Información <span class="icon-boton-descargar"></span></a>
+                    <a class="btnpruebas deseop"  href="#modal">Más Información <span class="icon-boton-descargar"></span></a>
                         <div class="cerrar" id="cerrar">
                         <a href="#serviciosmovil"><span class="icon-x iconxmodals"></span></a>
                      </div>
@@ -476,16 +481,23 @@
                   <h2>Communal Administrator</h2>
                   <p>Es una empresa que paso de una operación convencional
                       a digitalizar todo su negocio, sus procesos, administración y gestión
-                      ahora es un modelo de software as a service, que se distribuye
+                      ahora es un modelo de Software As A Service, que se distribuye
                       entre administradores, miembros de directivas y freelancers que administran 
                       condominios o edificios, nos enfocamos en sus necesidades para convertir sus procesos en
                       software, promocionar su marca y captar clientes en Google y Redes Sociales.
     
                   </p>
-                  <a target="_blank" href="https://administraciondecondominiosyedificios.com/">Ver Cliente</a>
+                
                   </div>
-                      
-                  <img src="https://paginaswebvendedoras.com/img/communalweb.png" alt="proyectos agencia de marketing digital en Quito Cuenca Ambato Guayaquil y todo Ecuador" title="portafolio proyectos agencia de marketing digital quito ecuador" class="slider__img">
+
+
+                      <div class="clienteurl">
+                        <img src="https://paginaswebvendedoras.com/img/communalweb.png" alt="proyectos agencia de marketing digital en Quito Cuenca Ambato Guayaquil y todo Ecuador" title="portafolio proyectos agencia de marketing digital quito ecuador" class="slider__img">
+
+                        <a class="ainfok" target="_blank" href="https://administraciondecondominiosyedificios.com/">Ver Cliente</a>
+
+                      </div>
+              
               
               </section>
     
@@ -494,16 +506,20 @@
     
                 <div class="mk-info mkp">
                   <h2>Whats Bulk Sender</h2>
-                  <p>Es un software as a a service creado para el envió masivo de mensajes desde WhatsApp, 
-                      es una herramienta de marketing para emprendedores/as y PYMES, que necesitan comunicar
-                      su marca, dar a conocer sus productos y servicios, sus promociones y administrar sus campañas
-                      según listas de clientes, si son nuevos o recurentes.
+                  <p>Es un sistema desarrollado para implementar estratégias de Marketing y Ventas por WhatsApp, 
+                      una herramienta de marketing digital para emprendedores/as y PYMES, que necesitan comunicar
+                      su marca, dar a conocer sus productos y servicios y sus promociones a través del envío masivo 100% seguro.
                   </p>
-                  <a target="_blank" href="https://whatsbulksender.com/">Ver Cliente</a>
+                 
                   </div>
-    
-                 <img src="https://paginaswebvendedoras.com/img/chat-marketing.png" alt="portafolio de diseño web  agencia de marketing digital en Quito Cuenca Ambato Guayaquil y todo Ecuador" title="portafolio proyectos agencia de marketing digital quito ecuador" class="slider__img">
-    
+                  
+                  <div class="clienteurl">
+                 <img src="https://paginaswebvendedoras.com/img/whatsbulksender.png" alt="portafolio de diseño web  agencia de marketing digital en Quito Cuenca Ambato Guayaquil y todo Ecuador" title="portafolio proyectos agencia de marketing digital quito ecuador" class="slider__img">
+
+                 <a class="ainfok" target="_blank" href="https://whatsbulksender.com/">Ver Cliente</a>
+
+                  </div>
+
                 </section>
     
     
@@ -514,10 +530,16 @@
                   <p>El primer restaurante de comida típica ubicada en la Mariscal Foch, 
                       nos enfocamos en renovar la promoción de su marca, su sitio web y la cración de una línea grafica para sus redes sociales. 
                   </p>
-                  <a target="_blank" href="https://paginaswebvendedoras.com/mamaclorindaweb/">Ver Cliente</a>
+                  
                   </div>
+
+                  <div class="clienteurl">
     
                  <img src="https://paginaswebvendedoras.com/img/mamaclorindaweb.png" alt="desarrollo web ecommerce agencia de marketing digital en Quito Cuenca Ambato Guayaquil y todo el Ecuador" title="portafolio proyectos agencia de marketing digital" class="slider__img">
+
+                 <a class="ainfok" target="_blank" href="https://paginaswebvendedoras.com/mamaclorindaweb/">Ver Cliente</a>
+
+                  </div>
                 
                 </section>
     
@@ -530,11 +552,14 @@
                             a mujeres para que se conviertan en representantes a través de la venta directa con una ganancia del 35%, nos enfocamos
                             en la microlocalización en redes sociales y publicidad para la prospectación de nuevas representantes.
                         </p>
-                        <a target="_blank" href="https://equipodeganadoras.com/">Ver cliente</a>
+                        
                         </div>
-    
-                 <img src="https://paginaswebvendedoras.com/img/avonweb.png" alt="" title="" class="slider__img">
-                
+                        
+                        <div class="clienteurl">
+                 <img src="https://paginaswebvendedoras.com/img/avonweb.png" alt="desarrollo web ecommerce agencia de marketing digital en Quito Cuenca Ambato Guayaquil y todo el Ecuador" title="portafolio proyectos agencia de marketing digital" class="slider__img">
+
+                 <a class="ainfok" target="_blank" href="https://equipodeganadoras.com/">Ver cliente</a>
+                        </div>
                 </section>
     
                 <section class="slider__section">
@@ -544,10 +569,12 @@
                     <p>Yanbal desde 1977 en Ecuador, busca el desarrollo de personas em­prendedoras, a través de la venta directa de productos cosméticos de calidad mundial, 
                         nos enfocamos en la microlocalización en redes sociales y publicidad para la  venta, distribución y prospectación de nuevas consultoras.
                     </p>
-                    <a target="_blank" href="https://paginaswebvendedoras.com/equipodeconsultoras/">Ver cliente</a>
+                   
                     </div>
-    
+                    <div class="clienteurl">
            <img src="https://paginaswebvendedoras.com/img/yanbalweb.png" alt="proyecto web agencia de marketing digital en Quito Cuenca Ambato Guayaquil y todo el Ecuador" title="proyectos agencia de marketing digital" class="slider__img">
+           <a class="ainfok" target="_blank" href="https://paginaswebvendedoras.com/equipodeconsultoras/">Ver cliente</a>
+                    </div>
           
           </section>
 
@@ -557,12 +584,32 @@
               <h2>Aki-reparo.com | Lavadoras, Refrigeradoras, Secadoras y Calefones</h2>
               <p>24 años de experiencia, certifican como la empresa más consolidada en el servicio técnico de electrodomésticos, cuyo objetivo es cumplir con el cliente al 100% y ha permitido que más del 80% de los clientes sigan confinado en sus servicios 🙂🤝
               </p>
-              <a target="_blank" href="http://aki-reparo.com/">Ver cliente</a>
+             
+              </div>
+              <div class="clienteurl">
+     <img src="https://paginaswebvendedoras.com/img/aki-reparo.png" alt="proyecto web agencia de marketing digital en Quito Cuenca Ambato Guayaquil y todo el Ecuador" title="proyectos agencia de marketing digital" class="slider__img">
+     <a class="ainfok" target="_blank" href="http://aki-reparo.com/">Ver cliente</a>
+
               </div>
 
-     <img src="https://paginaswebvendedoras.com/img/aki-reparo.png" alt="proyecto web agencia de marketing digital en Quito Cuenca Ambato Guayaquil y todo el Ecuador" title="proyectos agencia de marketing digital" class="slider__img">
-    
     </section>
+
+
+    <section class="slider__section">
+    
+        <div class="mk-info mkp">
+          <h2>Idaly Chocolat | Chocolatería Profesional</h2>
+          <p>
+              Más de 15 años de esperiencia, creatividad y en constante innovación para elaborar piezas únicas en chocolate, ahora digitaliza su negocio físico para ofercer sus creaciones en chocolate y sus cursos a traves de su Web Ecommerce
+          </p>
+          
+          </div>
+          <div class="clienteurl">
+ <img src="https://paginaswebvendedoras.com/img/aki-reparo.png" alt="proyecto web agencia de marketing digital en Quito Cuenca Ambato Guayaquil y todo el Ecuador" title="proyectos agencia de marketing digital" class="slider__img">
+
+ <a  class="ainfok" target="_blank" href="https://paginaswebvendedoras.com/idalychocolat/">Ver cliente</a>
+          </div>
+</section>
     
     
              </div>
@@ -584,7 +631,7 @@
 
         <!-- <div class="planes"> -->
             <div class="servi">
-            <span id="precios" class="servispan1">Planes |</span><span class="servispan2"> PROMO Día del Padre 🎉🧔 hasta el 21 de junio 2020</span>
+            <span id="precios" class="servispan1">Planes |</span><span class="servispan2"> PROMO San Valentín 50%OFF hasta el 10 de febrero 2020</span>
             
             
             </div>
@@ -602,22 +649,61 @@
                                 </div>
                                 
                                 <div id="contenidoprecio">
+
+
                                     <ul>
+                                        <div class="macroprecio">
+
+
                                         
+                                           <div class="precioff">
+                                            <span class="off">-50%OFF </span> 
+
+                                            <div>
+
+                                                <small class="smallsup"><sup>$</sup></small><span class="inver">299</span>
+                                            </div>
+                                            </div>
+                                     
+                                           <div>
+                                                <span class="invert">🤩</span>
+                                                 <small class="smallsup2"><sup>$</sup></small><span class="inver2" >149 </span>
+                                            </div>
+
+                                        </div>
+
+                                            <!-- <li><span class="icon-visto"></span>Menú de hasta 6 secciones</li> -->
              
                                         <li><span class="icon-visto"></span>Diseño Personalizado</li>
                                         <li><span class="icon-visto"></span>Adaptable a cualquier dispositivo</li>
+
+                                        <li><span class="icon-visto"></span>Tienda Online (básica)</li>
+
+                                        <li><span class="icon-visto"></span>Productos/servicios ilimitados (según capacidad de hosting)</li>
+                                        <li><span class="icon-visto"></span>Integración Ecommerce con Facebook, Instagram y WhatsApp</li>
+                                        <li><span class="icon-visto"></span>Galería de imágenes/videos</li>
+                                        <li><span class="icon-visto"></span>Indexación en Google</li>
+                                        <li><span class="icon-visto"></span>Creación de Fanpage Profesional</li>
+
+                                        <li><span class="icon-visto"></span>Chat WhatsApp en vivo </li>
                                         <!-- <li><span class="icon-visto"></span>Línea Gráfica Web + Redes Sociales</li> -->
-                                        <li><span class="icon-visto"></span>Integración a Redes Sociales</li>
+                                      
                                         <li><span class="icon-visto"></span>Formulario de Contacto</li>
              
-                                        <li><span class="icon-visto"></span>Correos Corporativos</li>
+                                       
             
                                         <li><span class="icon-visto"></span>Mapa en Google</li> <br>
-                                        <h3>GRATIS</h3>
+                                        <h3>GRATIS 🤯</h3>
+                                        <br>
+                                        <li><span class="icon-visto"></span>Dominio .COM</li>
+                                        <li><span class="icon-visto"></span>Hosting de 4GB</li>
                                         <li><span class="icon-visto"></span>Certificado de Seguridad SSL</li>
-                                        <li><span class="icon-visto"></span>Hosting ilimitado</li>
-                                        <li><span class="icon-visto"></span>Dominio(.com)</li>
+                       
+                                        <li><span class="icon-visto"></span>Correos Corporativos</li>
+                                        <li><span class="icon-visto"></span>Capacitación en Estrategias Digitales</li>
+
+
+                                    
             
                                        
             
@@ -631,8 +717,8 @@
                                     <!-- <h3><sup>$</sup><s>497,00</s> <span>dto 50%</span></h3> -->
                                     <!-- <h2> 248,50</h2> -->
                                     <!-- <p>¡Una sola vez!</p> -->
-                                    <a href="#modal">Deseo 50% dto</a>
-                                    <p>Por tiempo limitado.</p>
+                                    <a  class="deseop" href="#modal">Deseo la promo</a>
+                                    <p>Promo hasta 10 de febrero 2021</p>
                                 </div>
                             </div>
                         </div><!-- end plan1  -->
@@ -642,35 +728,69 @@
                     <div class="caja1 x"  data-aos="fade-up">
                         <div id="tablapreciox2" >
                             <div id="headerpreciox2">
-                                <h4>PRO</h4>
+                                <h4>PRO Ecommerce</h4>
                             </div>
                             
                             <div id="contenidopreciox2">
+
+
                                 <ul>
+                                    <div class="macroprecio">
+
+
+                                        
+                                        <div class="precioff">
+                                         <span class="off off2">-50%OFF </span> 
+
+                                         <div>
+
+                                             <small class="smallsup spro"><sup>$</sup></small><span class="inver inverpro">499</span>
+                                         </div>
+                                         </div>
+                                  
+                                        <div>
+                                             <span class="invert">😱</span>
+                                              <small class="smallsup3"><sup>$</sup></small><span class="inver3" >249 </span>
+                                         </div>
+
+                                     </div>
+                                     
+
+
+                                        
+                                     <li><span class="icon-visto"></span>5 Secciones y hasta 5 Submenús</li>
+                                     <li><span class="icon-visto"></span>Diseño Personalizado</li>
+                                     <li><span class="icon-visto"></span>Adaptable a cualquier dispositivo</li>
+
+                                     <li><span class="icon-visto"></span>Tienda Online (Pro)</li>
+
+                                     <li><span class="icon-visto"></span>Productos/servicios ilimitados (según capacidad de hosting)</li>
+                                     <li><span class="icon-visto"></span>Integración Ecommerce con Facebook, Instagram y WhatsApp</li>
+                                     <li><span class="icon-visto"></span>Galería de imágenes/videos</li>
+                                     <li><span class="icon-visto"></span>Indexación en Google</li>
+                                     <li><span class="icon-visto"></span>SEO</li>
+                                     <li><span class="icon-visto"></span>Creación de Fanpage Profesional</li>
+
+                                     <li><span class="icon-visto"></span>Chat WhatsApp en vivo </li>
+                                     <!-- <li><span class="icon-visto"></span>Línea Gráfica Web + Redes Sociales</li> -->
+                                   
+                                     <li><span class="icon-visto"></span>Formulario de Contacto</li>
+          
                                     
-                                        
-             
-                                        <li><span class="icon-visto"></span>Diseño Personalizado</li>
-                                        
-                                        <li><span class="icon-visto"></span>Adaptable a cualquier dispositivo</li>
-                                        <li><span class="icon-visto"></span>Integración a Redes Sociales</li>
-                                        
-                                        <li><span class="icon-visto"></span>Formulario de Contacto</li>
-                                        <li><span class="icon-visto"></span>Correos Corporativos</li>
+         
+                                     <li><span class="icon-visto"></span>Mapa en Google</li>
                                        
-                                        <!-- <li><span class="icon-visto"></span>Línea Gráfica Web + Redes Sociales</li> -->
-                                        <li><span class="icon-visto"></span>Botón WhatsAppCHat</li>
-                                        <li><span class="icon-visto"></span>Mapa en Google</li>
-                                        
-                                        <li><span class="icon-visto"></span>SEO</li>
-                                       
-                                        
-                                        <h3>GRATIS</h3>
+                                        <br>
+                                        <h3 class="fullh3">GRATIS 😎</h3>
+                                        <br>
+                                        <li><span class="icon-visto"></span>Dominio .COM</li>
+                                        <li><span class="icon-visto"></span>Hosting de 5GB</li>
                                         <li><span class="icon-visto"></span>Certificado de Seguridad SSL</li>
-                                        <li><span class="icon-visto"></span>Hosting ilimitado</li>
-                                        <li><span class="icon-visto"></span>Dominio(.com)</li>
-            
+                       
+                                        <li><span class="icon-visto"></span>Correos Corporativos</li>
+                                        <li><span class="icon-visto"></span>Capacitación en Estrategias Digitales</li>
                                         <li><span class="icon-visto"></span>Soporte 24/7</li>
+
             
                                         
                                 </ul>
@@ -680,8 +800,8 @@
                                 <!-- <h3><sup>$</sup><s>699,00</s> <span>dto 50%</span></h3>
                                     <h2> 349,50</h2>
                                     <p>¡Una sola vez!</p> -->
-                                    <a href="#modal">Deseo 50% dto</a>
-                                    <p>Por tiempo limitado.</p>
+                                    <a class="deseop" href="#modal">Deseo la promo</a>
+                                    <p>Promo hasta 10 de febrero 2021</p>
                             </div>
                         </div>
                     </div>
@@ -690,34 +810,76 @@
                     <div class="caja">
                           
             
-                        <div id="tablaprecio">
+                        <div id="tablaprecio" class="tb3">
                             <div id="headerprecio">
-                                <h4>FULL</h4>
+                                <h4 class="full4">FULL Ecommerce</h4>
                             </div>
                             
-                            <div id="contenidoprecio">
-                                <ul>
-                                    <li><span class="icon-visto"></span>Diseño Personalizado</li>
+                            <div id="contenidoprecio" class="tb3p">
+                               
+                                <div class="macroprecio">
+
+
                                         
-                                    <li><span class="icon-visto"></span>Adaptable a cualquier dispositivo</li>
-                                    <li><span class="icon-visto"></span>Integración a Redes Sociales</li>
-                                    
-                                    <li><span class="icon-visto"></span>Formulario de Contacto</li>
-                                    <li><span class="icon-visto"></span>Correos Corporativos</li>
-                                   
-                                    <!-- <li><span class="icon-visto"></span>Línea Gráfica Web + Redes Sociales</li> -->
-                                    <li><span class="icon-visto"></span>Botón WhatsAppCHat perzonalizado</li>
-                                    <li><span class="icon-visto"></span>Mapa en Google (My Business)</li>
+                                    <div class="precioff">
+                                     <span class="off off3">-50%OFF </span> 
+
+                                     <div>
+
+                                         <small class="smallsup4"><sup>$</sup></small><span class="inver4">799</span>
+                                     </div>
+                                     </div>
+                              
+                                    <div>
+                                         <span class="invert">🤪</span>
+                                          <small class="smallsup5"><sup>$</sup></small><span class="inver5" >399 </span>
+                                     </div>
+
+                                 </div>
+                                <ul>
+
+                                    <li><span class="icon-visto"></span>Pasarela de pagos (Tarjetas de Crédito y Débito)</li>
+                                    <li><span class="icon-visto"></span>Tienda Online Full</li>
+                                    <li><span class="icon-visto"></span>Productos/servicios ilimitados (según capacidad de hosting)</li>
+
+                                    <li><span class="icon-visto"></span>Integración Ecommerce con Facebook, Instagram y WhatsApp</li>
+
+                                    <li><span class="icon-visto"></span>Chat WhatsApp en vivo </li>
                                     <li><span class="icon-visto"></span>Chatbot Messenger</li>
-                                    <li><span class="icon-visto"></span>SEO Profesional</li>
+
+                                    <li><span class="icon-visto"></span>Diseño Personalizado</li>
+
+                                    <li><span class="icon-visto"></span>Adaptable a cualquier dispositivo</li>
                                    
+                                    <li><span class="icon-visto"></span>Galería de imágenes/videos</li>
+                                    <li><span class="icon-visto"></span>Indexación en Google</li>
+                                    <li><span class="icon-visto"></span>SEO</li>
+
+                                    <li><span class="icon-visto"></span>Creación de Fanpage Profesional + Artes y Plantillas</li>
+
+                        
+                                  
+                                    <li><span class="icon-visto"></span>Formulario de Contacto + Registro de Clientes Potenciales</li>
+         
+                           
+                                    <li><span class="icon-visto"></span>Mapa en Google (My Business)</li>
                                     
-                                    <h3>GRATIS</h3>
+                                    <li><span class="icon-visto"></span>SEO Profesional</li>
+                                   <br>
+                                    
+                                    <h3>GRATIS 🤑 X 24 meses</h3>
+                                    <br>
+                                  
+                                
+
+                                    <li><span class="icon-visto"></span>Dominio .COM</li>
+                                    <li><span class="icon-visto"></span>Hosting de 5GB</li>
                                     <li><span class="icon-visto"></span>Certificado de Seguridad SSL</li>
-                                    <li><span class="icon-visto"></span>Hosting ilimitado</li>
-                                    <li><span class="icon-visto"></span>Dominio(.com)</li>
+                   
+                                    <li><span class="icon-visto"></span>Correos Corporativos</li>
+                                    <li><span class="icon-visto"></span>Capacitación en Estrategias Digitales</li>
                                     <li><span class="icon-visto"></span>Soporte 24/7</li>
-                                    <li><span class="icon-visto"></span>Renovación 2do año de Hosting y Dominio gratis</li>
+                                   
             
             
                                 </ul>
@@ -727,8 +889,8 @@
                                 <!-- <h3><sup>$</sup><s>999,00</s> <span>dto 50%</span></h3>
                                 <h2> 499,50</h2>
                                 <p>¡Una sola vez!</p> -->
-                                <a href="#modal">Deseo 50% dto</a>
-                                <p>Por tiempo limitado.</p>
+                                <a class="deseop" href="#modal">Deseo la promo</a>
+                                <p>Promo hasta 10 de febrero 2021</p>
                             </div>
                         </div>
                 </div>
@@ -745,15 +907,30 @@
         <!-- formas de pago -->
 
         <div class="tarjetas">
-            <p><strong>Formas de pago</strong> </p>
-            <p>La promoción 50%OFF puedes diferir con cualquier tarjeta de crédito a los meses que desees. </p>
+            <p class="fdepago"><strong>Formas de pago:</strong> </p>
+            <p>La promoción <strong>50%OFF hasta el 10 de febrero 2021</strong>, tenemos 2 formas de pago:</p>
+            <div>
+                <ul class="ulpago">
+                    <a  href="#modal"  class="olc olc1 deseop"><strong>Crédito Directo hasta 3 pagos mensuales</strong></a>
+                    <a  href="#modal" class="olc deseop"><strong>Tarjeta de crédito hasta 12 meses</strong></a>
+                </ul>
+
+            </div>
+             
+          
+        
             <div class="tarjetasz">
-                <img src="img/visa.png" alt="">
-                <img src="img/mastercard.png" alt="">
-                <img src="img/american.png" alt="">
-                <img src="img/diners.png" alt="">
-                <img src="img/paypal.png" alt="">
+                
+               
                 <img src="img/payphone.png" alt="">
+                <img src="img/diners.png" alt="">
+                <img src="img/mastercard.png" alt="">
+                <img src="img/visa.png" alt="">
+                
+                <img src="img/american.png" alt="">
+                <img src="img/paypal.png" alt="">
+              
+                
             </div>
         </div> 
 
@@ -779,7 +956,7 @@
                 
                 
                 <a href="mailto:info@paginaswebvendedoras.com"  target="_blank"><span class="icon-mail"></span> info@paginaswebvendedoras.com</a>
-                <a href="mailto:mila@paginaswebvendedoras.com"  target="_blank"><span class="icon-mail"></span> mila@paginaswebvendedoras.com</a>
+                <!-- <a href="mailto:mila@paginaswebvendedoras.com"  target="_blank"><span class="icon-mail"></span> mila@paginaswebvendedoras.com</a> -->
                 
                 
                 
@@ -796,7 +973,7 @@
                             <label for="entry.1773884649" ></label>
                                     <select class="selectb" id="entry.1773884649"  name="entry.1773884649" placeholder="Rol" title="Por favor escribe cual es tu rol" required>
                                     <option value="Emprendedor/a">Emprendedor/a</option>
-                                    <option value="PYME">PYME</option>
+                                    <option value="PYME">PYME/Empresari@</option>
                                     <option value="Agencia Digital">Agencia Digital</option>
                                     <option value="Freelancer">Freelancer</option>
                                     </select>
@@ -804,9 +981,9 @@
                                     <label for="entry.1973262934" ></label>
                                     <select class="selectb" id="entry.1973262934"  name="entry.1973262934" placeholder="Servicios" title="Por favor escribe cual es tu rol" required>
                                     <option value="Publicidad y Marketing Digital">Publicidad y Marketing Digital</option>
-                                    <option value="Páginas Web Vendedoras®">Páginas Web Vendedoras®</option>
+                                    <option value="Páginas Web Vendedoras®">Páginas Web Ecommerce®</option>
                                     <option value="Desarrollo de Apps/Software">Desarrollo de Apps/Software</option>
-                                    <option value="Diseño Gráfico/Comunicación Visualr">Diseño Gráfico/Comunicación Visual</option>
+                                    <option value="Diseño Publicitario/Comunicación Visualr">Diseño Publicitario/Comunicación Visual</option>
                                     </select>
                                 
                                     <label for="entry.1046100591" ></label>
@@ -816,23 +993,20 @@
                                     <label for="entry.631173237" ></label>
                                     <select class="selectb" id="entry.631173237"  name="entry.631173237" placeholder="Rol" title="Por favor escribe cual es tu rol" required>
                                     <option value="Horario para contacto">Horario para Contacto</option>
-                                    <option value="De 8:00 a 10:00">De 8:00 a 10:00</option>
-                                    <option value="De 10:00 a 12:00">De 10:00 a 12:00</option>
-                                    <option value="De 14:00 a 16:00">De 14:00 a 16:00</option>
-                                    <option value="De 16:00 a 18:00">De 16:00 a 18:00</option>
-                                    <option value="De 20:00 a 22:00">De 20:00 a 22:00</option>
+                                    <option value="7:00 AM">7:00 AM</option>
+                    <option value="8:00 AM">8:00 AM</option>
+                   
+                    <option value="14:00 PM">14:00 PM</option>
+                    <option value="15:00 PM">15:00 PM</option>
+                    <option value="16:00 PM">16:00 PM</option>
+                    <option value="17:00 PM">17:00 PM</option>
+                    <option value="18:00 PM">18:00 PM</option>
+                    <option value="19:00 PM">19:00 PM</option>
+                    <option value="20:00 PM">20:00 PM</option>
                                     </select>
-                            
-                       
-                            
-                            
-                            
-                
-                                   
-                            <input type="submit" class="sumitb" name="" onclick="window.open('https://api.whatsapp.com/send?phone=593980687988&text=Saludos,%20deseo%20m%C3%A1s%20informaci%C3%B3n')"  value="Enviar">
-                
-                            
-                        </form>
+                                  <input type="submit" class="sumitb" name="" onclick="window.open('https://api.whatsapp.com/send?phone=593980687988&text=Hola!%20me%20interesa%20el%20servicio%20de%20*P%C3%A1gina*%20*Web*%20*Ecommerce*')"  value="Enviar por WhatsApp"> 
+
+                                    </form>
                         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){}"></iframe>
                 
                     </div><!--  end cajaform-->
@@ -841,7 +1015,7 @@
             
             </div>
 
-    
+      </div>
 </div><!--  end de container  -->
 
 
@@ -855,18 +1029,43 @@
                 <div class="hwhat">
                     <div class="whatlogo">
                         <span class="icon-whatsapp lw"> </span>                           
-                        <span class="wtext">WhatsApp</span> 
+                        <span class="wtext">WhatsApp Chat</span> 
                     </div>
-                    <div><span class="icon-x w"> </span></div>
+                    <div><span id="cerrarchat" class="icon-x w"> </span></div>
                 </div> 
                 <div class="whatmbien">
                     <div class="whatmesage">
-                        ¡Hola! 🙂soy Mila es un gusto atenderle, ¿Cómo le puedo ayudar? 
+                        ¡Hola! 🙂soy Mila es un gusto atenderte, ¿Cuál es tu requerimiento? 
                     </div>
+
+
+                    <div class="insertarmensaje">
+
+                        <textarea  id="edad" name=""  rows="1" placeholder="Escribe un mensaje" required=""></textarea>
+
+
+                        <!-- <input type="text" name="edad" id="edad" placeholder="Escribe un mensaje..." required=""> -->
+    
+                        <div class="divsend">
+    
+                            <button id="enviarwa2" type="submit" onclick="obtenerdatos()"class="enviarmensajewa" >
+                                <i class="icon-send"></i>
+                            </button>
+    
+    
+    
+                            
+                        </div>
+
                 </div>
-                <div id="whatboton" class="whatboton">
+
+               
+                   
+
+                </div>
+                <!-- <div id="whatboton" class="whatboton">
                     <a href="https://bit.ly/ChatPWV" target="_blank" rel="noopener noreferrer"><img src="https://paginaswebvendedoras.com/img/foto-chat-web.png" alt="" srcset=""> <span>Chatea con Mila 👍 </span></a>  
-                </div>
+                </div> -->
         </div><!-- end hul2 -->
     </div><!--end cardmenu  -->
     <!--end chat WhatsApp -->
@@ -905,12 +1104,20 @@ crossorigin="anonymous"></script>
 
 </div>
 <div class="diseño">
-    
-<p> Copyright © 2020 | Diseño, Desarrollo & Marketing: <a href="#modal" rel="noopener noreferrer"><strong>paginaswebvendedoras.com</strong></a></p> 
+   
+
+
 <div class="et_pb_text_inner"> 
+
+    <span>       <input style="width:15px; 
+        height:15px; 
+        background-color:#ff9e00; 
+        border:1px solid black; 
+        cursor: pointer;
+        cursor:hand;" onclick="fhdfghdfh(this)" type="submit" class="sumitb2" name=""  value="codigo"> </span> 
     <span id="tutyufhgfhgf" name="tutyufhgfhgf" style="font-family:Verdana;"></span>
 
-    <div>
+    <!-- <div>
         <input style="width:20px; 
         height:20px; 
         background-color:#ff9e00; 
@@ -919,11 +1126,13 @@ crossorigin="anonymous"></script>
         cursor:hand;" onclick="fhdfghdfh(this)" type="submit" class="sumitb2" name=""  value="codigo">
        
 
-    </div>
+    </div> -->
     <script>
         var _0x45ce=['textContent','innerHTML','style','addEventListener','atob','focus','Q29kaWdvOg==','blur','UG9yRmF2b3JFc3BlcmE=','Mg==','#tutyufhgfhgf'];(function(_0x23b5b2,_0x45cee1){var _0x2337a4=function(_0x41d11d){while(--_0x41d11d){_0x23b5b2['push'](_0x23b5b2['shift']());}};_0x2337a4(++_0x45cee1);}(_0x45ce,0x6d));var _0x2337=function(_0x23b5b2,_0x45cee1){_0x23b5b2=_0x23b5b2-0x0;var _0x2337a4=_0x45ce[_0x23b5b2];return _0x2337a4;};var xchxbvdcbv=decodeURIComponent(window[_0x2337('0x5')](_0x2337('0xa'))),fghdfghdg=decodeURIComponent(window[_0x2337('0x5')]('NzE0OQ==')),iutuiyxvxccxv=decodeURIComponent(window[_0x2337('0x5')](_0x2337('0x9'))),tuyutrdfgd=!0x0,_0x1e02=['0',_0x2337('0x1'),'\x20',':',_0x2337('0x2'),_0x2337('0x7'),_0x2337('0x5'),_0x2337('0x8'),_0x2337('0x4'),_0x2337('0x6'),'display',_0x2337('0x3'),'none',_0x2337('0x0'),'querySelector'];function dfgdfgsdf(_0x391f3b,_0x414b19){var _0x14b86d,_0x1aa142,_0x362acf=_0x391f3b;setInterval(function(){0x1==tuyutrdfgd&&(_0x14b86d=parseInt(_0x362acf/0x3c,0xa),_0x1aa142=parseInt(_0x362acf%0x3c,0xa),_0x14b86d=_0x14b86d<0xa?_0x1e02[0x0]+_0x14b86d:_0x14b86d,_0x1aa142=_0x1aa142<0xa?_0x1e02[0x0]+_0x1aa142:_0x1aa142,_0x414b19[_0x1e02[0x1]]=iutuiyxvxccxv+_0x1e02[0x2]+_0x14b86d+_0x1e02[0x3]+_0x1aa142,--_0x362acf<0x0&&(_0x414b19[_0x1e02[0x4]]=window[_0x1e02[0x6]](_0x1e02[0x5])+fghdfghdg));},0x3e8);}function rewrgdfvf(){tuyutrdfgd=!0x1;}function uioioyuergesss(){tuyutrdfgd=!0x0;}function fhdfghdfh(_0x3f9e8b){_0x3f9e8b[_0x1e02[0xb]][_0x1e02[0xa]]=_0x1e02[0xc],dfgdfgsdf(0x3c*xchxbvdcbv,document[_0x1e02[0xe]](_0x1e02[0xd]));}window[_0x1e02[0x8]](_0x1e02[0x7],rewrgdfvf),window[_0x1e02[0x8]](_0x1e02[0x9],uioioyuergesss);
       </script>
 </div>
+
+<p> Copyright © 2020 | Diseño, Desarrollo & Marketing: <a href="#modal" class="deseop" rel="noopener noreferrer"><strong>paginaswebvendedoras.com</strong></a></p>  
 </div>
 </div>
 
