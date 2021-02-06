@@ -266,8 +266,9 @@ main{
     background:#fff0e5;
 }
 
-.text p{
-    color:;
+.text {
+    max-width: 400px;
+    margin: 0 auto;
     
 }
 
@@ -370,7 +371,7 @@ main{
     height: 30px;
 }
 .menumama a span.flechatipica{
-	position: absolute;
+	
 	
     width: 100%;
 

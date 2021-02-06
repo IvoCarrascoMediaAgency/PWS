@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+    <link rel="stylesheet" href="styletienda.css">
+
+    <link rel="stylesheet" href="owl.carousel.css">
+    <!-- <link rel="stylesheet" href="owl.theme.default.min.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"></script>
+    
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=false"></script>
+
+    <link rel="stylesheet" href="icons/iconos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+    <title>Tienda</title>
+</head>
+
+<body>
+
+    
+    <div class="modalv">
+
+        <div class="mensajev">
+            <img class="imgwe" src="logoburger.jpg" alt="" srcset="">
+            <p><strong>👋¡Bienvenid@!🤩  </strong> <br><strong>GlobalEstetic</strong> - Proveedor N°1 de productos y equipos para centros de estética, Spas, etc..  <br>
+             
+                <strong>Te recordamos nuestro horario:</strong> <br>
+                🏪 Para recoger del local: 8am a 20pm <br>
+                🛵 A domicilio: 8am a 17pm
+                </p>
+                
+        </div>
+    </div>
+
+
+    <nav class="navbar navbar-dark bg-dark">
+     
+    </nav>
+    <main id="main">
+    <!-- <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav> -->
+
+    <header>
+       
+        
+        <div class="top-header"></div>
+        <!-- <div class="container">
+            <h1 class="text-center">Ecommerce Demo</h1>
+     
+        </div> -->
+
+
+        <div class="containerlogo">
+
+            <div class="logoname">
+
+                <div class="imgcon"> <img src="logoburger.jpg" alt=""></div>
+               
+                <!-- <p class="h1por">🌍Global Estetic</p> -->
+            </div>
+
+            
+            <div class="portadatitulo">
+
+<p>Global Estetic presenta su gama de productos y equipos para Centros de Estetica, centros de belleza y Spas. Ahora puedes hacer tu pedido por WhatsApp🤩👇:</p>
+
+
+            </div>
+          
+          
+         
+        </div>
+    </header>
+
+    <!-- START SECTION STORE -->
+
+    <section class="store">
+        <div class="container">
+            <div class="items" >
+                <div class="fantasma3"></div>
+                <nav class="row-centered" id="menu-sections">
+                  
+                    <!--AQUI INSERTAREMOS LAS CATEGORIAS QUE QUEREMOS-->
+                </nav>
+                <!--ESTE DIV CONTENDRA LOS MULTIPLES MENUS DISPONIBLES GENERADOS POR LAS CATEGORIAS-->
+                <div class="menu-slider" id="slides-container">
+                <!--<div class="item-menu" id="menu-container-C1">
+                </div>
+                <div class="item-menu" id="menu-container-C2">
+                </div>
+                <div class="item-menu" id="menu-container-C3">
+                </div>-->
+            </div>
+        </div>
+    </section>
+    
+    <!-- END SECTION STORE -->
+    <!-- START SECTION SHOPPING CART -->
+    <section class="shopping-cart">
+        <div class="container">
+            <dialog id="myFirstDialog" 
+            class="orderDialog">  
+            <div id="order-msg">
+            </div>
+       
+            </dialog> 
+
+            <div id="nav" class="menumovil2">
+
+              
+                <div class="hul">
+
+
+                    <div class="containerlogo">
+
+                        <div class="logoname">
+                            <img src="logoburger.jpg" alt="">
+                        </div>
+            
+                    </div>
+
+
+<div class="cabecerapedido">
+
+
+    <div class="ordernumber">
+    <p class="text-center">Tu pedido😋 #</p>
+    <div class="ordenrandom">
+        <span class="ordenf"></span>
+        <input class="ordernumber" type="text" id="intro" value="12345" readonly="">
+    </div>
+    </div>
+                   
+    
+                        <div class="scrollpedido">
+    
+                             <div class="row2">
+    
+                                <div class="col-6">
+                                    <div class="shopping-cart-header">
+                                        <h6>Producto</h6>
+                                    </div>
+                                </div>
+    
+                                <div class="col-2">
+                                    <div class="shopping-cart-header">
+                                        <h6 class="text-truncate">Precio</h6>
+                                    </div>
+                                </div>
+    
+                                <div class="col-4">
+                                    <div class="shopping-cart-header">
+                                        <h6>Cantidad</h6>
+                                    </div>
+                                </div>
+
+                                <div class="col-4">
+                                    <div class="shopping-cart-header">
+                                        <h6>Total</h6>
+                                    </div>
+                                </div>
+    
+                            </div>
+                      </div>
+
+
+</div>
+
+
+
+                    <div class="separatescrol">
+
+<!--                         
+<p class="psinproductos">😱¡Todavia no haz añadido productos!
+   </p> -->
+
+
+
+                      <div class="shopping-cart-items shoppingCartItemsContainer" id="cart_list">
+                    </div>
+
+
+                    </div>
+        
+                   
+        
+        
+        
+                    <div class="row rowtotal">
+                        <div class="col-12 orderpedido">
+                            
+    
+                                <!-- <div class="ordenrandom">
+                                    <span class="ordenf">Orden:</span>
+                                    <input class="ordernumber" type="text" id="intro" value="12345" readonly="">
+                            
+                            
+                    
+                                    
+                            
+                                    </div> -->
+
+                                    <div class=" primertotal">
+                                        <p class="mb-0">Subtotal:</p>
+                                        <p class="ml-4 mb-0 shoppingCartTotal" id="totalwa">$00.00</p>
+                
+                            
+                                        </div>
+
+                                        <div class="btnpedidof">
+
+                                        <div class="seguirc">
+
+                                            <a  >Seguir Comprando</a>
+
+                                        </div>
+
+                                        <div class="continuar">
+                                            <a href="#gform2">Continuar a caja</a>
+                                        </div>
+                                    </div>
+                            
+        
+                                    <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal" data-target="#comprarModal">Comprar</button>
+                            </div>
+        
+                        </div>
+
+            </div>
+
+                 
+                 
+             
+
+                   
+              
+            </div><!-- end car items -->
+                    
+           
+        <div class="form" id="contacto2">
+            <form  
+            id="gform"  name="gform" target="hidden_iframe" onsubmit="submitted=true;"
+            action="https://docs.google.com/forms/d/e/1FAIpQLSclWHdimbOn2b18CPRaSz5RVoeLA-pxJudums5VtjnYhuVSRg/formResponse?" method="GET">
+                <!-- <div class="FormField"> -->
+
+                    
+
+
+                    <!-- end factura -->
+                    <div class="itemocul">
+
+                        <label for="user_name"></label>
+                        <input  type="number"  name="user_name" id="user_name" placeholder="Número de WhatsApp" class="user_phone"/>
+                    
+                        <label for="user_phone"></label>
+                        <input  type="number"  name="user_phone" id="user_phone" placeholder="Número de WhatsApp" class="user_phone"/>
+                    
+                        <label for="user_dir"></label>
+                        <input  type="number"  name="user_dir" id="user_dir" placeholder="Número de WhatsApp" class="user_phone"/>
+                    
+                        <label for="user_zone"></label>
+                        <input  type="number"  name="user_zone" id="user_zone" placeholder="Número de WhatsApp" class="user_phone"/>
+                    
+                        <label for="user_mail"></label>
+                        <input  type="number"  name="user_mail" id="user_mail" placeholder="Número de WhatsApp" class="user_phone"/>
+
+                        <input id="boton" type="submit" class="sumitb" name=""  target="_blank" value="Enviar pedido">
+
+                    </div>
+                    </form> 
+
+      
+                    
+                    
+
+            <div class="form2" id="contacto2">
+                <form  
+                id="gform2"  name="gform2" target="hidden_iframe" onsubmit="submitted=true;"
+                action="https://docs.google.com/forms/d/e/1FAIpQLSclWHdimbOn2b18CPRaSz5RVoeLA-pxJudums5VtjnYhuVSRg/formResponse?" >
+                    <!-- <div class="FormField"> -->
+                        
+                   
+<!-- <div class="pedidocli"> -->
+
+<!-- form final -->
+    <p class="titulode">Continúa con el pedido</p>
+
+ 
+
+
+   
+<div class="chaotext">
+
+    
+    <!-- <span class="ordenf">Orden:</span> -->
+    <p class="ppedido">Pedido N°</p>
+
+    <div >
+
+        <label for="entry.1450118414">  </label>
+        <textarea class="ch23" name="entry.1450118414" type="text" id="entry.1450118414" readonly ></textarea>
+
+    </div>
+
+    </div>
+
+    <p class="pdatosc cc">¿Factura o consumidor final?</p>
+
+    <div class="facconsu">
+
+
+        <div class="facdatos">
+            <input type="checkbox" class="facf" name="entry.709227128" value="Datos para la factura: %0A*N° de cédula:*" id="entry.709227128" onclick=" limpiarfac();">
+            <label for="entry.709227128" class="faccedula">Factura</label>
+     
+            <div class="mfac datafac">
+                <input type="number" name="entry.2420597" placeholder="N° de cédula/RUC" id="entry.2420597" value="">
+
+                
+                <label  for="entry.2420597" class="clickcedula"></label>
+            </div>
+
+        </div>
+
+        <div class="datocconsumidor">
+
+        <input type="checkbox" class="facf" onclick="limpiarconsu();"
+        name="entry.2016983664" value="Consumidor final" id="entry.2016983664">
+        <label for="entry.2016983664" class="consumidorsinfac">Consumidor final</label>
+        
+       
+            </div>
+
+            <input type="checkbox" class="facf" onclick="limpiarcliente();"name="entry.1758756268" value="Ya soy Cliente" id="entry.1758756268">
+            <label for="entry.1758756268" class="clientefac">Ya soy cliente</label>
+            
+    </div><!-- end facconsu -->
+
+
+                    
+
+                    <!--  -->
+                    <div class="datosfacturacion">
+
+                    <label class="cc" for="entry.2030044025">Datos para la entrega:</label>
+                    <input  type="text"  name="entry.2030044025" id="entry.2030044025" placeholder="Nombres y Apellidos" />
+                   
+                    
+                    <label for="entry.1156212193">Correo electrónico 📧</label>
+                    <input class="user_mail" type="email"  name="entry.1156212193" id="entry.1156212193" 
+                    placeholder="tunombre@correo.com"/>
+                  
+                   
+                    <label for="entry.1632691641">Número de Teléfono </label>
+                    <input type="number"  name="entry.1632691641" id="entry.1632691641" placeholder="Número de WhatsApp" />
+                
+
+                    </div> <!-- ens datos facturacion -->
+                   
+
+                    <!-- opcion de entrega -->
+
+
+                        <!-- opcion de pago -->
+
+                        <label  for="deliveryselect"></label>
+
+                        <p class="cc">Opción de Entrega:</p>
+                       
+                   
+                        <div class="opcione" id="opcione">
+
+                        <input type="checkbox" onclick="linpiarreservar();"name="entry.1067299390" value="A domicilio" id="entry.1067299390">
+            
+                        <label for="entry.1067299390" class="deliveryope" id="ope1a">A domicilio</label>
+
+                       
+                
+                       
+                         <div class="opedetalle">
+                           
+                            <label for="entry.686290451" ></label>
+                            <p class="cc">Costo de delivery por sector 📍</p>
+    
+                            <select class="selectb" id="entry.686290451"  name="entry.686290451" placeholder="Rol" title="">
+                          
+                                <option value="0">$0,00</option>
+                                <option value="3.00">Norte $3.00</option>
+                                <option value="4.00">Centro $4,00</option>
+                                <option value="5.00">Sur $5,00</option>
+
+                                <option value="6.00">Valles $6,00</option>
+                   
+     
+                            
+                    
+                            </select>
+    
+                            
+                            <!-- <p class="cc">Dirección de la entrega con referencia 📍</p> -->
+
+                            <div class="btnpagos">
+
+                            
+                            <input type="checkbox" name="entry.150273747" id="entry.150273747" onclick="limpiaringd();">
+
+                            <label class="mapalocor" for="entry.150273747"> Ingresar dirección con referencia</label>
+
+                        <div class="direcreg">
+                            <label for="entry.803987817" class="cc">  </label>
+                            
+                            <textarea  value="*Dirección para la entreda:*" name="entry.803987817" id="entry.803987817" cols="30" rows="10" placeholder="Av.10 de Agosto N345 y Valladolid frente a la escuela El Florón..."></textarea>
+                        </div>
+
+                            <!--  -->
+                       
+                            <input type="checkbox" name="entry.2092178738" id="entry.2092178738" onclick="limpiaringdmap();">
+
+                        <label class="mapalocor2" for="entry.2092178738" id="maploco2">O Seleccionar en el mapa</label>
+
+                    <div class="mapfinalw">
+                        
+                        <div id="map-canvas" class="mapcanvas"></div>
+
+                        <div id="latitude"></div>
+                       
+                      
+
+                        <label for="entry.2092178738">
+
+                        </label>
+                         
+<div class="googlemaps">
+                            <textarea name="entry.2092178738" id="entry.2092178738" class="address" placeholder="">
+                            </textarea>
+
+                        </div>
+
+                        <div class="fantasmashetlinkmap">
+<!-- guardar el link de maps para mostrar en >G sheets ojo  -->
+                            <label for="entry.1441018699"></label>
+                         
+
+                            <textarea name="entry.1441018699" id="entry.1441018699" cols="30" class="" rows="10" placeholder="">
+                            </textarea>
+
+
+                         
+                            
+                            <!-- <label for="entry.2092178738"></label>
+                         
+
+                            <textarea name="entry.2092178738" id="entry.2092178738" cols="30" class="" rows="10" placeholder="">
+                            </textarea> -->
+                        </div>
+                    
+                    </div><!-- end mapfinalw -->
+
+                    </div><!-- end btnpagos -->
+
+
+                    </div><!-- end opendetalle -->
+    
+                            
+                        <input type="checkbox" onclick="linpiardelivery();" name="entry.398428276" value="Reservar en el local %0A *Fecha y hora de la reserva*"  id="entry.398428276">
+            
+                        <label for="entry.398428276" class="deliveryoper" id="ope1a">Reservar en el local</label>
+
+
+                        <div class="diahora">
+                            <span>Selecciona el día y la hora:</span>
+                                                <div> 
+                                                            <label for="entry.1164560529"></label>
+                                                                                                   <input type="date" placeholder="dd/mm/aaaa" name="entry.1164560529" value="" id="entry.1164560529" >
+                                                            </div>
+                                                                <div> 
+                                                            <label for="entry.404593967"></label>
+                                                         
+                                                               
+                                                                <input type="time" id="entry.404593967" placeholder="14:00" value="" name="entry.404593967" >
+                                                            </div>
+                                    
+                         </div><!-- end diahora -->
+
+
+
+
+    
+                        <input type="checkbox" onclick="linpiarreserdomi();" name="entry.1612018657"  value="Recoger del local" id="entry.1612018657">
+                
+                        <label for="entry.1612018657" class="deliveryoperr" id="ope1a">Recoger del local</label>
+
+
+                    </div>  <!-- end opcione -->    
+
+
+
+                    <!-- end opcion de entrega -->
+
+
+                     <!-- <div class="FormField">
+                    <label for="entry.686290451">Costo Delivery selecciona el sector 📍</label>
+                    <select class="selectb" id="entry.686290451"  name="entry.686290451" placeholder="Rol" 
+                    title="Por favor escribe cual es tu rol" class="user_zone">
+                        <option value="*" selected>Elija una zona...</option>
+                        <option value="Norte">Norte</option>
+                        <option value="Centro">Centro</option>
+                        <option value="Sur">Sur</option>
+                        <option value="Valles">Valles</option>
+                    </select>
+                    </div> -->
+                    <!-- <div class="FormField"> -->
+
+                        <!-- <label for="entry.150273747"> <input type="radio" value="Ingresar dirección con referencia" name="entry.150273747" id="entry.150273747">Ingresar dirección con referencia</label> -->
+
+
+                    <!-- <label for="entry.803987817">Dirección de la entrega con referencia 📍</label>
+                        <textarea
+                        name="entry.803987817" id="entry.803987817" 
+                        cols="30" class="user_dir" rows="10" 
+                        placeholder="Av.10 de Agosto N345 y Valladolid frente a la escuela El Florón..."></textarea> -->
+
+<!--                         
+                        <label for="" id="maploco2"> <input type="radio" value="Seleccionar en el mapa" name="" id="">Seleccionar en el mapa</label>
+
+
+                        <article class="static-map-container articlechao">
+                        <div id="position" class="description">
+                            <div class="row flex-container">
+                                <div class="flex-item">Latitude</div>
+                                <div class="flex-item" id="latitude"></div>
+                            </div>
+                            <div class="row flex-container">
+                                <div class="flex-item">Longitude</div>
+                                <div class="flex-item" id="longitude"></div>                    
+                            </div>
+                            <div class="row flex-container">
+                                <div class="flex-item">Address</div>
+                                <div class="flex-item" id="address"></div>                                         -->
+                            <!-- </div>
+                        </div> -->
+
+                        <!-- <div id="map1" class="map"></div>     -->
+                        <!-- </article> -->
+                
+             
+
+               
+
+
+                    <div class="formasdepagos" id="formasdepagos">
+                        <p class="cc">Formas de pago:</p>
+              <div>
+
+            
+                <input   type="checkbox" onclick="limpiarformas();" name="entry.696366128" value="Transferencia Bancaria: Bco. Pichincha Cta. Cte  54XXXXXXX00 --- Bco. Guayaquil Cta. Cte 32XXXXXX00.  " id="entry.696366128">
+
+                <label for="entry.696366128" class="eti1" id="transb">   Transferencia Bancaria</label>
+                        
+                <div class="mk datos1">
+                   <div class="tranfer" id="transb">
+                      <span>Banco Pichincha</span> <br> 
+                      <span>Cta. Cte  54XXXXXXX00</span> <br> 
+                      <span>Banco Guayaquil</span>  <br> 
+                      <span>Cta. Cte 32XXXXXX00</span> <br> 
+                     <span class="ctacte"> <i>Haz una captura del pago y envíanos por WhatsApp</i></span> 
+                   </div>
+               </div>    
+           
+
+              </div>
+                       
+              <div>
+
+                
+
+                <input  type="checkbox" onclick="limpiarformase();" name="entry.1405646315" 
+                    value="Recuerda pagos contra entrega (hasta las 18:00)" id="entry.1405646315" >
+
+                    <label for="entry.1405646315" class="eti2"id="transb" >     Efectivo contra entrega.</label>
+
+                    <div class="mk2 datos2 datacambio ">
+
+                        <div>
+
+
+                          
+
+                        <input 
+                        
+                             type="number" class="monto" id="entry.1280846489" name="entry.1280846489" value="">
+
+                        <label for="entry.1280846489">
+                        </label>
+                     <br>
+                            
+                            <small><i> * Valor del billete para el cambio</i></small>
+                            
+                        </div>
+
+                        <div class="cambio2"> 
+                            <div class="totalcambio">
+
+                                <p class=""><strong>Total</strong> </p> 
+                          
+                            <p class="shoppingCartcambio" id="totalwa3">$0.00</p>
+
+                          </div>
+
+
+                          <div class="cambioinsert">
+                            <p><strong>Cambio</strong> </p> 
+                           
+
+                            <p class="mb-0"id="resultadocambio"> <label for="entry.580204725">  </label>
+                                <textarea
+                                class="xcvs"
+                                name="entry.580204725" type="text" id="entry.580204725" readonly ></textarea
+                                    
+                                  ></p>
+                          </div>
+
+                       
+
+                          
+   
+                       
+                        </div>
+                        
+
+                    
+        
+                    </div>  <!-- datos cambio end -->
+                
+              </div>
+                    
+                        
+                        
+                              <!-- 2 forma de pago  -->
+    
+                              <div>
+
+                            
+
+                                
+                                <input  type="checkbox" onclick="limpiarformaspl();" name="entry.1179942020" value="Ingresa al link para completar el pago ----- https://www.paypal.com/paypalme/ ----- *Haz una captura y envíanos por aquí* 👇 " id="entry.1179942020">
+
+                                <label for="entry.1179942020" class="eti3" id="transb" >   Paypal</label>
+
+                                <div class="mk3 datos3">
+                                    <div class="">
+                                        Ingresa al link para completar el pago <br>
+                                        https://www.paypal.com/paypalme/ <br>
+                                        <span> <i>Haz una captura del 
+                                            pago y envíanos por WhatsApp</i></span> 
+                                    </div>
+                                </div>        
+
+                              </div>
+                            
+                                              
+
+                              <div>
+
+                                
+
+                                <input type="checkbox" onclick="limpiarformaspy();" name="entry.2095367105" 
+                                    value="Haz seleccionado pagar con *PayPhone* ----- *Envíanos la captura del pago por aquí* 👇" id="entry.2095367105"> 
+                                    <label  for="entry.2095367105" class="eti4" id="transb">PayPhone</label>
+
+                                <div class="mk4 datos4">
+                                    <div class="payphonecaja">
+                                        Escanéa el código QR con tu app de PayPhone <br>
+                                        <img class="payqr" src="" alt="" srcset="">
+                                        <span> <i>Haz una captura del pago y envíanos por WhatsApp</i></span> 
+                                    </div>
+                                </div> 
+
+                              </div>
+                            
+                        
+                        </div>  <!-- end  formasdepagos -->
+              
+                      
+
+<div class="ter">
+                        <label for="entry.1625517509" class="ter"> </label>
+                        
+                        <textarea
+                        name="entry.1625517509" id="entry.1625517509" 
+                        cols="30" class="" rows="10" 
+                        placeholder="" class="ter"></textarea>
+
+                    </div>
+
+
+ <div class="subtotalfinaldiv">    
+
+<div class="shopping-cart-total d-flex align-items-center smallsub">
+    <p class="mb-0">Subtotal</p>
+
+
+
+    <p class="ml-4 mb-0 shoppingCartTotal2" id="totalwa">$0.00</p>
+
+    <!-- <label for="entry.985986529"></label>
+    <input type="text" id="entry.985986529"  name="entry.985986529"> class="ch23" -->
+
+    <div class="chaosubt">
+    <label for="entry.985986529">  </label>
+    <textarea  name="entry.985986529" type="text" id="entry.985986529" ></textarea>
+</div>
+
+
+
+
+</div>
+
+    <div class="shopping-cart-total d-flex align-items-center smallsub">
+        <p class="mb-0">Delivery</p>
+        <p class="ml-4 mb-0 deliverysub" id="totalwa">$0.00</p>
+
+
+
+    </div>
+
+  
+
+        <div class="shopping-cart-total d-flex align-items-center totalfinalp">
+            <p class="mb-0">Total</p>
+            <p class="ml-4 mb-0 shoppingCartTotaldelivery" id="totalwa">$0.00</p>
+
+
+            </div>
+         
+            <div class="chaosubt">
+         
+
+            <label for="entry.802449909">  </label>
+    <textarea  name="entry.802449909" type="text" id="entry.802449909" ></textarea>
+        </div>
+
+                       
+</div><!-- end subtotal final -->
+
+                        
+<p class="great">Disfruta de tu pedido. <br>¡Gracias por tu compra nos vemos pronto!  <br>😉👍</p>
+            <!-- <p class="demo " id="demo"></p> -->
+
+<!-- <p class="demo"></p> -->
+
+<label for="boton"  id="enviarwa" class="enviarwa">  </label>
+
+<div class="spanenviar">
+                      <span>  <input id="boton" type="submit" class="icon-wa" name=""  onclick="goToPage(); " target="_blank" value="Haz tu pedido por WhatsApp " ></span></div>
+
+                     
+
+                        <!-- <label for="boton" id="enviarwa" class="enviarwa"> Enviar mi pedido <span class="icon-wa"></span> <input id="boton" type="submit" class="sumitb " name="" onclick="goToPage();" target="_blank" value=""
+                            > </label> -->
+                        
+                        
+
+
+
+                </form> 
+                
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){}"></iframe>
+            </div>   <!-- enddiv form -->
+
+
+
+
+            <!-- ? END SHOPPING CART ITEMS -->
+           
+     <!-- <p class="demo" id="demo"></p> -->
+               
+            <!-- END MODAL COMPRA -->
+        
+                 
+                    
+                       
+        
+         
+           
+         
+      
+            
+
+                
+        </div>
+    </section>
+    <!-- END SECTION SHOPPING CART -->
+<!-- boton flotante -->
+<!-- <a href="#cart_list"> -->
+
+
+    
+
+
+
+
+
+
+<div id="cardnegocioid" class='cardnegocio tripimg'>
+    <span class="icon- mw">
+        <!-- <svg width="0.75em" height="0.75em" viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+        </svg> -->
+    </span>
+    <span  class="unowhat" id="cart_amt">*</span> 
+</div> 
+</a>
+    <!-- START FOOTER -->
+    <div class="footer"></div>
+    <footer class="bg-dark p-3 mt-5">
+        <p class="wsbmarca2">Recuerda abrir WhatsApp Web si haces tu pedido desde un ordenador</p>
+            <br>
+            <p class="wsbmarca">Desarrollado por: <a href="http://bit.ly/WBS-ecommerce"> WhatsEcom-WhatsBulksender.com</a> </p>
+
+        <!-- <script src="owl.carousel.min.js"></script> -->
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <div class="fantasma" id="fantasma"></div>
+        <div class="fantasmas"></div>
+
+        <div class="deliverysub2"></div>
+        <script src=""
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            var submitted = false;
+            </script>
+    </footer>
+    <!-- END FOOTER -->
+    <!-- SCRIPTS -->
+    <script src="tienda.js"></script>
+
+    <script>
+
+        var scroll = new SmoothScroll('a[href*="#"]', {
+           speed:500,
+           speedAsDuration: true
+          
+       });
+           </script>
+
+
+ 
+
+
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkGoJnVeGDJt95eLYrBeZIrlKqoiPBA30&callback=initialize" async defer></script>
+ 
+ 
+    
+        </footer>
+
+    </main>
+</body>
+</html>
+

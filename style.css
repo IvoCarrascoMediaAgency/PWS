@@ -694,6 +694,9 @@ li.eti1,li.eti2,li.eti3,li.eti4  {
     background-color: #fff;
     color: #4a4a4a;
     box-shadow: 0 1px 2px 0 rgba(0,0,0,.3);
+    display: grid;
+    grid-gap: 5px;
+    font-size: 0.9em;
 }
 
 .whatboton{
@@ -898,7 +901,7 @@ img.imgcliente {
   
   .slider {
     display: flex;
-    width: 700%;
+    width: 800%;
   }
   
   .slider__section {
@@ -2312,6 +2315,7 @@ textarea#edad {
     font-family: 'Roboto';
     line-height: 25px;
     overflow-y: hidden;
+    font-size: 0.9em;
     
 }
 
