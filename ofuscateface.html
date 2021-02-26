@@ -1,0 +1,207 @@
+
+
+<html>
+    
+
+  <p class="1p">
+
+    Revela la herramienta de orientación de intereses de Facebook Miles de intereses ocultos en Facebook puede apuntar sin que su competencia lo sepa
+  </p>
+
+
+  <p>
+
+    Es una herramienta de orientación por intereses de Facebook para nuestra comunidad 100% GRATUITA.
+  </p>
+
+
+  <p>
+    Facebook oculta los intereses de  tus proximos clientes potenciales. Así que hemos creado una herramienta que muestra los interes ocultos de millones de perfiles de usuarios de Facebook para llegar a nuevos leads y estar por encima de tu competencia que usa por defecto los intereses que facebook le muestra para que entren a la subasta de interes donde se muestra a quien paga màs, ahorras tiempo y dinero en la investigación de objetivos de interés y, lo más importante ... disparar su ROAS 🚀
+  </p>
+
+
+  <p>
+    El aumento del costo por resultado (lead, mensaje, conversiòn) es debido a que facebook muestra solo 25 sugerencias relacionadas a un mismo interès.
+    
+    AL seleccionar los interèses del pùblico objetivo Facebook muestra las 25 suguerencias a màs de 7 millones de anunciantes, compitiendo todos para que sus anuncios puedan aparecer, recuerda que es una subasta en la que aparecen primero aquellos con grandes presupuestos.
+
+  </p>
+
+  <p>
+
+    Encuentra miles de intereses ocultos a los que puedes dirigirte y que tu competencia aùn no los està aprovechando
+   
+  </p>
+
+  <p>
+
+marca utiliza la API de Facebook Marketingg para revelar intereses que están ocultos a la mayoría de los anunciantes, por lo que puede ahorrar horas en la investigación de intereses y encontrar las palabras clave perfectas de baja competencia.
+  </p>
+
+  <p>
+      
+  </p>
+
+
+    <!-- <input type="submit" class="sumitb" name="" onclick="window.open('https://api.whatsapp.com/send?phone=593980687988&text=Hola!%20me%20interesa%20el%20servicio%20de%20*P%C3%A1gina*%20*Web*%20*Ecommerce*')"  value="Ver Nichos">  -->
+
+<input type="text" id="interes" name="Inteses,nichos,Comportamietnos" >
+
+<input type="text"  name="Cantidad de resultados" id="cantidad">
+
+
+    <input id="boton" type="submit" class="sumitb " name="" onclick="gourl();"  value="ver nichos"
+    >
+<!-- 
+    <input id="boton" type="submit" class="sumitb " name="" onclick="exportxls();"  value="exportar xls"
+    > -->
+
+    <a href="javascript:location.reload()">Nueva búsqueda</a>
+
+
+<div id="nichosb">
+
+
+    <div id="inserdata">
+
+    </div>
+
+
+</div>
+
+    <div id="nichos"></div>
+
+    <script>
+
+        //https://graph.facebook.com/search?type=adinterest&q=[marketing]&limit=1000&locale=en_US&access_token=EAAE0GDLXfyABAE8icTxVkH2rHjlfZBiZBk4Yi8uGpO5YIGUZCfv5shSYOo6kf2lW9F5BWDDQ0ZCFjtQZB9YKZCqetln2aOM3ZA2pSXbBA6QxffISItyi8ZC1kayCYOEq5x1MNWJ9xcw2CqbJTRkNxvpdUuZCnUdlTTyv8xF80lZALTFWwa9x7YZBHV1
+
+        function gourl(){
+
+
+            var interes= document.getElementById('interes').value;
+
+            var cantidad= document.getElementById('cantidad').value;
+
+
+            var string = 'aHR0cHM6Ly9ncmFwaC5mYWNlYm9vay5jb20vc2VhcmNoP3R5cGU9YWRpbnRlcmVzdCZxPVs=';
+
+            var stringdos = 'XSZsaW1pdD0=';
+
+            var stringtres='JmxvY2FsZT1lbl9VUyZhY2Nlc3NfdG9rZW49RUFBRTBHRExYZnlBQkFFOGljVHhWa0gyckhqbGZaQmlaQms0WWk4dUdwTzVZSUdVWkNmdjVzaFNZT282a2YybFc5RjVCV0REUTBaQ0ZqdFFaQjlZS1pDcWV0bG4yYU9NM1pBMnBTWGJCQTZReGZmSVNJdHlpOFpDMWtheUNZT0VxNXgxTU5XSjl4Y3cyQ3FiSlRSa054dnBkVXVaQ25VZGxUVHl2OHhGODBsWkFMVEZXd2E5eDdZWkJIVjE='
+
+
+
+// Encode the String
+var encodedString = atob(string);
+
+var encodedStringdos = atob(stringdos);
+var encodedStringtres = atob(stringtres);
+
+
+
+ // Outputs: "SGVsbG8gV29ybGQh"^
+
+
+ var iframe2 = (encodedString +interes+encodedStringdos+cantidad+encodedStringtres)
+        
+
+       // var myWindow = window.open (encodedString +interes+encodedStringdos+cantidad+encodedStringtres)}
+
+
+
+
+  
+     
+   var iframe = document.createElement('iframe');
+   iframe.frameBorder=0;
+   iframe.width="400px";
+   iframe.height="500px";
+   iframe.style=" display:grid;";
+   iframe.id="randomid";
+   iframe.setAttribute("src", iframe2);
+   document.getElementById("nichos").appendChild(iframe);
+    
+//*************
+
+
+// var datafbiframe = document.getElementById('randomid');
+// var innerDoc = datafbiframe.contentDocument || datafbiframe.contentWindow.document;
+
+
+// var datafb= innerDoc.find('pre');
+// console.log("🚀 ~ file: ofuscateface.html ~ line 101 ~ datafb", datafb)
+
+// var inserdatafb=document.getElementById('inserdata').innerHTML=`${datafb}`;
+
+// var datafbiframe = document.getElementById('randomid');
+
+var er=document.getElementById('randomid').onload = function() {
+
+    // var datafbiframe = document.getElementById('randomid');
+
+    var wer= document.getElementsByTagName('PRE')[0].innerHTML;
+    console.log("🚀 ~ file: ofuscateface.html ~ line 141 ~ er ~ wer", wer)
+    // var wn = document.getElementById('randomid').contentWindow.document;
+    // console.log("🚀 ~ file: ofuscateface.html ~ line 104 ~ er ~ wn", wn)
+
+    // var wert=document.getElementsByTagName('PRE')[0].innerHTML;
+    // console.log("🚀 ~ file: ofuscateface.html ~ line 107 ~ er ~ wert", wert)
+  
+    // var rew=datafbiframe.contentDocument || datafbiframe.contentWindow.document;
+
+    // var wer= document.getElementsByTagName('PRE')[0].innerHTML;
+    // console.log("🚀 ~ file: ofuscateface.html ~ line 105 ~ er ~ wer", wer)
+
+
+    // var cop= document.getElementsByName('PRE')
+    
+    // var datafb= document.getElementsByTagName('PRE')[0].innerHTML;
+    // console.log("🚀 ~ file: ofuscateface.html ~ line 106 ~ er ~ datafb", datafb)
+
+    // var rec=document.getElementById('inserdata').innerHTML=`${datafb}`;
+    // console.log("🚀 ~ file: ofuscateface.html ~ line 110 ~ er ~ rec", rec)
+
+  
+
+  
+
+    // var datafb= innerDoc.find('pre');
+
+
+        }
+
+
+}
+
+
+// var datafb= document.getElementsByTagName('PRE')[0].innerHTML;
+
+// var insertdatafb=document.getElementById('insertdata').innerHTML=`${datafb}`;
+
+function exportxls(){
+
+
+
+    var data = document.querySelector('#inserdata').textContent;
+    console.log("🚀 ~ file: ofuscateface.html ~ line 227 ~ exportxls ~ data", data)
+
+    /* worksheet */
+    var ws = XLSX.utils.json_to_sheet(data);
+
+    /* workbook，worksheet */
+    var wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, "People");
+    
+    /*  */
+    XLSX.writeFile(wb, "interesesocultos.xlsx");
+
+}
+
+
+
+
+
+       
+
+    </script>
+</html>
