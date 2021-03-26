@@ -354,8 +354,12 @@ dialog .actions {
 }
 
 .pcategory{
-  margin-bottom: 5px;
+  margin-bottom: 35px;
   margin-top: 0;
+}
+
+.shopping-cart{
+  margin-top: 30px;
 }
 
 .menu-slider > .item-menu {
