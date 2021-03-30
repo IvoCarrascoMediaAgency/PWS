@@ -448,6 +448,7 @@ input.anav{
     margin: 0 auto;
     padding: 0 20px;
     line-height: 30px;
+    cursor: pointer;
     
 }
 
@@ -1603,7 +1604,8 @@ small.spro{
 
 .fantasma{
 	width: 100%;
-	height: 200px;
+    height: 200px;
+    margin-top: 15px;
 }
 
 .cerrar{
@@ -1666,12 +1668,13 @@ small.spro{
 form {
     width: 90%;
     margin: 0 auto;
-    max-width: 400px;
-    overflow: hidden;
+    max-width: 300px;
+
 	height: 100%;
 	display: grid;
 	align-content: center;
-	-webkit-appearance: none;
+    -webkit-appearance: none;
+    grid-gap: 5px;
 }
 
 input, textarea {
@@ -1682,8 +1685,7 @@ input, textarea {
  
     /* background: rgba(255,255,255, .9); */
     color: #999;
-
-    height: 40px;
+    
     margin-bottom: 15px;
     background: rgba(255,255,255,.3);
     -webkit-appearance: none;
@@ -1698,6 +1700,7 @@ input, textarea {
     background: #25d366;
     border-radius: 20px;
     width: 200px;
+    margin-top: 20px;
     text-align: center;
     transition: 0.5s ease-out;
    height: 40px;
@@ -1705,6 +1708,7 @@ input, textarea {
    -moz-border-radius: 20px;
    -webkit-border-radius: 20px;
    -webkit-appearance: none;
+   cursor: pointer;
 }
 
 
@@ -1725,7 +1729,7 @@ select{
     border: none;
     padding: 7px;
     font-size: 1em;
-    height: 50px;
+    
     background: rgba(0,0,0,.2);
     -webkit-appearance: none;
     border-radius: 5px;
@@ -1810,6 +1814,7 @@ option{
 .modalv2 input.sumitb {
     margin-top: 20px;
     width: 200px;
+    cursor: pointer;
 }
 
 .escondercaja{
@@ -2499,7 +2504,7 @@ button.enviarmensajewa {
     justify-content: center;
     align-items: center;
     background: #25d366;
-    padding-left: 5px;
+    
     outline: none;
     cursor: pointer;
 }
@@ -2514,14 +2519,15 @@ i.icon-send {
     color: white;
     /* height: 30px; */
     /* width: 30px; */
-    font-size: 1.5em;
+    font-size: 1.2em;
+    margin-left: 5px;
 }
 
 .divsend {
     margin: 0 auto;
     display: grid;
    
-    align-items: self-end;
+    align-items: center;
 }
 
 
@@ -2924,6 +2930,7 @@ a.linknav {
     width: 350px;
     margin: 0;
     margin-top: 0;
+    margin-bottom: 30px;
  
 }
 
