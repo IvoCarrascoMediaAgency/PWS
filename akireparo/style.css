@@ -1,0 +1,2816 @@
+html{
+	box-sizing: border-box;
+	font-family: 'Arimo', sans-serif;
+    
+	font-size: 16px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+	
+}
+
+*,
+*:after,
+*::before{
+	padding: 0;
+	margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* portada */
+.portada{
+    height: 100vh;
+    /* background-image: url(img/reparacion-mantenimiento-servicio-tecnico-lavadoras-en-Quito.png); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    background-position-x: -200px;
+    
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Oswald', sans-serif;
+}
+
+
+
+
+main{
+    max-width: 1024px;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+body{
+    overflow-x: hidden;
+
+}
+
+
+
+.containernav{
+    display:none;
+}
+
+.containermovil{
+    display: grid;
+    background: white;
+    margin: 0 auto;
+
+}
+
+.containermovil img{
+    display: grid;
+    width: 60px;
+    margin-left: 20px;
+   
+    
+}
+
+.btnaki {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 20px;
+}
+
+
+.layer{
+    width: 100%;
+    height: 100%;
+  
+    z-index: 2;
+ 
+
+}
+
+.containers{
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center;
+    
+    
+}
+
+.containers2{
+    width: 100%;
+    scroll-snap-align: center;
+ 
+
+}
+
+
+.containers:nth-child(1) {
+    background: url(img/paginas-web-Quito.png);
+    background-size: cover;
+    transition: 1s ease-in-out 0s;
+    z-index: 1;
+    background-size: 700px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.35);
+    /* background-position: bottom;
+    background-position-y: 350px;
+    background-position-x: -200px; */
+
+}
+
+
+
+
+.containernav img{
+    height:50px;
+    display: grid;
+}
+
+
+
+
+
+.tripimg{
+    animation: trip ease-in-out 4s ;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+    -webkit-animation: trip ease-in-out 4s ;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+    -moz-animation: trip ease-in-out 4s ;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+    -o-animation: trip ease-in-out 4s ;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+    -ms-animation: trip ease-in-out 4s ;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%;
+}/* mover los botones de izq a derecha */
+
+
+@keyframes trip {
+    0% {
+      transform:  translate(0px,0px)  ;
+    }
+    50% {
+      transform:  translate(5px,0px)  ;
+    }
+    100% {
+      transform:  translate(0px,0px)  ;
+    }
+  }
+
+  .containernav li{
+    list-style: none;
+
+  }
+
+.containernav li a{
+    text-decoration: none;
+    
+   
+    color: white;
+}
+
+.containernav nav ul{
+    display: grid;
+    width: 100%;
+    line-height: 50px;
+    grid-template-columns: auto auto auto auto auto;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.containernav nav {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.frasebtn {
+    height: 100%;
+    
+ 
+    align-content: start;
+    color: white;
+    
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+
+
+
+
+
+.frasebtn span{
+    font-size: 1em;
+    padding-left: 10px;
+   
+
+}
+
+.btnaki a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    background: #25d366;
+    border-radius: 20px;
+    border: 1px solid #128C7E;
+    width: 250px;
+    text-align: center;
+    transition: 0.5s ease-out;
+    
+    box-shadow: 10px 10px 34px -11px rgba(0,0,0,1);
+
+}
+
+.btnaki a:hover{
+    color: #25d366;
+    background: white;
+    font-weight: bold;
+
+}
+
+
+
+
+a.anav{
+    text-decoration: none;
+    margin: 0;
+    height: 30px;
+    text-align: center;
+    line-height: 25px;
+    background-color: #128C7E;
+    border-radius: 16px;
+    border: 2px solid #25D366;
+    color: white;
+    margin: 0 auto;
+    padding: 0 10px;
+    line-height: 30px;
+    
+}
+
+a.anav:hover{    
+    background: #25D366;
+    
+
+}
+
+
+span.spanfrase {
+    font-size: 1.5em;
+    color: #1d9cd8;
+    font-weight: bold;
+    
+    padding-left: 10px;
+    margin-top: 20px;
+ 
+    
+}
+
+.spanfrase{
+    font-family: 'Arimo', sans-serif;
+     
+}
+
+.logomovil
+{
+	width: 100%;
+	margin: auto;
+}
+.logomovil img{
+	height: 100px;
+	
+	
+}
+
+
+/* slider servicios */
+
+
+
+.forw {
+    width: 50px;
+    height: 50px;
+    background: rgba(0,0,0,.2);
+    border-radius: 50%;
+    margin-top: 25%;
+    position: absolute;
+    display: flex;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+.rewr{
+    width: 50px;
+    height: 50px;
+    background: rgba(0,0,0,.2);
+    border-radius: 50%;
+    margin-top: 25%;
+    position: absolute;
+    display: flex;
+
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  
+
+}
+
+.rewr span{
+    color: white;
+    font-size: 2.5em;
+    transition: 0.5s ease-out;
+
+}
+
+.forw span{
+
+    color:white;
+    font-size: 2.5em;
+    transition: 0.5s ease-out;
+
+}
+
+.forw:hover,.rewr:hover{
+    background:#ff9e00;
+    box-shadow: 7px 7px 20px -11px rgba(0,0,0,1);    
+
+}
+
+
+
+
+/* new slider */
+.contenedor-slider {
+    margin: auto;
+    /* width: 85%;
+    max-width: 900px; */
+    position: relative;
+    overflow: hidden;
+    /* width: 1024px; */
+    height: 100%;
+   
+  }
+  
+  .slider {
+    display: flex;
+    width: 500%;
+    height: 100%;
+  }
+  
+  .slider__section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    height: 100%;
+  }
+
+.section1{
+    
+    /* background:  url(img/reparacion-mantenimiento-servicio-tecnico-de-lavadoras-secadoras-refrigeradoras-y-calefones.jpg) , rgba(0, 0, 0, 0.35) ; */
+    background-image: linear-gradient(to bottom, rgba(0, 0,0, .35), rgba(0, 0, 0, .35)), url(img/reparacion-mantenimiento-y-servicio-tecnico-a-domicilio-en-Quito.webp);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-size: cover;
+    background-position-y: -35px;
+    background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .5)), -webkit-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .5)), -ms-linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, .5)), linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, .5));
+  
+
+
+}
+
+
+.section2{
+    background-image: linear-gradient(to bottom, rgba(0, 0,0, .5), rgba(0, 0, 0, .5)), url(img/mantenimiento-y-repacion-en-Quito-24-7.webp);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, right;
+    background-size: cover;
+    background-position-y: -35px;
+    background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), -webkit-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), -ms-linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+  
+
+}
+
+.section3{
+    background-image: linear-gradient(to bottom, rgba(0, 0,0, .5), rgba(0, 0, 0, .5)), url(img/repuestos-electrodomésticos-todas-las-marcas.webp);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-size: cover;
+    background-position-y: -35px;
+    background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), -webkit-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), -ms-linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+  
+
+
+}
+
+
+.section4{
+    background-image: linear-gradient(to bottom, rgba(0, 0,0,.5), rgba(0, 0, 0,.5)), url(img/servicio-tecnico-de-lavadoras-secadoras-refrigeradoras-calefones-en-Cumbaya.webp);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-size: cover;
+    background-position-y: -35px;
+    background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), -webkit-gradient(to bottom, rgba(0, 0, 0, 5), rgba(0, 0, 0, .5)), -ms-linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, .5));
+  
+
+}
+
+.section5{
+    background-image: linear-gradient(to bottom, rgba(0, 0,0, .35), rgba(0, 0, 0, .35)), url(img/servicio-tecnico-autorizado-multimarcas-de-electrodomésticos-Quito.webp);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-size: cover;
+    background-position-y: -35px;
+    background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .5)), -webkit-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .5)), -ms-linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, .5)), linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, .5));
+  
+
+}
+  
+  .slider__img {
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 34px -11px rgba(0,0,0,.8);
+
+    
+    
+  }
+  
+  .btn-prev, .btn-next, .btn-prevm, .btn-nextm {
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    color: rgba(255,255,255,.4);
+  }
+
+  
+  .btn-prev:hover, .btn-next:hover {
+    background: #1d9cd8;
+    color: white;
+  }
+  
+  .btn-prev, .btn-prevm {
+    left: 10px;
+  }
+  
+  .btn-next,.btn-nextm {
+    right: 10px;
+  }
+
+  .btnser{
+    background: rgba(255,255,255,.2);
+   
+}
+
+
+
+
+.mk-info {
+   
+    display: grid;
+    
+    justify-items: center;
+   
+    align-items: flex-end;
+    text-align: center;
+}
+
+.mk-info h1{
+    color: white;
+
+}
+
+.domi24{
+    font-size: 0.7em;
+    font-family: 'Arimo', sans-serif;
+}
+
+
+.whataki{
+    display: block;
+}
+
+.whatakidiv{
+margin: auto;
+}
+
+/* boton  */
+
+.whataki {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    background: #25d366;
+    border-radius: 20px;
+    border: 1px solid #128C7E;
+    width: 250px;
+    text-align: center;
+    transition: 0.5s ease-out;
+    box-shadow: 10px 10px 34px -11px rgba(0,0,0,1);
+    margin-bottom: 10px;
+}
+
+.whataki:hover {
+    color: #25d366;
+    background: white;
+    font-weight: bold;
+}
+.containers2{
+    width: 100%;
+    scroll-snap-align: center;
+    height: 90%;
+    margin-top: 50px;
+ 
+
+}
+
+/* menu movil */
+
+/* menu */
+.menu {
+    border-radius: 50%;
+    background: #ffffff;
+    top: 10px;
+    /* box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF; */
+    cursor: pointer;
+    height: 50px;
+    position: fixed;
+    right: 3px;
+    width: 50px;
+    z-index: 1030;
+    filter: opacity(90%);
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+/* con js */
+.mostrarmenu2{
+	right: 0;
+	z-index: 1029;
+
+	
+}
+/*  */
+
+.menumovil2{
+	position: fixed;
+	
+	top: 0;
+	z-index: 25;
+	right: -100%;
+	background: rgba(0,0,0,0.4);
+	height: 100%;
+	width: 100%;
+	
+	transition: .55s .1s cubic-bezier(0, 1.07, 0, 1.02);
+	
+
+
+}
+
+
+
+.menumovil2 .hul{
+	width: 75%;
+	height: 100%;
+	position: relative;
+	font-size: 1em;
+	background: linear-gradient(to bottom, rgb(255, 255, 255) 30%,rgba(255,255,255,.6) 100%);
+	float: right;
+	
+}
+
+.menumovil2 .hul .qe{
+	text-align: center;
+	margin-top:30px;
+	display: grid;
+	
+
+}
+
+
+.menumovil2 .hul li a{
+	color: #626262;
+	font-size: 1.5em;
+}
+
+
+
+
+.mostrarmenu2{
+	right: 0;
+	z-index: 1029;
+
+	
+}
+
+
+
+
+.logomovil
+{
+	width: 100%;
+	margin: auto;
+}
+.logomovil img{
+	height: 100px;
+	
+	
+}
+
+
+.logofinalm{
+	/* margin:30px auto 0 auto;
+	display: grid;
+	align-items: center;
+    grid-gap: 5px; */
+    
+    /* display: flex; */
+    /* right: 0; */
+    /* position: absolute;
+    left: 0;
+    margin-left: 20px; */
+    display: flex;
+    position: absolute;
+    left: 0;
+    margin-left: 20px;
+
+
+}
+
+
+
+.logofinalm2 figure img{
+	
+	
+        width: 90%;
+        margin: auto;
+     
+        max-width: 150px;
+        /* margin: 0 auto; */
+        display: block;
+
+    
+}
+
+.logofinalm a{
+	text-decoration: none;
+    font-style: italic;
+  
+    font-weight: bold;
+	font-family: Roboto;
+	font-size: 1.5em;
+
+
+}
+
+
+.logofinalm img{
+
+
+	width: 60px;
+	
+}
+
+
+
+.disenor a {
+    text-decoration: none;
+    color: #1d9cd8;
+}
+
+
+
+/* end menu slide */
+
+
+
+
+.hul {
+	display: grid;
+	grid-template-columns: auto;
+    position: fixed;
+
+    list-style: none;
+	font-size: 1.5em;
+	/* border-radius: 50%; */
+
+	z-index: 11;
+	width: 100%;
+    text-align: center;
+    align-content: center;
+	
+}
+
+
+
+.hul li{
+	margin: 0 auto;
+    width: 100%;
+    box-shadow: 10px 10px 9px -10px rgba(0,0,0,.5);
+    border-radius: 10px;
+    margin-top: 50px;
+    width: 250px;
+    padding-bottom: 10px;
+	
+}
+
+.hul li a {
+
+    transition: all 300ms;
+	
+	text-decoration: none;
+ 
+}
+
+
+.hul li a:hover:before {
+    width: 110%;
+}
+
+
+
+
+.iconosocial a{
+	text-decoration: none;
+}
+
+.disenor {
+    margin-top: 30px;
+}
+
+
+
+.hamburger:before:hover{
+	width: 25px;
+    height: 3px;
+}
+
+.hamburger {
+    position: sticky;
+    /* top: 24px;
+    left: 15px; */
+    width: 20px;
+    height: 2px;
+    background: #1d9cd8;
+    /* display: block; */
+    /* transform-origin: center; */
+    transition: .5s ease-in-out;
+}
+
+
+.hamburger:after,
+.hamburger:before {
+    background: #1d9cd8;
+    content: "";
+    display: block;
+    transition: .5s ease-in-out;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hamburger:before {
+    top: -8px;
+}
+
+.hamburger:after {
+    bottom: -6px;
+}
+
+
+/* end menumovil */
+
+
+/* servicios movil */
+/* movil servicios */
+
+.divportadam{
+	display: grid;
+	grid-template-columns: 75px auto;
+	overflow: hidden;
+}
+
+
+.servicios1{
+	
+	display: grid;
+}
+
+
+
+.galeriaentradas ul li a img{
+	max-width: 240px;
+	min-width: 160px;
+}
+
+
+.galeriaentradas ul{
+	width: 100%;
+
+    
+    height:300px;
+
+    overflow: hidden;
+}
+
+.galeriaentradas ul li a img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+.galeriaentradas ul li a{
+	width: 100%;
+	
+}
+
+.galeriaentradas ul li{
+	width: 100%;
+	list-style: none;
+	
+}
+
+.galeriaentradas a.agale{
+
+
+    display: grid;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 70px;
+    width: 300px;
+    color: #626262;
+    grid-template-columns: 80% 20%;
+    text-transform: uppercase;
+    font-family:'Oswald', sans-serif;
+    font-size: 1.2em;
+
+	
+}
+
+
+
+.modalservicio{
+	display: none;
+}
+
+
+.modalservicio:target {
+	display: grid;
+	position: fixed;
+    background: rgba(0,0,0,.9);	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1100;
+	justify-items: center;
+    
+    align-items: center;
+
+}
+
+.modalservicio p{
+	color: white;
+	
+	font-size: 1em;
+	width: 80%;
+    margin: auto;
+    text-align: center;
+
+}
+
+.modalservicio h3{
+	color: #1d9cd8;
+	font-size: 1.5em;
+	text-align: center;
+	
+    text-shadow: 1px 2px #444;
+    margin-top: 40px;
+    text-transform: uppercase;
+
+}
+
+
+
+
+.imagen a{
+	color: white;
+	font-size: 2em;
+	text-decoration: none;
+	margin: auto;
+	cursor: pointer;
+}
+
+.imagen a:nth-child(2){
+	margin: 0;
+	height: 100%;
+	flex-shrink: 2;
+}
+
+.imagen img{
+    height: 230px;
+    border-radius: 10px;
+	
+}
+
+.imagen {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    
+}
+
+.cerrar{
+	margin-top: 20px;
+	position: absolute;
+    top: 0;
+    right: 20px;
+	
+}
+
+
+
+
+
+
+.imghide{
+	visibility: hidden;
+}
+
+
+
+
+.btnpruebas{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    background: #25d366;
+    border-radius: 20px;
+    width: 250px;
+    text-align: center;
+    transition: 0.5s ease-out;
+    margin-left: 10px;
+    border: none;
+    box-shadow: 10px 10px 34px -11px rgba(0,0,0,1);
+}
+
+.btnpruebas:hover{
+    color: #25d366;
+   
+    font-weight: bold;
+    background: white;
+    
+}
+
+.btnpruebas a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+.cerrar a{
+	
+    text-decoration: none;
+    border-radius: 50%;
+   
+    width: 30px;
+    height: 30px;
+    line-height: 33px;
+    margin: auto;
+    font-size: 0.7em;
+    text-align: center;
+    display: block;
+    color: rgba(255,255,255,.3);
+}
+
+.icon-x:before {
+    content: "\ea0f";
+}
+
+
+::-webkit-input-placeholder { color: rgb(0, 0, 0, 30%); } 
+
+:-moz-placeholder { /* Firefox 18- */ color: rgb(0, 0, 0, 30%); } 
+
+::-moz-placeholder { /* Firefox 19+ */ color: rgb(0, 0, 0, 30%); } 
+
+:-ms-input-placeholder { color: rgb(0, 0, 0, 30%); }
+
+
+::-webkit-select-placeholder { color: rgb(0, 0, 0, 30%); } 
+
+
+span.icon-subm {
+    transform: rotate(180deg);
+    margin: auto;
+}
+
+.select {
+    padding-left: 10px;
+    border-left: 3px solid #1d9cd8;
+    font-weight: bold;
+    box-shadow: 10px 10px 34px -11px rgba(0,0,0,.8);
+    background: rgba(0,0,0,.04);
+
+}
+
+.servi {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding-top: 50px;
+}
+
+.servispan1 {
+    font-size: 1.5em;
+    color: #1d9cd8;
+    font-weight: bold;
+}
+
+.servispan2 {
+    color: #626262;
+    font-size: 1em;
+}
+
+.entradasservicios {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.cajah{
+    font-size: 2em;
+}
+
+.servih{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+/* end movil servicios */
+
+
+/* contador de clientes */
+.middle{
+    display: grid;
+     top: 50%;
+     width: 100%;
+   }
+   .counting-sec{
+     padding-bottom: 20px;
+     width: 100%;
+     /* background: linear-gradient(90deg,#3c6382,#82ccdd); */
+   }
+   .inner-width{
+   display: grid;
+     margin: auto;
+   
+   }
+   .col{
+   
+     text-align: center;
+    
+     color: #1d9cd8;
+     text-transform: uppercase;
+     display: grid;
+     grid-template-columns: 50% 50%;
+     align-items: center;
+     
+       justify-items: center;
+   }
+   .col i{
+     font-size: 40px;
+     color: #333;
+   }
+   
+   .col img{
+     width: 100px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     opacity: .4;
+   }
+   .num{
+     font-size: 40px;
+     margin: 20px 0;
+   }
+
+   .numb span {
+    color: #626262;
+}
+
+
+   .clientes{
+       width: 90%;
+       margin: 0 auto;
+   }
+   .servi img {
+    width: 100%;
+    margin-top: 20px;
+}
+   .servic{
+
+    padding-top: 20px;
+   }
+   /*end contador de clientes  */
+
+   /* servicio tecnico */
+   .servtec{
+       width: 90%;
+       margin: 0 auto;
+
+   }
+
+   .whataki2{
+    display: grid;
+    align-items: flex-end;
+    justify-items: center;
+   }
+
+   .btnst{
+    color: #e12327;
+    text-decoration: none;
+    padding: 10px;
+    background: white;
+    border: 1px solid #e12327;
+    border-radius: 20px;
+    width: 250px;
+    text-align: center;
+    transition: 0.5s ease-out;
+    box-shadow: 10px 10px 34px -11px rgba(0,0,0,1);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+   }
+
+   .btnst:hover{
+    color: white;
+    background: #e12327;
+    font-weight: bold;
+   }
+
+   .servit{
+       margin-bottom: 20px;
+   }
+
+   /* end servico tecnico solicitud */
+
+   /* repuestos */
+   .servres{
+       width: 90%;
+       margin: 0 auto;
+
+   }
+
+   .servres1{
+       margin-bottom: 20px;
+   }
+   .servih2{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+   }
+
+   .servauto{
+    width: 90%;
+    margin: 0 auto;
+
+   }
+
+   /* estilos botones slider marcas */
+
+   .btn-prevm:hover, .btn-nextm:hover {
+    background: #e12327;
+    color: white;
+}
+/* multimarcas */
+
+
+.multimarcas{
+    display: grid;
+    width: 90%;
+   
+    margin: 0 auto;
+}
+
+.containersa1{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 300px;
+}
+.containersa1 .slidera1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1800%;
+	height: 100%;
+	animation: animate 20s  infinite alternate ease-in-out;
+	
+	
+}
+
+.slidera1 {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.containersa1 .slidera1 .slide{
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 100%;
+
+}
+
+.containers1a .slider:hover{
+	animation-play-state: paused;
+	
+}
+.containers1a .slider1a .slide .caption{
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 30px;
+	
+	box-sizing: border-box;
+	z-index: 9;
+}
+
+.caption img{
+	border-style: none;
+    
+    position: absolute;
+  
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+	z-index: 80;
+	display: grid;
+   
+  
+
+}
+.containers1a .slider1a .slide .caption a{
+	
+	display: block;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 1.2em;
+	text-decoration: none;
+	cursor: pointer;
+
+}
+
+
+
+.caption a{
+	border-radius: 3px;
+	background:  linear-gradient(to bottom, #EDE7F3 0%,#4D148C 100%);
+	line-height: 35px;
+	width: 130px;
+	text-align: center;
+	z-index: 90;
+}
+
+.caption a:hover{
+	color: #FF6600;
+	transform: scale(1.2);
+	transition: 1s all;
+	transform-origin: center center;
+}
+
+
+
+@keyframes animate{
+	0% {
+		left: 0;
+    }
+	2.857%{
+		left: 0;
+	}
+	5.714%{
+		left: -100%;
+	}
+	8.571%{
+		left: -100%;
+	}
+	11.428%{
+		left: -200%;
+	}
+	14.285%{
+		left: -200%;
+	}
+	17.142%{
+		left: -300%;
+	}
+	19.999%{
+		left: -300%;
+	}
+	22.856%{
+		left: -400%;
+    }
+    25.713%{
+		left: -400%;
+    }
+    28.570%{
+		left: -500%;
+	}
+	31.427%{
+		left: -500%;
+    }
+    34.284%{
+		left: -600%;
+	}
+	37.141%{
+		left: -600%;
+	}
+	39.998%{
+		left: -700%;
+	}
+	42.855%{
+		left: -700%;
+	}
+    45.712%{
+		left: -800%;
+    }
+    48.569%{
+		left: -800%;
+	}
+	51.426%{
+		left: -900%;
+    }
+    54.283%{
+		left: -900%;
+    }
+    57.140%{
+		left: -1000%;
+    }
+    59.997%{
+		left: -1000%;
+    }
+    62.854%{
+		left: -1100%;
+	}
+	65.711%{
+		left: -1100%;
+	}
+	68.568%{
+		left: -1200%;
+	}
+	71.425%{
+		left: -1200%;
+	}
+	74.282%{
+		left: -1300%;
+    }
+    77.139%{
+		left: -1300%;
+    }
+    79.996%{
+		left: -1400%;
+	}
+	82.843%{
+		left: -1400%;
+    }
+    85.710%{
+		left: -1500%;
+	}
+	88.567%{
+		left: -1500%;
+	}
+	91.424%{
+		left: -1600%;
+	}
+	94.281%{
+    
+		left: -1600%;
+	}
+    97.138%{
+		left: -1700%;
+    }
+    100%{
+		left: -1700%;
+	}
+   
+}
+
+
+/* ens multimarcas */
+   /* mapa */
+
+   .mapa{
+       width: 90%;
+       margin: 0 auto;
+   }
+
+.mapcaja {
+    display: grid;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 70px;
+    width: 300px;
+    color: #626262;
+    grid-template-columns: 30px 60%;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    align-content: center;
+    justify-content: center;
+    justify-items: start;
+   }
+
+   .mapag{
+       width: 90%;
+       display: block;
+       margin: 0 auto;
+   }
+
+   .mapspan{
+       margin-bottom: 20px;
+       display: block;
+    
+   }
+   .btnmap {
+    margin: 20px 0;
+}
+
+
+.enlinea{
+    height: 10px;
+    width: 10px;
+    border-color: #25d366;
+    background: #25d366;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 11px;
+    border: 1px solid #999;
+    margin-left: 20px;
+    position: relative;
+    bottom: 7px;
+    line-height: 7px;
+    font-size: 14px;
+}
+
+.enlinea:hover{
+    color: #25D366;
+}
+
+
+
+.foo2 p{
+    color: rgba(0,0,0,.3);
+    font-size: 0.9em;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.diseño a{
+    text-decoration: none;
+    color: rgba(255,255,255,.7);
+
+}
+
+.footerredes {
+    text-align: center;
+    height: 60px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+a.whtcontacto{
+    color: #25d366;
+}   
+
+.whtcontacto span.icon-whatsapp {
+    color: #25d366;
+}
+
+
+.footerredes{
+    text-align: center;
+    height: 60px;
+
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    height: 100px;
+}
+
+/* footer */
+
+.footer {
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.foo1 {
+    text-align: center;
+    margin: 0px 0 20px 0;
+}
+.foo1 span {
+    color: #1d9cd8;
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: 'Oswald', sans-serif;
+
+    margin-bottom: 20px;
+    font-size: 1.5em;
+   
+    font-weight: bold;
+}
+
+.foo1 {
+    text-align: center;
+    margin: 0px 0 20px 0;
+}
+
+.foo2 span {
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+
+    margin-bottom: 5px 0 5px 0;
+    color: #1d9cd8;
+    font-size: 1.5em;
+  
+    font-weight: bold;
+  
+}
+
+.foo2 ul {
+    margin: 20px 0;
+}
+.foo2 ul li {
+    list-style: none;
+    /* color: red; */
+    margin: 0 0 10px 0;
+}
+
+.foo2 ul li a {
+   text-decoration: none;
+    color: #e12327;
+  
+}
+
+.horario {
+    margin-top: 20px;
+}
+
+
+
+
+.formdatos{
+    display: grid;
+   
+}
+
+.formdatos img{
+    width: 100%;
+   
+}
+
+.formdatos a{
+    
+    text-decoration: none;
+    margin: 5px 0;
+    color: #1d9cd8;
+   
+}
+
+a.formdatosa{
+    text-decoration: none;
+    color: #25d366;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.formdatosspan{
+    color: #1d9cd8;
+  
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+   
+    font-weight: bold;
+    
+}
+
+
+
+.footerredes div{
+    height: 50px;
+    width: 50px;
+    background: rgba(255,255,255,.5);
+    border-radius: 50%;
+    display: grid;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.footerredes span:hover{
+    color: #1d9cd8;
+}
+
+.fface span.icon-facebook {
+    color: rgba(0,0,0,.3);
+    font-size: 1.5em;
+    /* margin-right: 20px;
+    border-radius: 50%;
+    background: white; */
+        
+    
+}
+
+.formdatosspanw{
+    display: block;
+    text-align: center;
+    color: #1d9cd8;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.footerredes a {
+    text-decoration: none;
+}
+.fface span.icon-facebook:hover{
+    color: #1d9cd8;
+}
+
+.fins span.icon-instagram {
+    color: rgba(0,0,0,.3);
+    font-size: 1.5em;
+    /* margin-right: 20px;
+    background: white;
+    border-radius: 50%; */
+}
+
+.fins span.icon-instagram:hover{
+    color: #1d9cd8;
+}
+
+.fwhat span.icon-whatsapp {
+    color: rgba(0,0,0,.3);
+    font-size: 1.5em;
+    /* margin-right: 20px;
+    background: white;
+    border-radius: 50%; */
+}
+
+.fwhat span.icon-whatsapp:hover{
+    color: #1d9cd8;
+}
+
+.fyou span.icon-youtube {
+    color: rgba(0,0,0,.3);
+    font-size: 1.5em;
+    /* margin-right: 20px;
+    background: white;
+    border-radius: 50%; */
+}
+
+.fyou span.icon-youtube:hover{
+    color: #1d9cd8;
+}
+
+.foomaster{
+    text-align: center;
+    margin-top: 30px;
+    /* width: 1024px; */
+    margin: 0 auto;
+
+
+}
+
+.foomaster p{
+    color: rgba(0,0,0,.3);
+    font-size: 0.9em;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.diseño a{
+    text-decoration: none;
+    color: rgba(255,255,255,.7);
+
+}
+
+.diseño {
+    background: #1d9cd8;
+    height: 80px;
+    display: grid;
+   
+    text-align: center;
+}
+
+.diseño p{
+    margin: auto;
+
+}
+
+.pfinal {
+    width: 90%;
+    margin: 0 auto;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* modal */
+
+
+.modal{
+	display: none;
+}
+
+.modal:target {
+	display: grid;
+	position: fixed;
+	background: rgba(255,255,255,1);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1050;
+    overflow: scroll;
+
+}
+
+.modal2{
+	align-self: center;
+    justify-self: center;
+    margin-top: 20px;	
+}
+
+.modal2 p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #1d9cd8;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+
+}
+
+
+
+.fantasma {
+    width: 100%;
+    height: 200px;
+}
+.datoss p {
+    color: rgba(0,0,0,.3);
+    font-size: 13px;
+    font-family: 'Arimo', sans-serif;
+    text-transform: initial;
+    text-align: center;
+ 
+    max-width: 400px
+
+    
+}
+
+
+
+
+.cerrar a{
+	
+    text-decoration: none;
+    border-radius: 50%;
+   
+    width: 30px;
+    height: 30px;
+    line-height: 33px;
+    margin: auto;
+    font-size: 0.7em;
+    text-align: center;
+    display: block;
+}
+
+.icon-x:before {
+    content: "\ea0f";
+}
+
+
+::-webkit-input-placeholder { color: #1d9cd8; } 
+
+:-moz-placeholder { /* Firefox 18- */ color: #1d9cd8; } 
+
+::-moz-placeholder { /* Firefox 19+ */ color: #1d9cd8; } 
+
+:-ms-input-placeholder { color: #1d9cd8; }
+
+
+::-webkit-select-placeholder { color: #1d9cd8; } 
+
+
+.pgracias{
+	color: #ff9e00;
+	text-align: center;
+	line-height: 20px;
+	margin: 50px 0;
+}
+
+.pgracias2{
+	margin-top: 0;
+	text-align: center;
+	font-size: 2em;
+
+}
+
+
+form {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 400px;
+    overflow: hidden;
+	height: 100%;
+	display: grid;
+	align-content: center;
+	-webkit-appearance: none;
+}
+
+input, textarea {
+  
+   
+    padding: 7px;
+    font-size: 1em;
+ 
+    /* background: rgba(255,255,255, .9); */
+    color: #999;
+    border: none;
+    height: 40px;
+    margin-bottom: 15px;
+    background: rgba(255,255,255,.3);
+    -webkit-appearance: none;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 5px;
+}
+
+.sumitb{
+    color: #e12327;
+    text-decoration: none;
+    padding: 10px;
+    background: white;
+    border: 1px solid #e12327;
+    border-radius: 20px;
+    width: 160px;
+    text-align: center;
+    transition: 0.5s ease-out;
+   height: 40px;
+   box-shadow: 10px 10px 18px -11px rgba(0,0,0,1);
+   -moz-border-radius: 20px;
+   -webkit-border-radius: 20px;
+   -webkit-appearance: none;
+}
+
+.sumitb:hover{
+    color: #1d9cd8;
+    background: white;
+    font-weight: bold;
+
+}
+
+
+
+select{
+	width: 100%;
+    margin-bottom: 15px;
+    color: #1d9cd8;
+    border: none;
+    padding: 7px;
+    font-size: 1em;
+    height: 50px;
+    background: rgba(255,255,255,.3);
+   -webkit-appearance: none;
+   border-radius: 5px;
+    border: 1px solid rgba(0,0,0,.2);
+    background: rgba(0,0,0,.1);
+}
+
+option{
+	color: rgb(0, 0, 0,1);;
+    -webkit-appearance: none;
+}
+
+.date1 {
+    width: 100%;
+}
+
+.date1 span {
+    color: #626262;
+}
+
+input[type="date"] {
+    color: #1d9cd8;
+    width: 100%;
+    background: rgba(0,0,0,0.04);
+}
+
+input[type="time"] {
+    color: #1d9cd8;
+    background: rgba(0,0,0,0.04);
+}
+
+.cerraraki a{
+    color: rgba(0,0,0,0.2);
+    background: rgba(0,0,0,.03);
+    border-radius: 50%;
+}
+
+
+
+
+
+
+/* end modal */
+
+
+
+
+   /* menu */
+    
+   header{
+    height: 60px;
+    background: white;
+    color: #1d9cd8;
+    display: flex;
+    /* justify-content: flex-end; */
+    display: grid;
+    grid-template-rows: auto auto;
+    width: 100%;
+}
+.header1 {
+    display: flex;
+}
+
+.header2 {
+    display: grid;
+    /* grid-template-columns: auto auto auto auto; */
+    background: white;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* align-content: center; */
+    /* justify-items: center; */
+    margin-top: 60px;
+    
+}
+
+.sectioniconos {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+   
+}
+
+.sectioniconos img {
+    width: 50px;
+    margin: 0 auto;
+    opacity: .4;
+
+  
+}
+.sectioniconos a {
+    margin: 0 auto;
+}
+
+
+#btn-menuar{
+    display: none;
+   
+}
+
+header label{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.menuar ul{
+   
+    display: flex;
+    list-style: none;
+  
+}
+
+.menuar ul ul {
+    display: none;
+}
+
+.menuar a{
+    display: block;
+    padding: 15px 20px;
+    color: #626262;
+    text-decoration: none;
+}
+
+
+.menuar a:hover{
+    background: rgba(0,0,0,.1);
+
+}
+
+.menuar a span {
+    margin-left: 10px;
+}
+
+.menuar ul ul ul {
+    display: none;
+}
+
+.menuar ul li:hover ul.sub2{
+    display: block;
+    position: absolute;
+
+}
+.menuar ul li ul li:hover ul.sub3{
+    display: block;
+    
+
+}
+
+.menuar ul li ul li:hover ul.sub4{
+    display: block;
+    
+
+}
+
+span.icon-subm {
+    transform: rotate(90deg);
+    color: rebeccapurple;
+}
+
+
+
+/* end menu */
+
+/* servicos escritorio */
+.servicios{
+    display: none;
+}
+
+
+.imgdervfooter{
+    display: none;
+}
+    
+
+
+
+
+/*  */
+/*  */
+
+
+@media (max-width:768px){
+    header label{
+        /* display: block;
+        margin-right: 20px;
+        font-size: 2.5em; */
+        display: grid;
+    /* margin-right: 20px; */
+    font-size: 2.5em;
+    /* grid-column-start: auto; */
+    position: absolute;
+    /* margin-right: -10px; */
+    right: 10px;
+    }
+
+
+    .menuar{
+        top:50px;
+        left: 0;
+        width: 100%;
+       opacity: 0;
+     
+        transition: all 0.3s;
+        z-index: 40;
+        margin-top: 60px;
+        position: absolute;
+        z-index: -1;
+
+
+    }
+
+    .menuar ul{
+        display: block;
+        background: white;
+    }
+
+    .menuar ul li:hover ul.sub2 {
+        display: none;
+        position: static;
+
+    }
+
+    .menuar ul li ul li:hover ul.sub3{
+        display: none;
+        position: static;
+        
+    
+    }
+    
+    .menuar ul li ul li:hover ul.sub4{
+        display: none;
+        position: static;
+        
+    
+    }
+
+    .menuar a span{
+        position: absolute;
+        right: 5px;
+
+    }
+
+    #btn-menuar:checked ~ .menuar{
+        opacity: 1;
+        z-index: 200;
+        
+    }
+
+    /* .menuar ul ul {
+        background: rgba(0,0,0,.1);
+    } */
+
+    .menuar ul ul a{
+        padding: 15px 40px;
+    }
+
+    .menuar ul ul ul a{
+        padding: 15px 60px;
+    }
+
+    ul.sub2 a {
+        color: #1d9cd8;
+        text-transform: uppercase;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    li.sub3 a,li.sub4 a {
+        color: #626262;
+        ;
+    }
+    ul.sub3ul a,ul.sub4ul a {
+        color: #1d9cd8;
+    }
+
+
+
+
+}
+
+
+
+
+@media screen and (min-width: 768px){
+    .containernav{
+    
+        display: grid;
+        height: 50px;
+        width: 90%;
+        max-width: 1024px;
+        margin: 0 auto;
+       
+    
+}
+
+
+.containers:nth-child(1){
+    background: url(img/paginas-web-Quito.png);
+    background-size: cover;
+    transition: 1s ease-in-out 0s;
+    z-index: 1;
+}
+
+
+.cardnegocio {
+
+    bottom: 30px;
+    right: 50px;
+   
+}
+
+.containermovil{
+    display: none;
+}
+
+
+.frasebtn{
+    max-width: 1024px;
+    width: 90%;
+    display: grid;
+    align-content: center;
+    color: white;
+    margin: 0 auto;
+    
+    text-align: center;
+    justify-content: left;
+    justify-items: left;
+}
+
+
+
+
+a.linknav:hover {
+    color: #ff9e00;
+    font-size: bold;
+    font-weight: bold;
+}
+
+a.linknav {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.menuar ul{
+   
+  
+    z-index:200;
+}
+
+.galeriaentradas{
+    display: none;
+}
+
+
+.servicios {
+    
+    grid-template-columns: 30% 70%;
+    margin: 0 auto;
+        display: grid;
+        height: 400px;
+}
+
+.mk,.mk2,.mk3,.mk4 {
+    display: grid;
+    grid-template-columns: auto auto;
+    
+
+}
+
+
+.servispan1{
+    font-size: 1.5em;
+    color: #1d9cd8;
+    font-weight: bold;
+   
+}
+
+
+.servispan2 {
+    
+    font-size: 1em;
+}
+
+
+
+
+.etiquetas {
+    /* background: #1d9cd8 */
+}
+
+
+
+
+li.eti1,li.eti2,li.eti3,li.eti4 {
+    list-style: none;
+    padding: 30px 0;
+
+    color: #1d9cd8;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+
+
+
+
+.mk img,.mk2 img,.mk3 img,.mk4 img {
+    width: 400px;
+    border-radius: 20px;
+}
+
+.mk-info {
+   
+    display: grid;
+    
+    justify-items: center;
+   
+    align-items: center;
+    text-align: center;
+}
+
+.mk-info h2 {
+    color: #009ece;
+    margin: 0 10px;
+}
+
+.mk-info a {
+
+    color: #e12327;
+    text-decoration: none;
+    padding: 10px;
+    background: white;
+    border: 1px solid #e12327;
+    border-radius: 20px;
+    width: 250px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 10px 10px 34px -11px rgba(0,0,0,1); 
+}
+
+.mk-info a:hover{
+    color: white;
+    background: #e12327;
+    font-weight: bold;
+
+}
+.cerrarmodal{
+    display: none;
+    opacity: 0;
+}
+
+
+
+.datos1,.datos2,.datos3,.datos4{
+    animation-name: grande;
+    height: 100%;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    -webkit-animation-name: grande;
+    
+    
+    -webkit-animation-duration: .5s;
+   
+    -webkit-animation-fill-mode: both;
+}
+
+@keyframes grande{
+    0% {opacity: .5;}
+    50% {opacity: 0;
+     transform: scale3d (.1,.1,.1);}
+     100% {opacity: 0;}
+
+}
+
+.show{
+    animation-name: chico;
+    z-index: 2;
+}
+
+@keyframes chico{
+  0% {opacity: 0;
+    transform: scale3d(.1,.1,.1);}
+    
+    50% {
+        opacity: .5;
+    }
+}
+
+.etiquetasinfo{
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: left;
+    justify-content: left;
+    position: relative;
+}
+
+.select{
+    padding-left: 10px;
+    border-left: 3px solid #e12327;
+    font-weight: bold;
+    box-shadow: 10px 10px 34px -11px rgba(0,0,0,.8);
+    
+    
+}
+
+
+
+
+.mk img,.mk2 img,.mk3 img,.mk4 img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 20px;
+}
+
+
+.mk,.mk2,.mk3,.mk4{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-content: baseline;
+    justify-items: baseline;
+}
+
+.servi {
+    /* margin: 0 auto;
+    margin-bottom: 50px;
+    padding-top: 50px; */
+}
+
+.servic{
+    padding-top: 0;
+}
+
+.inner-width {
+   
+    grid-template-columns: auto auto auto auto;
+}
+
+.col{
+    
+    grid-template-rows: auto auto;
+    grid-template-columns: none;
+
+}
+
+.col img{
+    width: 200px;
+}
+
+.svtec{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+    margin-bottom: 0;
+    grid-template-areas:
+        "a a b b"
+        "a a c c"
+        "a a d d"
+        ;
+
+}
+
+.servesimg {
+    grid-area: a;
+    margin-top: 0;
+  }
+  .spantec1  {
+    grid-area: b;
+    max-width: 60%;
+    margin: 0 auto;
+  }
+  .spantec2 {
+    grid-area: c;
+    max-width: 60%;
+    margin: 0 auto;
+  }
+  .stwha{
+    grid-area: d;
+    max-width: 60%;
+    margin: 0 auto;
+  }
+ 
+  
+.header2{
+    margin-top: 0;
+}
+
+.section1,.section2,.section3,.section4,.section5{
+    background-position-y: 0;
+  
+}
+.containers2{
+    margin-top: 45px;
+}
+  
+.svteca{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas:
+        "a a d d"
+        "b b d d"
+        "c c d d"
+        ;
+
+}
+.clientes{
+    background: rgba(0,0,0,.05);
+
+}
+
+.svtecm{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,.05);
+    margin-bottom: 0;
+    grid-template-areas:
+        "c c  a"
+        "c c  b"
+      
+        ;
+
+}
+
+.containersa1 {
+ 
+    margin: 0 auto;
+    max-width: 400px;
+}
+.servimulti {
+    grid-area: c;
+    margin-top: 0;
+    display: grid;
+  }
+  .servimultit  {
+    grid-area: a;
+   
+  }
+  .servchat {
+    grid-area: b;
+    max-width: 60%;
+    margin: 0 auto;
+  }
+
+
+  
+.svtecmapa{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+    margin-bottom: 0;
+    grid-template-areas:
+        "a a c c c"
+        "b b d d d"
+        "b b e e e"
+      
+        ;
+
+}
+
+.servi{
+    margin-bottom: 0;
+}
+
+
+.servimapa {
+grid-area:a ;
+    
+}
+.serlugar {
+    grid-area: b;
+   
+  }
+  .servmaps  {
+    grid-area: c;
+   
+  }
+  .sergoogle {
+    grid-area: d;
+
+  }
+  .serwhat {
+    grid-area: e;
+ 
+  }
+
+
+  
+.svtecf{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+    margin-bottom: 0;
+    grid-template-areas:
+        "a  a  a a"
+        "b  b  c c"
+        
+      
+        ;
+
+}
+
+
+.servif1{
+    grid-area: a;
+   
+  }
+  .servif2{
+    grid-area: b;
+   
+  }
+  .servvif3 {
+    grid-area: c;
+   
+  }
+
+  .formdatos img {
+    display: none;
+}
+
+
+
+.mk-info h1 {
+    
+    font-size: 3em;
+    margin-top: 250px;
+    background: rgba(29,156,216,.7);
+    border-radius: 10px;
+}
+.servesimga {
+    grid-area: d;
+  }
+  .spantec1a {
+    grid-area: a;
+    max-width: 60%;
+    margin: 0 auto;
+  }
+  .spantec2a {
+    grid-area: b;
+    max-width: 60%;
+    margin: 0 auto;
+  }
+  .stwha2{
+    grid-area: c;
+    max-width: 60%;
+    margin: 0 auto;
+  }
+
+  img.servesimga {
+    margin-top: 0;
+
+  }
+
+  span.spanfrase {
+    font-size: 1.5em;
+    color: #e12327;
+    font-weight: bold;
+    
+    padding-left: 10px;
+    margin-top: 20px;
+ 
+    
+}
+
+.section1{
+    
+    /* background:  url(img/reparacion-mantenimiento-servicio-tecnico-de-lavadoras-secadoras-refrigeradoras-y-calefones.jpg) , rgba(0, 0, 0, 0.35) ; */
+    background-image: url(img/reparacion-mantenimiento-y-servicio-tecnico-a-domicilio-en-Quito.webp);
+    background-position-y: -60px;
+
+}
+
+
+.section2{
+    background-image: url(img/mantenimiento-y-repacion-en-Quito-24-7.webp);
+   
+
+}
+
+.section3{
+    background-image: url(img/repuestos-electrodomésticos-todas-las-marcas.webp);
+  
+    background-position-y: -80px;
+
+}
+
+
+.section4{
+    background-image: url(img/servicio-tecnico-de-lavadoras-secadoras-refrigeradoras-calefones-en-Cumbaya.webp);
+  
+
+}
+
+.section5{
+    background-image: url(img/servicio-tecnico-autorizado-multimarcas-de-electrodomésticos-Quito.webp);
+   
+    background-position-y: -200px;
+   
+}
+
+.logofinalm {
+ 
+    position: relative;
+
+}
+.logofinalm img {
+    width: 50px;
+}
+
+
+.menuar a {
+
+    background: white;
+
+}
+
+.menuar a:hover {
+
+    background: #e12327;
+    color: white;
+
+}
+
+.header1 {
+ 
+    justify-content: center;
+
+
+  /* .barra{
+      display: none;
+  } */
+
+
+
+}
+
+footer{
+    background-image: linear-gradient(to bottom, rgba(255, 255,255,.7) 40%, rgba(255, 255, 255, .5)), url(img/servicio-al-cliente-covid-19.webp);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-size: cover;
+    background-position-y: -35px;
+    background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .5)), -webkit-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .5)), -ms-linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, .5)), linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, .5));
+  
+   
+}
+
+.foo1 p {
+    text-align: initial;
+
+}
+
+.footer {
+    margin-bottom: 30px;
+}
+
+.foo2 p {
+    color: #333;
+    font-size: 1em;
+margin: 0;
+    font-weight: bold;
+}
+
+
+}
+
