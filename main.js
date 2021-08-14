@@ -1,1 +1,591 @@
-var _0x1b33=["\x74\x6F\x70","\x6F\x66\x66\x73\x65\x74","\x2E\x72\x6F\x77\x2D\x63\x65\x6E\x74\x65\x72\x65\x64","\x73\x63\x72\x6F\x6C\x6C","\x73\x63\x72\x6F\x6C\x6C\x54\x6F\x70","\x72\x6F\x77\x2D\x63\x65\x6E\x74\x65\x72\x65\x64\x32","\x61\x64\x64\x43\x6C\x61\x73\x73","\x72\x65\x6D\x6F\x76\x65\x43\x6C\x61\x73\x73","\x6F\x6E","\x63\x6C\x69\x63\x6B","\x6D\x6F\x73\x74\x72\x61\x72\x63\x61\x72\x64\x6D\x65\x6E\x75","\x23\x63\x61\x72\x64\x6D\x65\x6E\x75","\x2E\x63\x61\x72\x64\x6E\x65\x67\x6F\x63\x69\x6F","\x74\x6F\x67\x67\x6C\x65\x43\x6C\x61\x73\x73","\x23\x63\x65\x72\x72\x61\x72\x63\x68\x61\x74","\x66\x61\x64\x65\x49\x6E","\x2E\x75\x6E\x6F\x77\x68\x61\x74","\x6D\x6F\x73\x74\x72\x61\x72\x6D\x65\x6E\x75\x32","\x23\x6E\x61\x76","\x23\x6D\x65\x6E\x75\x32","\x2E\x6D\x6F\x73\x74\x72\x61\x72\x6D\x65\x6E\x75\x32","\x6D\x6F\x73\x74\x72\x61\x72\x6D\x65\x6E\x75\x32\x32","\x23\x6D\x6F\x64\x61\x6C","\x2E\x64\x65\x73\x65\x6F\x70","\x23\x63\x65\x72\x72\x61\x72","\x73\x68\x6F\x77","\x2E\x64\x61\x74\x6F\x73\x31\x61","\x2E\x64\x61\x74\x6F\x73\x32\x61","\x2E\x64\x61\x74\x6F\x73\x33\x61","\x2E\x64\x61\x74\x6F\x73\x34\x61","\x2E\x65\x74\x69\x31\x61","\x2E\x65\x74\x69\x32\x61","\x2E\x65\x74\x69\x33\x61","\x2E\x65\x74\x69\x34\x61","\x73\x65\x6C\x65\x63\x74\x20\x74\x72\x69\x70\x69\x6D\x67","\x23\x73\x6C\x69\x64\x65\x72","\x23\x62\x74\x6E\x2D\x6E\x65\x78\x74","\x23\x62\x74\x6E\x2D\x70\x72\x65\x76","\x23\x73\x6C\x69\x64\x65\x72\x20\x2E\x73\x6C\x69\x64\x65\x72\x5F\x5F\x73\x65\x63\x74\x69\x6F\x6E\x3A\x66\x69\x72\x73\x74","\x69\x6E\x73\x65\x72\x74\x42\x65\x66\x6F\x72\x65","\x23\x73\x6C\x69\x64\x65\x72\x20\x2E\x73\x6C\x69\x64\x65\x72\x5F\x5F\x73\x65\x63\x74\x69\x6F\x6E\x3A\x6C\x61\x73\x74","\x6D\x61\x72\x67\x69\x6E\x2D\x6C\x65\x66\x74","\x2D","\x25","\x63\x73\x73","\x69\x6E\x73\x65\x72\x74\x41\x66\x74\x65\x72","\x61\x6E\x69\x6D\x61\x74\x65","\x76\x61\x6C\x75\x65","\x65\x6E\x74\x72\x79\x2E\x31\x38\x30\x33\x35\x35\x36\x38\x38\x38","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x65\x6E\x74\x72\x79\x2E\x37\x30\x36\x32\x30\x36\x34\x33\x33","\x65\x6E\x74\x72\x79\x2E\x31\x37\x37\x33\x38\x38\x34\x36\x34\x39","\x65\x6E\x74\x72\x79\x2E\x31\x39\x37\x33\x32\x36\x32\x39\x33\x34","\x65\x6E\x74\x72\x79\x2E\x31\x30\x34\x36\x31\x30\x30\x35\x39\x31","\x65\x6E\x74\x72\x79\x2E\x31\x34\x35\x33\x30\x32\x38\x30\x39\x38","\x65\x6E\x74\x72\x79\x2E\x36\x33\x31\x31\x37\x33\x32\x33\x37","\x6C\x65\x6E\x67\x74\x68","\x74\x65\x73\x74","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x49\x6E\x67\x72\x65\x73\x61\x20\x74\x75\x20\x6E\x6F\x6D\x62\x72\x65\x20\x63\x6F\x6D\x70\x6C\x65\x74\x6F","\x49\x6E\x67\x72\x65\x73\x61\x20\x65\x6C\x20\x6E\x6F\x6D\x62\x72\x65\x20\x64\x65\x20\x74\x75\x20\x6E\x65\x67\x6F\x63\x69\x6F","\x53\x65\x6C\x65\x63\x63\x69\x6F\x6E\x61\x20\x65\x6C\x20\x74\x69\x70\x6F\x20\x64\x65\x20\x6E\x65\x67\x6F\x63\x69\x6F","\x53\x65\x6C\x65\x63\x63\x69\x6F\x6E\x61\x20\x65\x6C\x20\x74\x69\x70\x6F\x20\x64\x65\x20\x73\x65\x72\x76\x69\x63\x69\x6F","\x49\x6E\x67\x72\x65\x73\x61\x20\x75\x6E\x20\x6E\xFA\x6D\x65\x72\x6F\x20\x64\x65\x20\x57\x68\x61\x74\x73\x41\x70\x70","\x53\x65\x6C\x65\x63\x63\x69\x6F\x6E\x61\x20\x65\x6C\x20\x64\xED\x61\x20\x70\x61\x72\x61\x20\x6C\x61\x20\x70\x72\x75\x65\x62\x61","\x53\x65\x6C\x65\x63\x63\x69\x6F\x6E\x61\x20\x75\x6E\x61\x20\x68\x6F\x72\x61","\x26\x74\x65\x78\x74\x3D\u2705\x20\x5F\x52\x65\x67\x69\x73\x74\x72\x6F\x20\x63\x6F\x6E\x66\x69\x72\x6D\x61\x64\x6F\x5F","\x25\x32\x30","\x2A\x50\xE1\x67\x69\x6E\x61\x73\x20\x57\x65\x62\x20\x56\x65\x6E\x64\x65\x64\x6F\x72\x61\x73\u2122\x2A","\x25\x30\x41","\x5F\x5F\x5F\x5F\x5F\x5F\x5F\x5F\x5F\x5F\x5F\x5F\x5F\x5F\x5F\x5F\x5F\x5F\x5F\x5F\x5F\x5F\x5F\x5F\x5F","\uD83D\uDC64\x20\x2A\x4E\x6F\x6D\x62\x72\x65\x2A","\u269C\uFE0F\x20\x2A\x4E\x6F\x6D\x62\x72\x65\x20\x64\x65\x6C\x20\x4E\x65\x67\x6F\x63\x69\x6F\x2A","\u2B50\x20\x2A\x54\x69\x70\x6F\x20\x64\x65\x20\x4E\x65\x67\x6F\x63\x69\x6F\x2A","\uD83D\uDCCC\x20\x2A\x54\x69\x70\x6F\x20\x64\x65\x20\x53\x65\x72\x76\x69\x63\x69\x6F\x2A","\u23F3\x20\x2A\x44\xED\x61\x20\x79\x20\x68\x6F\x72\x61\x20\x70\x61\x72\x61\x20\x63\x6F\x6E\x74\x61\x63\x74\x6F\x2A","\x2A\x50\x2E\x44\x2E\x2A","\x50\x6F\x72\x20\x66\x61\x76\x6F\x72\x20\x67\x75\x61\x72\x64\x61\x20\x6E\x75\x65\x73\x74\x72\x6F\x20\x63\x6F\x6E\x74\x61\x63\x74\x6F\x20\x70\x61\x72\x61\x20\x70\x6F\x64\x65\x72\x20\x72\x65\x63\x69\x62\x69\x72\x20\x74\x6F\x64\x61\x20\x6C\x61\x20\x69\x6E\x66\x6F\x72\x6D\x61\x63\x69\xF3\x6E\x20\uD83D\uDE09\uD83D\uDC4D","\x75\x73\x65\x72\x41\x67\x65\x6E\x74","\x6E\x61\x76\x69\x67\x61\x74\x6F\x72","\x6D\x6F\x62\x69\x6C\x65","\x68\x72\x65\x66","\x62\x6F\x74\x6F\x6E","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x61\x70\x69\x2E\x77\x68\x61\x74\x73\x61\x70\x70\x2E\x63\x6F\x6D\x2F\x73\x65\x6E\x64\x3F\x70\x68\x6F\x6E\x65\x3D\x35\x39\x33\x39\x38\x30\x36\x38\x37\x39\x38\x38","\x6F\x70\x65\x6E","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x77\x65\x62\x2E\x77\x68\x61\x74\x73\x61\x70\x70\x2E\x63\x6F\x6D\x2F\x73\x65\x6E\x64\x3F\x70\x68\x6F\x6E\x65\x3D\x35\x39\x33\x39\x38\x30\x36\x38\x37\x39\x38\x38","\x69\x6E\x70\x75\x74","\x68\x65\x69\x67\x68\x74","\x73\x74\x79\x6C\x65","\x61\x75\x74\x6F","\x73\x63\x72\x6F\x6C\x6C\x48\x65\x69\x67\x68\x74","\x70\x78","\x68\x65\x69\x67\x68\x74\x3A","\x70\x78\x3B\x6F\x76\x65\x72\x66\x6C\x6F\x77\x2D\x79\x3A\x61\x75\x74\x6F\x3B","\x73\x65\x74\x41\x74\x74\x72\x69\x62\x75\x74\x65","\x65\x61\x63\x68","\x74\x65\x78\x74\x61\x72\x65\x61","\x2E\x6F\x77\x6C\x2D\x64\x65\x76","\x6C\x69\x6E\x65\x61\x72","\x6F\x77\x6C\x43\x61\x72\x6F\x75\x73\x65\x6C","\x65\x64\x61\x64","\x77\x68\x61\x74\x65\x72\x72\x6F\x72","\x64\x69\x73\x70\x6C\x61\x79\x3A\x20\x6E\x6F\x6E\x65","\xBF\x43\x6F\x6D\x6F\x20\x70\x6F\x64\x65\x6D\x6F\x73\x20\x61\x79\x75\x64\x61\x72\x74\x65\x3F\x20\uD83D\uDE3D\uD83D\uDC47","\x20\x63\x6F\x6C\x6F\x72\x3A\x20\x23\x32\x35\x64\x33\x36\x36\x3B\x20\x70\x6F\x73\x69\x74\x69\x6F\x6E\x3A\x20\x72\x65\x6C\x61\x74\x69\x76\x65\x3B\x20\x70\x61\x64\x64\x69\x6E\x67\x3A\x20\x31\x35\x70\x78\x3B\x20\x20\x6D\x61\x72\x67\x69\x6E\x3A\x20\x30\x20\x32\x36\x70\x78\x20\x32\x30\x70\x78\x3B\x20\x62\x6F\x72\x64\x65\x72\x2D\x72\x61\x64\x69\x75\x73\x3A\x20\x31\x35\x70\x78\x3B\x20\x62\x61\x63\x6B\x67\x72\x6F\x75\x6E\x64\x2D\x63\x6F\x6C\x6F\x72\x3A\x20\x23\x66\x66\x66\x3B\x20\x63\x6F\x6C\x6F\x72\x3A\x20\x23\x34\x61\x34\x61\x34\x61\x3B\x20\x62\x6F\x78\x2D\x73\x68\x61\x64\x6F\x77\x3A\x20\x30\x20\x31\x70\x78\x20\x32\x70\x78\x20\x30\x20\x72\x67\x62\x28\x30\x20\x30\x20\x30\x20\x2F\x20\x33\x30\x25\x29\x3B\x20\x74\x72\x61\x6E\x73\x69\x74\x69\x6F\x6E\x3A\x20\x30\x2E\x35\x73\x20\x65\x61\x73\x65\x2D\x69\x6E\x2D\x6F\x75\x74\x3B","","\x68\x65\x69\x67\x68\x74\x20\x30","\x26\x74\x65\x78\x74\x3D","\x65\x6E\x76\x69\x61\x72\x77\x61\x32","\x2E\x66\x32\x77\x70\x31","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72","\x2E\x66\x32\x77\x70\x32","\x2E\x66\x32\x77\x70\x35","\x2E\x66\x32\x77\x70\x33","\x2E\x66\x32\x77\x70\x34","\x2E\x66\x32\x77\x70\x36","\x26\x74\x65\x78\x74\x3D\x48\x6F\x6C\x61\x20\x64\x65\x73\x65\x6F\x20\x6D\xE1\x73\x20\x69\x6E\x66\x6F\x72\x6D\x61\x63\x69\xF3\x6E\x20\x64\x65\x3A","\x2A\x50\xE1\x67\x69\x6E\x61\x73\x20\x57\x65\x62\x20\x45\x63\x6F\x6D\x6D\x65\x72\x63\x65\u2122\x20\x79\x20\x52\x65\x64\x65\x73\x20\x53\x6F\x63\x69\x61\x6C\x65\x73\x2A","\u2705\x20\x5F\x52\x65\x67\x69\x73\x74\x72\x6F\x20\x63\x6F\x6E\x66\x69\x72\x6D\x61\x64\x6F\x5F","\x2A\x4E\x6F\x6D\x62\x72\x65\x2A","\x2A\x4E\x6F\x6D\x62\x72\x65\x20\x64\x65\x6C\x20\x4E\x65\x67\x6F\x63\x69\x6F\x2A","\x2A\x54\x69\x70\x6F\x20\x64\x65\x20\x4E\x65\x67\x6F\x63\x69\x6F\x2A","\x2A\x44\xED\x61\x20\x79\x20\x68\x6F\x72\x61\x20\x70\x61\x72\x61\x20\x63\x6F\x6E\x74\x61\x63\x74\x6F\x2A","\x47\x75\x61\x72\x64\x61\x20\x6E\x75\x65\x73\x74\x72\x6F\x20\x63\x6F\x6E\x74\x61\x63\x74\x6F\x20\x63\x6F\x6D\x6F\x20\x2A\x50\xE1\x67\x69\x6E\x61\x73\x20\x57\x65\x62\x20\x45\x63\x6F\x6D\x6D\x65\x72\x63\x65\x2A\x20\x70\x61\x72\x61\x20\x70\x6F\x64\x65\x72\x20\x72\x65\x63\x69\x62\x69\x72\x20\x74\x6F\x64\x61\x20\x6C\x61\x20\x69\x6E\x66\x6F\x72\x6D\x61\x63\x69\xF3\x6E\x20\uD83D\uDE09\uD83D\uDC4D","\x65\x6E\x76\x69\x61\x72\x77\x61\x66\x66","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x61\x70\x69\x2E\x77\x68\x61\x74\x73\x61\x70\x70\x2E\x63\x6F\x6D\x2F\x73\x65\x6E\x64\x3F\x70\x68\x6F\x6E\x65\x3D\x35\x39\x33\x39\x38\x30\x36\x38\x37\x39\x38\x38\x26\x74\x65\x78\x74\x3D\x25\x32\x30\x48\x6F\x6C\x61\x2C\x25\x32\x30\x64\x65\x73\x65\x6F\x25\x32\x30\x6D\x25\x43\x33\x25\x41\x31\x73\x25\x32\x30\x69\x6E\x66\x6F\x72\x6D\x61\x63\x69\x25\x43\x33\x25\x42\x33\x6E","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x77\x65\x62\x2E\x77\x68\x61\x74\x73\x61\x70\x70\x2E\x63\x6F\x6D\x2F\x73\x65\x6E\x64\x3F\x70\x68\x6F\x6E\x65\x3D\x35\x39\x33\x39\x38\x30\x36\x38\x37\x39\x38\x38\x26\x74\x65\x78\x74\x3D\x25\x32\x30\x48\x6F\x6C\x61\x2C\x25\x32\x30\x64\x65\x73\x65\x6F\x25\x32\x30\x6D\x25\x43\x33\x25\x41\x31\x73\x25\x32\x30\x69\x6E\x66\x6F\x72\x6D\x61\x63\x69\x25\x43\x33\x25\x42\x33\x6E"];var altura=$(_0x1b33[2])[_0x1b33[1]]()[_0x1b33[0]];$(window)[_0x1b33[8]](_0x1b33[3],function(){if($(window)[_0x1b33[4]]()>= altura){$(_0x1b33[2])[_0x1b33[6]](_0x1b33[5])}else {$(_0x1b33[2])[_0x1b33[7]](_0x1b33[5]);$(window)[_0x1b33[3]](function(){return false})}});$(_0x1b33[12])[_0x1b33[8]](_0x1b33[9],function(){$(_0x1b33[11])[_0x1b33[6]](_0x1b33[10])});$(_0x1b33[14])[_0x1b33[8]](_0x1b33[9],function(){$(_0x1b33[11])[_0x1b33[13]](_0x1b33[10])});setTimeout(function(){$(_0x1b33[16])[_0x1b33[15]](1000)},8500);$(_0x1b33[19])[_0x1b33[8]](_0x1b33[9],function(){$(_0x1b33[18])[_0x1b33[13]](_0x1b33[17])});$(_0x1b33[18])[_0x1b33[8]](_0x1b33[9],function(){$(_0x1b33[18])[_0x1b33[7]](_0x1b33[17])});$(_0x1b33[20])[_0x1b33[8]](_0x1b33[9],function(){$(_0x1b33[18])[_0x1b33[7]](_0x1b33[17])});$(_0x1b33[23])[_0x1b33[8]](_0x1b33[9],function(){$(_0x1b33[22])[_0x1b33[13]](_0x1b33[21])});$(_0x1b33[24])[_0x1b33[8]](_0x1b33[9],function(){$(_0x1b33[22])[_0x1b33[7]](_0x1b33[21])});$(_0x1b33[30])[_0x1b33[8]](_0x1b33[9],function(){$(_0x1b33[26])[_0x1b33[6]](_0x1b33[25]);$(_0x1b33[27])[_0x1b33[7]](_0x1b33[25]);$(_0x1b33[28])[_0x1b33[7]](_0x1b33[25]);$(_0x1b33[29])[_0x1b33[7]](_0x1b33[25])});$(_0x1b33[31])[_0x1b33[8]](_0x1b33[9],function(){$(_0x1b33[27])[_0x1b33[6]](_0x1b33[25]);$(_0x1b33[26])[_0x1b33[7]](_0x1b33[25]);$(_0x1b33[28])[_0x1b33[7]](_0x1b33[25]);$(_0x1b33[29])[_0x1b33[7]](_0x1b33[25])});$(_0x1b33[32])[_0x1b33[8]](_0x1b33[9],function(){$(_0x1b33[28])[_0x1b33[6]](_0x1b33[25]);$(_0x1b33[26])[_0x1b33[7]](_0x1b33[25]);$(_0x1b33[27])[_0x1b33[7]](_0x1b33[25]);$(_0x1b33[29])[_0x1b33[7]](_0x1b33[25])});$(_0x1b33[33])[_0x1b33[8]](_0x1b33[9],function(){$(_0x1b33[29])[_0x1b33[6]](_0x1b33[25]);$(_0x1b33[26])[_0x1b33[7]](_0x1b33[25]);$(_0x1b33[28])[_0x1b33[7]](_0x1b33[25]);$(_0x1b33[27])[_0x1b33[7]](_0x1b33[25])});$(_0x1b33[30])[_0x1b33[8]](_0x1b33[9],function(){$(_0x1b33[30])[_0x1b33[6]](_0x1b33[34]);$(_0x1b33[31])[_0x1b33[7]](_0x1b33[34]);$(_0x1b33[32])[_0x1b33[7]](_0x1b33[34]);$(_0x1b33[33])[_0x1b33[7]](_0x1b33[34])});$(_0x1b33[31])[_0x1b33[8]](_0x1b33[9],function(){$(_0x1b33[31])[_0x1b33[6]](_0x1b33[34]);$(_0x1b33[30])[_0x1b33[7]](_0x1b33[34]);$(_0x1b33[32])[_0x1b33[7]](_0x1b33[34]);$(_0x1b33[33])[_0x1b33[7]](_0x1b33[34])});$(_0x1b33[32])[_0x1b33[8]](_0x1b33[9],function(){$(_0x1b33[32])[_0x1b33[6]](_0x1b33[34]);$(_0x1b33[30])[_0x1b33[7]](_0x1b33[34]);$(_0x1b33[31])[_0x1b33[7]](_0x1b33[34]);$(_0x1b33[33])[_0x1b33[7]](_0x1b33[34])});$(_0x1b33[33])[_0x1b33[8]](_0x1b33[9],function(){$(_0x1b33[33])[_0x1b33[6]](_0x1b33[34]);$(_0x1b33[30])[_0x1b33[7]](_0x1b33[34]);$(_0x1b33[31])[_0x1b33[7]](_0x1b33[34]);$(_0x1b33[32])[_0x1b33[7]](_0x1b33[34])});var slider=$(_0x1b33[35]);var siguiente=$(_0x1b33[36]);var anterior=$(_0x1b33[37]);$(_0x1b33[40])[_0x1b33[39]](_0x1b33[38]);slider[_0x1b33[44]](_0x1b33[41],_0x1b33[42]+ 100+ _0x1b33[43]);function moverD(){slider[_0x1b33[46]]({marginLeft:_0x1b33[42]+ 200+ _0x1b33[43]},700,function(){$(_0x1b33[38])[_0x1b33[45]](_0x1b33[40]);slider[_0x1b33[44]](_0x1b33[41],_0x1b33[42]+ 100+ _0x1b33[43])})}function moverI(){slider[_0x1b33[46]]({marginLeft:0},700,function(){$(_0x1b33[40])[_0x1b33[39]](_0x1b33[38]);slider[_0x1b33[44]](_0x1b33[41],_0x1b33[42]+ 100+ _0x1b33[43])})}function autoplay(){interval= setInterval(function(){moverD()},9000)}siguiente[_0x1b33[8]](_0x1b33[9],function(){moverD();clearInterval(interval);autoplay()});anterior[_0x1b33[8]](_0x1b33[9],function(){moverI();clearInterval(interval);autoplay()});autoplay();function goToPage(){var _0x6b21x9=document[_0x1b33[49]](_0x1b33[48])[_0x1b33[47]];var _0x6b21xa=document[_0x1b33[49]](_0x1b33[50])[_0x1b33[47]];var _0x6b21xb=document[_0x1b33[49]](_0x1b33[51])[_0x1b33[47]];var _0x6b21xc=document[_0x1b33[49]](_0x1b33[52])[_0x1b33[47]];var _0x6b21xd=document[_0x1b33[49]](_0x1b33[53])[_0x1b33[47]];var _0x6b21xe=document[_0x1b33[49]](_0x1b33[54])[_0x1b33[47]];var _0x6b21xf=document[_0x1b33[49]](_0x1b33[55])[_0x1b33[47]];if(_0x6b21x9== null|| _0x6b21x9[_0x1b33[56]]== 0|| /^\s+$/[_0x1b33[57]](_0x6b21x9)){return (document[_0x1b33[49]](_0x1b33[48])[_0x1b33[58]]= _0x1b33[59])};if(_0x6b21xa== null|| _0x6b21xa[_0x1b33[56]]== 0|| /^\s+$/[_0x1b33[57]](_0x6b21xa)){return (document[_0x1b33[49]](_0x1b33[50])[_0x1b33[58]]= _0x1b33[60])};if(_0x6b21xb== null|| _0x6b21xb[_0x1b33[56]]== 0|| /^\s+$/[_0x1b33[57]](_0x6b21xb)){return (document[_0x1b33[49]](_0x1b33[51])[_0x1b33[58]]= _0x1b33[61])};if(_0x6b21xc== null|| _0x6b21xc[_0x1b33[56]]== 0|| /^\s+$/[_0x1b33[57]](_0x6b21xc)){return (document[_0x1b33[49]](_0x1b33[52])[_0x1b33[58]]= _0x1b33[62])};if(_0x6b21xd== null|| _0x6b21xd[_0x1b33[56]]== 0|| /^\s+$/[_0x1b33[57]](_0x6b21xd)){return (document[_0x1b33[49]](_0x1b33[53])[_0x1b33[58]]= _0x1b33[63])};if(_0x6b21xe== null|| _0x6b21xe[_0x1b33[56]]== 0|| /^\s+$/[_0x1b33[57]](_0x6b21xe)){return (document[_0x1b33[49]](_0x1b33[54])[_0x1b33[58]]= _0x1b33[64])};if(_0x6b21xf== null|| _0x6b21xf[_0x1b33[56]]== 0|| /^\s+$/[_0x1b33[57]](_0x6b21xf)){return (document[_0x1b33[49]](_0x1b33[55])[_0x1b33[58]]= _0x1b33[65])};var _0x6b21x10=_0x1b33[66]+ _0x1b33[67]+ _0x1b33[68]+ _0x1b33[69]+ _0x1b33[70]+ _0x1b33[69]+ _0x1b33[69]+ _0x1b33[71]+ _0x1b33[69]+ _0x6b21x9+ _0x1b33[67]+ _0x1b33[69]+ _0x1b33[69]+ _0x1b33[72]+ _0x1b33[69]+ _0x6b21xa+ _0x1b33[67]+ _0x1b33[69]+ _0x1b33[69]+ _0x1b33[73]+ _0x1b33[69]+ _0x6b21xb+ _0x1b33[67]+ _0x1b33[69]+ _0x1b33[69]+ _0x1b33[74]+ _0x1b33[69]+ _0x6b21xc+ _0x1b33[69]+ _0x1b33[69]+ _0x1b33[75]+ _0x1b33[69]+ _0x6b21xf+ _0x1b33[69]+ _0x1b33[69]+ _0x1b33[70]+ _0x1b33[69]+ _0x1b33[69]+ _0x1b33[76]+ _0x1b33[67]+ _0x1b33[77];var _0x6b21x11= new MobileDetect(window[_0x1b33[79]][_0x1b33[78]]);if(_0x6b21x11[_0x1b33[80]]()){window[_0x1b33[84]](document[_0x1b33[49]](_0x1b33[82])[_0x1b33[81]]= _0x1b33[83]+ _0x6b21x10)}else {window[_0x1b33[84]](document[_0x1b33[49]](_0x1b33[82])[_0x1b33[81]]= _0x1b33[85]+ _0x6b21x10)}}$(_0x1b33[96])[_0x1b33[95]](function(){this[_0x1b33[94]](_0x1b33[88],_0x1b33[92]+ (this[_0x1b33[90]])+ _0x1b33[93])})[_0x1b33[8]](_0x1b33[86],function(){this[_0x1b33[88]][_0x1b33[87]]= _0x1b33[89];this[_0x1b33[88]][_0x1b33[87]]= (this[_0x1b33[90]])+ _0x1b33[91]});var owl=$(_0x1b33[97]);owl[_0x1b33[99]]({items:1,loop:true,nav:true,slideTransition:_0x1b33[98],margin:20,autoplay:true,autoplayTimeout:2500,autoplaySpeed:2500,responsive:{0:{items:2},600:{items:6}}});function obtenerdatos(){var _0x6b21x9=document[_0x1b33[49]](_0x1b33[100])[_0x1b33[47]];$(_0x1b33[14])[_0x1b33[8]](_0x1b33[9],function(){document[_0x1b33[49]](_0x1b33[101])[_0x1b33[88]]= _0x1b33[102]});if(_0x6b21x9== null|| _0x6b21x9[_0x1b33[56]]== 0|| /^\s+$/[_0x1b33[57]](_0x6b21x9)){return (document[_0x1b33[49]](_0x1b33[101])[_0x1b33[58]]= _0x1b33[103],document[_0x1b33[49]](_0x1b33[101])[_0x1b33[88]]= _0x1b33[104])};document[_0x1b33[49]](_0x1b33[100])[_0x1b33[47]]= _0x1b33[105];document[_0x1b33[49]](_0x1b33[100])[_0x1b33[88]]= _0x1b33[106];var _0x6b21x14=_0x1b33[107]+ _0x6b21x9;var _0x6b21x11= new MobileDetect(window[_0x1b33[79]][_0x1b33[78]]);if(_0x6b21x11[_0x1b33[80]]()){window[_0x1b33[84]](document[_0x1b33[49]](_0x1b33[108])[_0x1b33[81]]= _0x1b33[83]+ _0x6b21x14)}else {window[_0x1b33[84]](document[_0x1b33[49]](_0x1b33[108])[_0x1b33[81]]= _0x1b33[85]+ _0x6b21x14)}}function enviarwaf(){var _0x6b21x9=document[_0x1b33[110]](_0x1b33[109])[_0x1b33[47]];var _0x6b21xa=document[_0x1b33[110]](_0x1b33[111])[_0x1b33[47]];var _0x6b21xc=document[_0x1b33[110]](_0x1b33[112])[_0x1b33[47]];var _0x6b21xd=document[_0x1b33[110]](_0x1b33[113])[_0x1b33[47]];var _0x6b21xe=document[_0x1b33[110]](_0x1b33[114])[_0x1b33[47]];var _0x6b21x16=document[_0x1b33[110]](_0x1b33[115])[_0x1b33[47]];if(_0x6b21x9== null|| _0x6b21x9[_0x1b33[56]]== 0|| /^\s+$/[_0x1b33[57]](_0x6b21x9)){return (document[_0x1b33[110]](_0x1b33[109])[_0x1b33[58]]= _0x1b33[59])};if(_0x6b21xa== null|| _0x6b21xa[_0x1b33[56]]== 0|| /^\s+$/[_0x1b33[57]](_0x6b21xa)){return (document[_0x1b33[110]](_0x1b33[105])[_0x1b33[58]]= _0x1b33[60])};if(_0x6b21xc== null|| _0x6b21xc[_0x1b33[56]]== 0|| /^\s+$/[_0x1b33[57]](_0x6b21xc)){return (document[_0x1b33[110]](_0x1b33[112])[_0x1b33[58]]= _0x1b33[62])};if(_0x6b21xd== null|| _0x6b21xd[_0x1b33[56]]== 0|| /^\s+$/[_0x1b33[57]](_0x6b21xd)){return (document[_0x1b33[110]](_0x1b33[113])[_0x1b33[58]]= _0x1b33[63])};if(_0x6b21xe== null|| _0x6b21xe[_0x1b33[56]]== 0|| /^\s+$/[_0x1b33[57]](_0x6b21xe)){return (document[_0x1b33[110]](_0x1b33[114])[_0x1b33[58]]= _0x1b33[64])};if(_0x6b21x16== null|| _0x6b21x16[_0x1b33[56]]== 0|| /^\s+$/[_0x1b33[57]](_0x6b21x16)){return (document[_0x1b33[110]](_0x1b33[115])[_0x1b33[58]]= _0x1b33[64])};var _0x6b21x10=_0x1b33[116]+ _0x1b33[67]+ _0x1b33[117]+ _0x1b33[69]+ _0x1b33[118]+ _0x1b33[69]+ _0x1b33[70]+ _0x1b33[69]+ _0x1b33[69]+ _0x1b33[119]+ _0x1b33[69]+ _0x6b21x9+ _0x1b33[67]+ _0x1b33[69]+ _0x1b33[69]+ _0x1b33[120]+ _0x1b33[69]+ _0x6b21xa+ _0x1b33[67]+ _0x1b33[69]+ _0x1b33[69]+ _0x1b33[121]+ _0x1b33[69]+ _0x6b21xc+ _0x1b33[67]+ _0x1b33[69]+ _0x1b33[69]+ _0x1b33[122]+ _0x1b33[69]+ _0x6b21x16+ _0x1b33[69]+ _0x1b33[69]+ _0x1b33[70]+ _0x1b33[69]+ _0x1b33[69]+ _0x1b33[76]+ _0x1b33[67]+ _0x1b33[123];var _0x6b21x11= new MobileDetect(window[_0x1b33[79]][_0x1b33[78]]);if(_0x6b21x11[_0x1b33[80]]()){window[_0x1b33[84]](document[_0x1b33[49]](_0x1b33[82])[_0x1b33[81]]= _0x1b33[83]+ _0x6b21x10)}else {window[_0x1b33[84]](document[_0x1b33[49]](_0x1b33[82])[_0x1b33[81]]= _0x1b33[85]+ _0x6b21x10)}}function enviarwaff(){var _0x6b21x11= new MobileDetect(window[_0x1b33[79]][_0x1b33[78]]);if(_0x6b21x11[_0x1b33[80]]()){window[_0x1b33[84]](document[_0x1b33[49]](_0x1b33[124])[_0x1b33[81]]= _0x1b33[125])}else {window[_0x1b33[84]](document[_0x1b33[49]](_0x1b33[124])[_0x1b33[81]]= _0x1b33[126])}}
+
+
+    var altura =$('.row-centered').offset().top;
+    $(window).on('scroll', function(){
+      if ($(window).scrollTop()>= altura){
+        $('.row-centered').addClass('row-centered2');
+      } else{
+        $('.row-centered').removeClass('row-centered2');
+  
+        $(window).scroll(function() { return false; });
+  
+      }
+    })
+
+
+//   Whatsapp Chat
+
+
+
+$('.cardnegocio').on('click', function(){
+    $('#cardmenu').addClass('mostrarcardmenu');
+  })
+  
+  $('#cerrarchat').on('click', function(){
+    $('#cardmenu').toggleClass('mostrarcardmenu');
+  })
+  
+  
+  // $('.cardmenu').on('click', function(){
+  //   $('#cardmenu').removeClass('mostrarcardmenu');
+  //    $('#cardmenu').removeClass('cardmenu');
+  
+  // })
+  
+  // mostrar despues de 2 segundos el mensaje a whatsapp falso
+  
+  
+    setTimeout(function() {
+        $(".unowhat").fadeIn(1000);
+    },8500);
+  
+
+ 
+
+$('#menu2').on('click', function(){
+  $('#nav').toggleClass('mostrarmenu2');
+
+
+})
+
+$('#nav').on('click', function(){
+  $('#nav').removeClass('mostrarmenu2');
+})
+
+
+$('.mostrarmenu2').on('click', function(){
+  $('#nav').removeClass('mostrarmenu2');
+  // $('#nav').removeClass('mostrarmenu2');
+
+})
+
+
+//   $('#cerrar').on('click', function(){
+//     $('#modal').toggleClass('modal');
+
+
+//   })
+
+
+$('.deseop').on('click', function(){
+  $('#modal').toggleClass('mostrarmenu22');
+
+
+})
+
+$('#cerrar').on('click', function(){
+  $('#modal').removeClass('mostrarmenu22');
+
+
+})
+
+
+$('.eti1a').on('click', function(){
+    $('.datos1a').addClass('show');
+    $('.datos2a').removeClass('show');
+    $('.datos3a').removeClass('show');
+    $('.datos4a').removeClass('show');
+
+  })
+  
+  $('.eti2a').on('click', function(){
+    $('.datos2a').addClass('show');
+    $('.datos1a').removeClass('show');
+    $('.datos3a').removeClass('show');
+    $('.datos4a').removeClass('show');
+  })
+
+  $('.eti3a').on('click', function(){
+    $('.datos3a').addClass('show');
+    $('.datos1a').removeClass('show');
+    $('.datos2a').removeClass('show');
+    $('.datos4a').removeClass('show');
+  })
+
+  $('.eti4a').on('click', function(){
+    $('.datos4a').addClass('show');
+    $('.datos1a').removeClass('show');
+    $('.datos3a').removeClass('show');
+    $('.datos2a').removeClass('show');
+  })
+
+
+$('.eti1a').on('click', function(){
+    $('.eti1a').addClass('select tripimg');
+    $('.eti2a').removeClass('select tripimg');
+    $('.eti3a').removeClass('select tripimg');
+    $('.eti4a').removeClass('select tripimg');
+
+  })
+
+  
+$('.eti2a').on('click', function(){
+    $('.eti2a').addClass('select tripimg');
+    $('.eti1a').removeClass('select tripimg');
+    $('.eti3a').removeClass('select tripimg');
+    $('.eti4a').removeClass('select tripimg');
+
+  })
+
+  $('.eti3a').on('click', function(){
+    $('.eti3a').addClass('select tripimg');
+    $('.eti1a').removeClass('select tripimg');
+    $('.eti2a').removeClass('select tripimg');
+    $('.eti4a').removeClass('select tripimg');
+
+  })
+
+  $('.eti4a').on('click', function(){
+    $('.eti4a').addClass('select tripimg');
+    $('.eti1a').removeClass('select tripimg');
+    $('.eti2a').removeClass('select tripimg');
+    $('.eti3a').removeClass('select tripimg');
+
+
+  })
+
+  
+
+
+
+  
+
+
+// new slider
+
+//almacenar slider en una variable
+var slider = $('#slider');
+//almacenar botones
+var siguiente = $('#btn-next');
+var anterior = $('#btn-prev');
+
+//mover ultima imagen al primer lugar
+$('#slider .slider__section:last').insertBefore('#slider .slider__section:first');
+//mostrar la primera imagen con un margen de -100%
+slider.css('margin-left', '-'+100+'%');
+
+function moverD() {
+    slider.animate({
+        marginLeft:'-'+200+'%'
+    } ,700, function(){
+        $('#slider .slider__section:first').insertAfter('#slider .slider__section:last');
+        slider.css('margin-left', '-'+100+'%');
+    });
+}
+
+function moverI() {
+    slider.animate({
+        marginLeft:0
+    } ,700, function(){
+        $('#slider .slider__section:last').insertBefore('#slider .slider__section:first');
+        slider.css('margin-left', '-'+100+'%');
+    });
+}
+
+function autoplay() {
+    interval = setInterval(function(){
+        moverD();
+    }, 9000);
+}
+siguiente.on('click',function() {
+    moverD();
+    clearInterval(interval);
+    autoplay();
+});
+
+anterior.on('click',function() {
+    moverI();
+    clearInterval(interval);
+    autoplay();
+});
+
+
+autoplay();
+
+
+
+// smooth sroll navbar 
+// const scroll = new SmoothScroll('.navbar a[href*="#"]', {
+//     speed: 2000
+// });
+
+  
+function goToPage(){
+  var nombre = document.getElementById('entry.1803556888').value;
+  var nombrenegocio = document.getElementById('entry.706206433').value;
+  var tipodenegocio = document.getElementById('entry.1773884649').value;
+
+  var tipodeservicio = document.getElementById('entry.1973262934').value;
+
+
+
+  var whatsapp = document.getElementById('entry.1046100591').value;
+  var mail = document.getElementById('entry.1453028098').value;
+
+  var horaprueba = document.getElementById('entry.631173237').value;
+
+  if( nombre == null || nombre.length == 0 || /^\s+$/.test(nombre) ) {
+     
+    return (document.getElementById("entry.1803556888").innerHTML =
+    "Ingresa tu nombre completo")
+  }
+  if( nombrenegocio == null || nombrenegocio.length == 0 || /^\s+$/.test(nombrenegocio) ) {
+     
+    return (document.getElementById("entry.706206433").innerHTML =
+    "Ingresa el nombre de tu negocio")
+  }
+  if( tipodenegocio == null || tipodenegocio.length == 0 || /^\s+$/.test(tipodenegocio) ) {
+     
+    return (document.getElementById("entry.1773884649").innerHTML =
+    "Selecciona el tipo de negocio")
+  }
+
+  if( tipodeservicio == null || tipodeservicio.length == 0 || /^\s+$/.test(tipodeservicio) ) {
+     
+      return (document.getElementById("entry.1973262934").innerHTML =
+      "Selecciona el tipo de servicio")
+    }
+  if( whatsapp == null || whatsapp.length == 0 || /^\s+$/.test(whatsapp) ) {
+     
+    return (document.getElementById("entry.1046100591").innerHTML =
+    "Ingresa un número de WhatsApp")
+  }
+  if( mail == null || mail.length == 0 || /^\s+$/.test(mail) ) {
+     
+    return (document.getElementById("entry.1453028098").innerHTML =
+    "Selecciona el día para la prueba")
+  }
+  if( horaprueba == null || horaprueba.length == 0 || /^\s+$/.test(horaprueba) ) {
+     
+    return (document.getElementById("entry.631173237").innerHTML =
+    "Selecciona una hora")
+  }
+
+// var myWindow = window.open ("https://api.whatsapp.com/send?phone=593980687988&text="+"Hola deseo más información de:" + "%20" + "*Páginas Web Ecommerce™ y Redes Sociales*" + "%0A"+"✅ _Registro confirmado_" + "%0A"+"_________________________" + "%0A"+"%0A"+ "*Nombre*" +"%0A" + nombre + "%20" +"%0A"+"%0A" +"*Nombre del Negocio*" +"%0A" + nombrenegocio +  "%20" + "%0A"+"%0A"+"*Tipo de Negocio*"+"%0A" + tipodenegocio + "%20"+ "%0A"+"%0A"+"*Día y hora para contacto*"+"%0A" +horaprueba+"%0A" + "%0A"+ "_________________________" + "%0A" + "%0A"+"*P.D.*"+ "%20"+ "Guarda nuestro contacto como *Páginas Web Ecommerce* para poder recibir toda la información 😉👍");
+
+
+var whatsapp_number ="&text=✅ _Registro confirmado_"+ "%20" + "*Páginas Web Vendedoras™*" + "%0A"+"_________________________" + "%0A"+"%0A"+ "👤 *Nombre*" +"%0A" + nombre + "%20" +"%0A"+"%0A" +"⚜️ *Nombre del Negocio*" +"%0A" + nombrenegocio +  "%20" + "%0A"+"%0A"+"⭐ *Tipo de Negocio*"+"%0A" + tipodenegocio + "%20"+ "%0A"+"%0A"+"📌 *Tipo de Servicio*"+"%0A"+tipodeservicio+ "%0A"+"%0A"+"⏳ *Día y hora para contacto*"+"%0A" +horaprueba+"%0A" + "%0A"+ "_________________________" + "%0A" + "%0A"+"*P.D.*"+ "%20"+ "Por favor guarda nuestro contacto para poder recibir toda la información 😉👍";
+    
+    
+    
+    
+var md = new MobileDetect(window.navigator.userAgent);
+if (md.mobile()) {
+
+
+ window.open(document.getElementById("boton").href = "https://api.whatsapp.com/send?phone=593980687988" + whatsapp_number);
+
+ 
+} else {
+
+  window.open(document.getElementById("boton").href = "https://web.whatsapp.com/send?phone=593980687988" + whatsapp_number);
+
+}
+
+}
+
+//texterea
+$('textarea').each(function () {
+  this.setAttribute('style', 'height:' + (this.scrollHeight) + 'px;overflow-y:auto;');
+  }).on('input', function () {
+  this.style.height = 'auto';
+  this.style.height = (this.scrollHeight) + 'px';
+  });
+
+
+
+
+//chatsend
+
+// function obtenerdatos(){
+// var nombre = document.getElementById('edad').value;
+
+
+
+// if( nombre == null || nombre.length == 0 || /^\s+$/.test(nombre) ) {
+     
+//   return (document.getElementById("edad").innerHTML =
+//   "Escribe un mensaje",document.getElementById("edad").style="color: #25d366;")
+// }
+
+// document.getElementById('edad').value = '';
+// document.getElementById('edad').style ="height 0";
+
+// var myWindow = "&text="+nombre;
+
+// var md = new MobileDetect(window.navigator.userAgent);
+//    if (md.mobile()) {
+
+//     window.open(document.getElementById("enviarwa2").href = "https://api.whatsapp.com/send?phone=593980687988" + myWindow);
+
+//   } else {
+   
+//     window.open(document.getElementById("enviarwa2").href = "https://web.whatsapp.com/send?phone=593980687988" + myWindow);
+
+   
+
+
+//   }
+
+// }
+
+var owl=$('.owl-dev');
+owl.owlCarousel({
+items:1,
+loop:true,
+nav:true,
+slideTransition: 'linear',
+margin:20,
+autoplay:true,
+autoplayTimeout:2500,
+autoplaySpeed: 2500,
+
+responsive:{
+    0:{
+        items:2
+    },
+    600:{
+        items:6
+    },
+    // 1000:{
+    //     items:4
+    // }
+}
+
+});
+
+// $('.owl-dev').owlCarousel({
+//   // stagePadding: 10,
+
+
+//   loop: true,
+//   margin: 20,
+//   autoplay: true,
+//   slideTransition: 'linear',
+//   autoplayTimeout: 2500,
+//   autoplaySpeed: 2500,
+//   autoplayHoverPause: false,
+
+// quitar
+//   loop:true,
+//   margin:10,
+//   nav:true,
+
+//   animateOut: 'fadeOut',
+//   animateIn: 'fadeIn',
+//   slideSpeed: 1000,
+//   paginationSpeed: 1000,
+
+//   autoplay:true,
+//   autoplayTimeout:1000,
+//   autoplayHoverPause:true,
+
+// quitar
+
+//   responsive:{
+//       0:{
+//           items:2
+//       },
+//       600:{
+//           items:4
+//       },
+
+//     quitar
+//       1000:{
+//           items:4
+//       }
+//       quitar
+//   }
+// })
+
+
+// document.oncontextmenu = function(){return false}
+
+
+
+
+
+function obtenerdatos(){
+  var nombre = document.getElementById('edad').value;
+
+
+
+  $('#cerrarchat').on('click', function(){
+ 
+      document.getElementById("whaterror").style="display: none";
+    })
+
+  if( nombre == null || nombre.length == 0 || /^\s+$/.test(nombre) ) {
+     
+      return (document.getElementById("whaterror").innerHTML =
+      "¿Como podemos ayudarte? 😽👇",document.getElementById("whaterror").style=" color: #25d366; position: relative; padding: 15px;  margin: 0 26px 20px; border-radius: 15px; background-color: #fff; color: #4a4a4a; box-shadow: 0 1px 2px 0 rgb(0 0 0 / 30%); transition: 0.5s ease-in-out;")
+    }
+
+ 
+
+
+
+
+    document.getElementById('edad').value = '';
+    document.getElementById('edad').style ="height 0";
+
+  var myWindow = "&text="+nombre;
+
+  var md = new MobileDetect(window.navigator.userAgent);
+     if (md.mobile()) {
+
+      window.open(document.getElementById("enviarwa2").href = "https://api.whatsapp.com/send?phone=593980687988" + myWindow);
+
+    } else {
+     
+      window.open(document.getElementById("enviarwa2").href = "https://web.whatsapp.com/send?phone=593980687988" + myWindow);
+ 
+     
+ 
+ 
+    }
+ 
+}
+
+
+
+function enviarwaf(){
+
+
+  var nombre = document.querySelector('.f2wp1').value;
+  var nombrenegocio = document.querySelector('.f2wp2').value;
+  // var tipodenegocio = document.querySelector('.f2wp5').value;
+
+  var tipodeservicio = document.querySelector('.f2wp5').value;
+
+
+
+  var whatsapp = document.querySelector('.f2wp3').value;
+  var mail = document.querySelector('.f2wp4').value;
+  var hora = document.querySelector('.f2wp6').value;
+
+ 
+
+  if( nombre == null || nombre.length == 0 || /^\s+$/.test(nombre) ) {
+     
+    return (document.querySelector(".f2wp1").innerHTML =
+    "Ingresa tu nombre completo")
+  }
+  if( nombrenegocio == null || nombrenegocio.length == 0 || /^\s+$/.test(nombrenegocio) ) {
+     
+    return (document.querySelector("").innerHTML =
+    "Ingresa el nombre de tu negocio")
+  }
+
+  if( tipodeservicio == null || tipodeservicio.length == 0 || /^\s+$/.test(tipodeservicio) ) {
+     
+      return (document.querySelector(".f2wp5").innerHTML =
+      "Selecciona el tipo de servicio")
+    }
+  if( whatsapp == null || whatsapp.length == 0 || /^\s+$/.test(whatsapp) ) {
+     
+    return (document.querySelector(".f2wp3").innerHTML =
+    "Ingresa un número de WhatsApp")
+  }
+  if( mail == null || mail.length == 0 || /^\s+$/.test(mail) ) {
+     
+    return (document.querySelector(".f2wp4").innerHTML =
+    "Selecciona el día para la prueba")
+  }
+
+
+
+if( hora == null || hora.length == 0 || /^\s+$/.test(hora) ) {
+   
+  return (document.querySelector(".f2wp6").innerHTML =
+  "Selecciona el día para la prueba")
+}
+
+
+ 
+
+  // var md = new MobileDetect(window.navigator.userAgent);
+  //    if (md.mobile()) {
+
+  //     window.open(document.getElementById("enviarwaff").href = "https://api.whatsapp.com/send?phone=593980687988&text=Hola%20deseo%20más%20información%20de%20*Páginas%20Web%20Ecommerce™%20y%20Redes%20Sociales%0A%0A✅%20_Registro%20confirmado%0A%0A*P.D.*%20Guarda%20nuestro%20contacto%20como%20*Páginas%20Web%20Ecommerce*%20para%20poder%20recibir%20toda%20la%20información%20😉👍") ;
+
+  //   } else {
+     
+  //     window.open(document.getElementById("enviarwaff").href = "https://web.whatsapp.com/send?phone=593980687988&text=Hola%20deseo%20más%20información%20de%20*Páginas%20Web%20Ecommerce™%20y%20Redes%20Sociales%0A%0A✅%20_Registro%20confirmado%0A%0A*P.D.*%20Guarda%20nuestro%20contacto%20como%20*Páginas%20Web%20Ecommerce*%20para%20poder%20recibir%20toda%20la%20información%20😉👍");
+ 
+     
+ 
+ 
+  //   }
+
+  
+var whatsapp_number ="&text=Hola deseo más información de:" + "%20" + "*Páginas Web Ecommerce™ y Redes Sociales*" + "%0A"+"✅ _Registro confirmado_" + "%0A"+"_________________________" + "%0A"+"%0A"+ "*Nombre*" +"%0A" + nombre + "%20" +"%0A"+"%0A" +"*Nombre del Negocio*" +"%0A" + nombrenegocio +  "%20" + "%0A"+"%0A"+"*Tipo de Negocio*"+"%0A" + tipodeservicio + "%20"+ "%0A"+"%0A"+"*Día y hora para contacto*"+"%0A" +hora+"%0A" + "%0A"+ "_________________________" + "%0A" + "%0A"+"*P.D.*"+ "%20"+ "Guarda nuestro contacto como *Páginas Web Ecommerce* para poder recibir toda la información 😉👍";
+    
+
+
+    // var whatsapp_number ="&text=Hola deseo más información de:" + "%20" + "*Páginas Web Ecommerce™ y Redes Sociales*" + "%0A"+"✅ _Registro confirmado_" + "%0A"+"_________________________" + "%0A"+"%0A"+ "*Nombre*" +"%0A" + nombre + "%20" +"%0A"+"%0A" +"*Nombre del Negocio*" +"%0A" + nombrenegocio + "%0A"+ "_________________________" + "%0A" + "%0A"+"*P.D.*"+ "%20"+ "Guarda nuestro contacto como *Páginas Web Ecommerce* para poder recibir toda la información 😉👍";
+    
+    
+    
+    
+    var md = new MobileDetect(window.navigator.userAgent);
+    if (md.mobile()) {
+    
+    
+     window.open(document.getElementById("boton").href = "https://api.whatsapp.com/send?phone=593980687988" + whatsapp_number);
+    
+     
+    } else {
+    
+      window.open(document.getElementById("boton").href = "https://web.whatsapp.com/send?phone=593980687988" + whatsapp_number);
+    
+    }
+    
+
+
+
+
+
+ 
+}
+
+
+
+
+
+  
+function enviarwaff(){
+
+  
+  var md = new MobileDetect(window.navigator.userAgent);
+     if (md.mobile()) {
+
+      window.open(document.getElementById("enviarwaff").href = "https://api.whatsapp.com/send?phone=593980687988&text=%20Hola,%20deseo%20m%C3%A1s%20informaci%C3%B3n") ;
+
+    } else {
+     
+      window.open(document.getElementById("enviarwaff").href = "https://web.whatsapp.com/send?phone=593980687988&text=%20Hola,%20deseo%20m%C3%A1s%20informaci%C3%B3n");
+ 
+     
+ 
+ 
+    }
+ 
+}
+
+
+// in html js smotth 
+
+// var scroll = new SmoothScroll('a[href="#servicios"] ,a[href="#clientes"] ,a[href="#precios"] ,a[href="#top"],a[href="#contacto"],a[href="#clientes"],a[href="#"]' ,  {
+//   speed:2000,
+//   speedAsDuration: true
+ 
+// });
+
+
+
+// $("#boton").on("click",function(event){
+//   event.preventDefault();
+// });
+
+
