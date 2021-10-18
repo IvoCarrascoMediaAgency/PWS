@@ -72,9 +72,9 @@
 #c2 .owl-prev{
   display: none;
 }
-#c2 .owl-next{
+/* #c2 .owl-next{
   display: none;
-}
+} */
   .owl-carousel.owl-loaded {
     display: grid; }
   .owl-carousel.owl-loading {
