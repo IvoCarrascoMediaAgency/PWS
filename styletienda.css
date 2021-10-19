@@ -2310,7 +2310,7 @@ nav.navbar.navbar-dark.bg-dark {
   }
   
   
-  @media  (max-width: 375px) {
+  @media  (max-width: 599px) {
       .orderDialog {
         margin-top: 50%;
         margin-left: 5%;
@@ -2370,7 +2370,7 @@ nav.navbar.navbar-dark.bg-dark {
       
     }
     
-    @media  (min-width: 376px) and (max-width: 1023px) {
+    @media  (min-width: 600px) and (max-width: 1023px) {
       .orderDialog {
         margin-top: 20%;
         margin-left: 27.5%;
