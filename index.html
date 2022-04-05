@@ -62,7 +62,7 @@
       <meta property="og:site_name" content="Páginas Web Vendedoras | Agencia de marketing digital en Quito Guayaquil Ecuador" />
       <!-- Facebook -->
 
-
+      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 
 
@@ -312,7 +312,7 @@ display: none;
                     
                     <!-- <a  class="anav" href="onClick="enviarwaf();" target="_blank"  rel=" noreferrer"><span class="icon-whatsapp"></span> 098 068 7899</a> -->
 
-                    <input class="anav" id="enviarwaff" type="submit" class="sumitb" name="" onclick="enviarwaff();" target="_blank" value="098 068 7988">
+                    <!-- <input class="anav" id="enviarwaff" type="submit" class="sumitb" name="" onclick="enviarwaff();" target="_blank" value="098 068 7988"> -->
 
                     <!-- <input id="boton" type="submit" class="sumitb" name="" onclick="goToPage();" target="_blank" value="Enviar por WhatsApp">
 
@@ -518,7 +518,7 @@ display: none;
         <div class="modal2 modalv2">
             
                     
-        <form id="gform" name="gform" target="hidden_iframe" onsubmit="submitted=true;" action="https://docs.google.com/forms/d/e/1FAIpQLScYfhEJldDxV1hK9g9UheNDZ6aZgTAti_rW5nkGBrCphCYL3Q/formResponse?">
+        <form id="gform" name="gform" target="hidden_iframe" onsubmit="submitted=true;return submitUserForm1();" action="https://docs.google.com/forms/d/e/1FAIpQLScYfhEJldDxV1hK9g9UheNDZ6aZgTAti_rW5nkGBrCphCYL3Q/formResponse?">
             <p>Atendemos tu requerimiento 🙂</p>
             <label for="entry.1803556888" ></label>
             <input type="text" name="entry.1803556888" id="entry.1803556888" placeholder="Nombre y Apellido" title="Por favor escribe nombre y apellido" required>
@@ -577,7 +577,16 @@ display: none;
                    
             <!-- <input type="submit" class="sumitb" name="" onclick="window.open('https://api.whatsapp.com/send?phone=593980687988&text=Saludos,%20deseo%20m%C3%A1s%20informaci%C3%B3n')"  value="Enviar"> -->
 
-            <input id="boton" type="submit" class="sumitb" name="" onclick="goToPage();" target="_blank" value="Enviar por WhatsApp">
+            
+            <div class="recapcha1">
+                <div class="g-recaptcha" data-sitekey="6LfvDUofAAAAAFh0tofWyWSXUnSQD19T3i19ZXK8"data-callback="verifyCaptcha1"></div>
+                <div id="g-recaptcha-error1"></div>
+        
+            </div>
+
+            <label for="boton" id="boton1f"></label>
+
+            <input id="boton" type="submit" class="sumitb" name="" target="_blank" value="Enviar por WhatsApp">
             
         </form>
         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){}"></iframe>
@@ -837,7 +846,7 @@ display: none;
            
         <div class="formq" id="contacto2">
             <form  
-            id="gforma"  name="gforma" target="hidden_iframe2" onsubmit="submitted=true;"
+            id="gforma"  name="gforma" target="hidden_iframe2" onsubmit="submitted=true;return submitUserForm2();"
             action="https://docs.google.com/forms/d/e/1FAIpQLSclWHdimbOn2b18CPRaSz5RVoeLA-pxJudums5VtjnYhuVSRg/formResponse?" method="GET">
                 <!-- <div class="FormField"> -->
 
@@ -873,7 +882,7 @@ display: none;
 
             <div class="form2" id="contacto2">
                 <form  
-                id="gform2"  name="gform2" target="hidden_iframe2" onsubmit="submitted=true;"
+                id="gform2"  name="gform2" target="hidden_iframe2" onsubmit="submitted=true;return submitUserForm2();"
                 action="https://docs.google.com/forms/d/e/1FAIpQLSclWHdimbOn2b18CPRaSz5RVoeLA-pxJudums5VtjnYhuVSRg/formResponse?" >
                     <!-- <div class="FormField"> -->
                         
@@ -1379,10 +1388,16 @@ display: none;
 
 <!-- <p class="demo"></p> -->
 
+<div class="recapcha2">
+    <div class="g-recaptcha" data-sitekey="6LfvDUofAAAAAFh0tofWyWSXUnSQD19T3i19ZXK8"data-callback="verifyCaptcha2"></div>
+    <div id="g-recaptcha-error2"></div>
+
+</div>
+
 <label for="botona"  id="enviarwa" class="enviarwa">  </label>
 
 <div class="spanenviar">
-                      <span>  <input id="botona" type="submit" class="" name=""  onclick="goToPagea(); " target="_blank" value="Realizar pedido" ></span></div>
+                      <span>  <input id="botona" type="submit" class="" name=""   target="_blank" value="Realizar pedido" ></span></div>
 
                      
 
@@ -2408,7 +2423,7 @@ display: none;
 
                     <div class="cajaform">
                 
-                        <form id="gform22" name="gform22" target="hidden_iframe3" onsubmit="submitted=true;" action="https://docs.google.com/forms/d/e/1FAIpQLScYfhEJldDxV1hK9g9UheNDZ6aZgTAti_rW5nkGBrCphCYL3Q/formResponse?">
+                        <form id="gform22" name="gform22" target="hidden_iframe3" onsubmit="submitted=true;return submitUserForm3();" action="https://docs.google.com/forms/d/e/1FAIpQLScYfhEJldDxV1hK9g9UheNDZ6aZgTAti_rW5nkGBrCphCYL3Q/formResponse?">
                             <label for="entry.1803556888" ></label>
                             <input class="f2wp1" type="text" name="entry.1803556888" id="entry.1803556888" placeholder="Nombre y Apellido" title="Por favor escribe nombre y apellido" required>
                             <label for="entry.706206433" ></label>
@@ -2457,7 +2472,16 @@ display: none;
                     <option value="20:00 PM">20:00 PM</option>
                                     </select>
 
-                                    <input type="submit" class="sumitb" name="" onclick="enviarwaf();"  value="Enviar por WhatsApp"> 
+                                    <div class="recapcha3">
+                                        <div class="g-recaptcha" data-sitekey="6LfvDUofAAAAAFh0tofWyWSXUnSQD19T3i19ZXK8"data-callback="verifyCaptcha3"></div>
+                                        <div id="g-recaptcha-error3"></div>
+                                
+                                    </div>
+
+
+                                    <label for="botonb" id="botonwa"></label>
+
+                                    <input id="botonb" type="submit" class="sumitb" name=""   value="Enviar por WhatsApp"> 
 
                                     <!-- <input id="boton2" type="submit" class="sumitb" name="" onclick="goToPage2();" target="_blank" value="Enviar por WhatsApp"> -->
             
@@ -2585,18 +2609,19 @@ display: none;
     </div>
 
 
-<script src=""
+<!-- <script src=""
 integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 crossorigin="anonymous"></script>
 
 <script type="text/javascript">
     var submitted = false;
-    </script>
-    <script type="text/javascript">
+    </script> -->
+    <!-- <script type="text/javascript">
     var _0x34ba=['#gform\x20*','prepend','#gform','#gform22','<p\x20class=\x22pgracias\x22>¡Gracias!\x20enseguida\x20nos\x20comunicaremos\x20contigo.🙂</p>','#gform22\x20*','submit','fadeOut'];(function(_0x395c3b,_0x34ba12){var _0x50e7f4=function(_0x96d53f){while(--_0x96d53f){_0x395c3b['push'](_0x395c3b['shift']());}};_0x50e7f4(++_0x34ba12);}(_0x34ba,0x155));var _0x50e7=function(_0x395c3b,_0x34ba12){_0x395c3b=_0x395c3b-0x0;var _0x50e7f4=_0x34ba[_0x395c3b];return _0x50e7f4;};$(_0x50e7('0x5'))['on']('submit',function(_0x36fe5d){$(_0x50e7('0x3'))[_0x50e7('0x2')](0x7d0);$(_0x50e7('0x5'))[_0x50e7('0x4')](_0x50e7('0x7'));});$(_0x50e7('0x6'))['on'](_0x50e7('0x1'),function(_0x51f102){$(_0x50e7('0x0'))[_0x50e7('0x2')](0x7d0);$('#gform22')[_0x50e7('0x4')]('<p\x20class=\x22pgracias\x22>¡Gracias!\x20enseguida\x20nos\x20comunicaremos\x20contigo.🙂</p>');});
 
 
-</script>
+</script> --> 
+
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 
 </body>
@@ -2757,6 +2782,5 @@ crossorigin="anonymous"></script>
 
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkGoJnVeGDJt95eLYrBeZIrlKqoiPBA30&callback=initialize" async defer></script>
-
 </html>
 
